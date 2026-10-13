@@ -6,2263 +6,1153 @@
   <title>JEWLLZ - Premium Lightweight 92.5 Silver Wholesaler</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
       --gold-dark: #684209;
       --gold-deep: #7D510C;
       --gold-primary: #94681A;
-      --gold-light: #B88931;
       --gold-soft: #D4AF37;
       --gold-cream: #F8F3E6;
-      --gold-accent: #E5C378;
       --bg-cream: #FDFBF7;
-      --bg-card: #FFFFFF;
       --text-dark: #1E1A17;
       --text-muted: #574F46;
       --border-gold: rgba(148, 104, 26, 0.25);
       --border-gold-strong: rgba(148, 104, 26, 0.55);
-      --shadow-royal: 0 16px 36px rgba(104, 66, 9, 0.08);
-      --shadow-hover: 0 22px 48px rgba(104, 66, 9, 0.16);
     }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      background-color: var(--bg-cream);
-      color: var(--text-dark);
-      line-height: 1.6;
-      overflow-x: hidden;
-      position: relative;
-    }
-
-    h1, h2, h3, h4, .serif-font {
-      font-family: 'Cinzel', serif;
-      letter-spacing: 0.05em;
-    }
-
-    .container {
-      max-width: 1240px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
-
-    /* TOP STATUTORY NOTICE BAR */
-    .top-statutory-bar {
-      background: linear-gradient(90deg, #1A1510, #2C2216, #1A1510);
-      color: #E6D2B5;
-      padding: 10px 16px;
-      font-size: 11.5px;
-      font-weight: 500;
-      letter-spacing: 0.04em;
-      border-bottom: 1px solid rgba(212, 175, 55, 0.25);
-    }
-
-    .top-statutory-inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .statutory-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .statutory-dot {
-      width: 5px;
-      height: 5px;
-      background: var(--gold-soft);
-      border-radius: 50%;
-      display: inline-block;
-    }
-
-    /* HEADER */
-    .brand-header {
-      background: #FFFFFF;
-      border-bottom: 1px solid var(--border-gold);
-      padding: 16px 0;
-      position: sticky;
-      top: 0;
-      z-index: 900;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
-    }
-
-    .header-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-
-    .logo-container {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
-
-    .main-logo-img {
-      height: 68px;
-      width: auto;
-      max-width: 220px;
-      object-fit: contain;
-      border-radius: 6px;
-      border: 1px solid var(--border-gold);
-      padding: 4px;
-      background: #FFFFFF;
-      box-shadow: 0 4px 12px rgba(104, 66, 9, 0.08);
-    }
-
-    .brand-titles h1 {
-      font-size: 20px;
-      color: var(--gold-dark);
-      font-weight: 700;
-      line-height: 1.2;
-    }
-
-    .brand-titles p {
-      font-size: 11.5px;
-      color: var(--text-muted);
-      font-weight: 600;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-
-    .header-actions {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    /* BUTTONS */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 10px 20px;
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      border-radius: 4px;
-      text-decoration: none;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      border: 1px solid transparent;
-      white-space: nowrap;
-    }
-
-    .btn-gold {
-      background: linear-gradient(135deg, var(--gold-deep), var(--gold-primary));
-      color: #FFFFFF;
-      border-color: var(--gold-light);
-      box-shadow: 0 4px 14px rgba(104, 66, 9, 0.25);
-    }
-
-    .btn-gold:hover {
-      background: linear-gradient(135deg, var(--gold-dark), var(--gold-deep));
-      transform: translateY(-2px);
-      box-shadow: 0 6px 18px rgba(104, 66, 9, 0.35);
-      color: #FFFFFF;
-    }
-
-    .btn-whatsapp {
-      background: #128C7E;
-      color: #FFFFFF;
-      box-shadow: 0 4px 14px rgba(18, 140, 126, 0.2);
-    }
-
-    .btn-whatsapp:hover {
-      background: #075E54;
-      transform: translateY(-2px);
-      color: #FFFFFF;
-    }
-
-    .btn-outline-gold {
-      background: #FFFFFF;
-      color: var(--gold-dark);
-      border: 1px solid var(--border-gold-strong);
-    }
-
-    .btn-outline-gold:hover {
-      background: var(--gold-cream);
-      border-color: var(--gold-primary);
-      transform: translateY(-2px);
-    }
-
-    /* HERO SECTION */
-    .hero-banner {
-      padding: 44px 0 28px;
-      text-align: center;
-      background: radial-gradient(circle at 50% 30%, #FFFFFF, var(--bg-cream) 80%);
-      border-bottom: 1px solid var(--border-gold);
-    }
-
-    .hero-tagline-badge {
-      display: inline-block;
-      padding: 6px 18px;
-      background: var(--gold-cream);
-      border: 1px solid var(--border-gold-strong);
-      border-radius: 30px;
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--gold-dark);
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      margin-bottom: 14px;
-    }
-
-    .hero-title {
-      font-size: 34px;
-      color: var(--gold-dark);
-      font-weight: 800;
-      margin-bottom: 10px;
-      line-height: 1.25;
-    }
-
-    .hero-subtagline {
-      font-size: 17px;
-      color: var(--gold-deep);
-      font-weight: 600;
-      margin-bottom: 6px;
-      letter-spacing: 0.04em;
-    }
-
-    .hero-quote {
-      font-size: 14.5px;
-      color: var(--text-muted);
-      font-style: italic;
-      max-width: 680px;
-      margin: 0 auto 22px;
-    }
-
-    .terms-box {
-      background: var(--gold-cream);
-      border: 1px solid var(--border-gold-strong);
-      border-radius: 6px;
-      padding: 16px 20px;
-      font-size: 11.5px;
-      color: var(--text-muted);
-      line-height: 1.6;
-    }
-
-    .terms-title {
-      font-size: 12px;
-      font-weight: 800;
-      color: var(--gold-dark);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 6px;
-    }
-
-    /* 1 PRODUCT PER PAGE SECTION */
-    .product-showcase-section {
-      padding: 36px 0 24px;
-    }
-
-    .product-single-page-card {
-      min-height: calc(100vh - 120px);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin-bottom: 44px;
-      padding: 24px 0;
-      border-bottom: 1px dashed var(--border-gold);
-      position: relative;
-    }
-
-    .product-layout-grid {
-      display: grid;
-      grid-template-columns: 1.15fr 1fr;
-      gap: 40px;
-      align-items: center;
-      background: #FFFFFF;
-      border: 1px solid var(--border-gold);
-      border-radius: 12px;
-      padding: 32px;
-      box-shadow: var(--shadow-royal);
-    }
-
-    /* 12:14 ASPECT RATIO + SAME PLACE ZOOM */
-    .ratio-12-14-container {
-      width: 100%;
-      max-width: 520px;
-      margin: 0 auto;
-      aspect-ratio: 12 / 14;
-      position: relative;
-      overflow: hidden;
-      border-radius: 8px;
-      border: 1px solid var(--border-gold-strong);
-      background: #FAF8F5;
-      cursor: zoom-in;
-    }
-
-    .ratio-12-14-container.is-zoomed {
-      cursor: zoom-out;
-    }
-
-    .product-img-main {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.25s ease-out;
-      transform-origin: center center;
-    }
-
-    .ratio-12-14-container.is-zoomed .product-img-main {
-      transform: scale(2.2);
-    }
-
-    .zoom-hint-badge {
-      position: absolute;
-      bottom: 12px;
-      right: 12px;
-      background: rgba(30, 26, 23, 0.85);
-      color: #E5C378;
-      font-size: 11px;
-      font-weight: 600;
-      padding: 6px 12px;
-      border-radius: 20px;
-      border: 1px solid rgba(229, 195, 120, 0.4);
-      pointer-events: none;
-      transition: opacity 0.2s;
-    }
-
-    .ratio-12-14-container.is-zoomed .zoom-hint-badge {
-      opacity: 0;
-    }
-
-    /* PRODUCT SPECS & AMAZON CART CONTROLS */
-    .product-details-col {
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-    }
-
-    .product-meta-header {
-      border-bottom: 1px solid var(--border-gold);
-      padding-bottom: 16px;
-    }
-
-    .design-code-pill {
-      display: inline-block;
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--gold-deep);
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      margin-bottom: 6px;
-    }
-
-    .product-display-name {
-      font-size: 24px;
-      color: var(--gold-dark);
-      font-weight: 700;
-      line-height: 1.25;
-    }
-
-    .weight-metric-card {
-      display: inline-flex;
-      align-items: baseline;
-      gap: 8px;
-      background: var(--gold-cream);
-      border: 1px solid var(--border-gold-strong);
-      padding: 10px 18px;
-      border-radius: 6px;
-      margin-top: 10px;
-    }
-
-    .weight-metric-card .label {
-      font-size: 12px;
-      font-weight: 700;
-      text-transform: uppercase;
-      color: var(--text-muted);
-    }
-
-    .weight-metric-card .value {
-      font-size: 24px;
-      font-weight: 800;
-      color: var(--gold-dark);
-    }
-
-    .spec-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 13px;
-    }
-
-    .spec-table td {
-      padding: 8px 0;
-      border-bottom: 1px solid rgba(0,0,0,0.05);
-    }
-
-    .spec-table td:first-child {
-      font-weight: 600;
-      color: var(--text-muted);
-      width: 40%;
-    }
-
-    .spec-table td:last-child {
-      color: var(--text-dark);
-      font-weight: 600;
-    }
-
-    /* AMAZON CART BLOCK */
-    .amazon-cart-block {
-      background: #FDFBF7;
-      border: 1px solid var(--border-gold-strong);
-      border-radius: 8px;
-      padding: 18px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .amazon-stepper-row {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      flex-wrap: wrap;
-    }
-
-    .qty-stepper {
-      display: inline-flex;
-      align-items: center;
-      border: 1px solid var(--border-gold-strong);
-      border-radius: 4px;
-      background: #FFFFFF;
-      overflow: hidden;
-    }
-
-    .stepper-btn {
-      width: 38px;
-      height: 38px;
-      background: #FFFFFF;
-      border: none;
-      font-size: 18px;
-      font-weight: 700;
-      color: var(--gold-dark);
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background 0.2s;
-    }
-
-    .stepper-btn:hover {
-      background: var(--gold-cream);
-    }
-
-    .qty-input {
-      width: 48px;
-      height: 38px;
-      border: none;
-      border-left: 1px solid var(--border-gold);
-      border-right: 1px solid var(--border-gold);
-      text-align: center;
-      font-size: 15px;
-      font-weight: 700;
-      color: var(--gold-dark);
-      background: #FFFDF9;
-    }
-
-    .btn-add-amazon {
-      flex: 1;
-      min-width: 200px;
-      background: linear-gradient(135deg, #FFD814, #F7CA00);
-      color: #0F1111;
-      border: 1px solid #FCD200;
-      border-radius: 20px;
-      padding: 10px 22px;
-      font-size: 13.5px;
-      font-weight: 700;
-      cursor: pointer;
-      box-shadow: 0 2px 5px rgba(213,217,217,.5);
-      transition: all 0.2s;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-    }
-
-    .btn-add-amazon:hover {
-      background: #F7CA00;
-      transform: translateY(-1px);
-    }
-
-    .btn-add-amazon.added-state {
-      background: #2E7D32;
-      color: #FFFFFF;
-      border-color: #1B5E20;
-    }
-
-    /* VIEW MORE CONTROLS (DIRECTLY AFTER 5TH PRODUCT) */
-    .view-more-banner {
-      background: #FFFFFF;
-      border: 2px dashed var(--border-gold-strong);
-      border-radius: 10px;
-      padding: 24px;
-      text-align: center;
-      margin: 10px 0 40px;
-      box-shadow: var(--shadow-royal);
-    }
-
-    .view-more-banner h3 {
-      font-size: 18px;
-      color: var(--gold-dark);
-      margin-bottom: 6px;
-    }
-
-    .view-more-banner p {
-      font-size: 13px;
-      color: var(--text-muted);
-      margin-bottom: 16px;
-    }
-
-    /* STRICT HIDING OF DESIGNS 6 TO 23 */
-    #extra-designs-wrapper {
-      display: none;
-    }
-
-    /* PRICING & TIERS SECTION */
-    .pricing-tiers-section {
-      padding: 56px 0;
-      background: linear-gradient(180deg, var(--bg-cream), #F6EFE2);
-      border-top: 1px solid var(--border-gold);
-      border-bottom: 1px solid var(--border-gold);
-    }
-
-    .section-header {
-      text-align: center;
-      margin-bottom: 36px;
-    }
-
-    .section-eyebrow {
-      font-size: 12px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--gold-primary);
-      margin-bottom: 6px;
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: var(--bg-cream); color: var(--text-dark); line-height: 1.6; }
+    h1, h2, h3, h4, .serif { font-family: 'Cinzel', serif; letter-spacing: 0.05em; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+    .top-bar { background: #1A1510; color: #E6D2B5; padding: 8px 16px; font-size: 11.5px; border-bottom: 1px solid rgba(212,175,55,0.25); }
+    .top-bar-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+
+    .header { background: #FFF; border-bottom: 1px solid var(--border-gold); padding: 14px 0; position: sticky; top: 0; z-index: 900; }
+    .header-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; }
+    .logo-box { display: flex; align-items: center; gap: 14px; }
+    .logo-img { height: 60px; width: auto; object-fit: contain; border: 1px solid var(--border-gold); padding: 3px; border-radius: 4px; }
+
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 9px 18px; font-size: 13px; font-weight: 600; border-radius: 4px; text-decoration: none; cursor: pointer; border: 1px solid transparent; }
+    .btn-gold { background: linear-gradient(135deg, var(--gold-deep), var(--gold-primary)); color: #FFF; }
+    .btn-whatsapp { background: #128C7E; color: #FFF; }
+    .btn-outline { background: #FFF; color: var(--gold-dark); border-color: var(--border-gold-strong); }
+
+    .hero { padding: 40px 0 24px; text-align: center; border-bottom: 1px solid var(--border-gold); }
+    .badge { display: inline-block; padding: 4px 14px; background: var(--gold-cream); border: 1px solid var(--border-gold-strong); border-radius: 20px; font-size: 11px; font-weight: 700; color: var(--gold-dark); text-transform: uppercase; margin-bottom: 12px; }
+    .hero h2 { font-size: 32px; color: var(--gold-dark); margin-bottom: 8px; }
+    .terms-box { background: var(--gold-cream); border: 1px solid var(--border-gold-strong); border-radius: 6px; padding: 14px 18px; font-size: 11.5px; color: var(--text-muted); max-width: 900px; margin: 18px auto 0; text-align: left; }
+
+    /* Product Cards */
+    .product-card { min-height: calc(100vh - 100px); display: flex; flex-direction: column; justify-content: center; padding: 30px 0; border-bottom: 1px dashed var(--border-gold); }
+    .product-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 36px; align-items: center; background: #FFF; border: 1px solid var(--border-gold); border-radius: 10px; padding: 28px; box-shadow: 0 10px 25px rgba(104,66,9,0.06); }
+    
+    .img-wrap { width: 100%; max-width: 480px; margin: 0 auto; aspect-ratio: 12 / 14; overflow: hidden; border-radius: 6px; border: 1px solid var(--border-gold-strong); background: #FAF8F5; cursor: zoom-in; position: relative; }
+    .img-wrap.zoomed { cursor: zoom-out; }
+    .img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.2s ease-out; }
+    .img-wrap.zoomed img { transform: scale(2.2); }
+    .zoom-hint { position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.75); color: #E5C378; font-size: 10.5px; padding: 4px 10px; border-radius: 14px; pointer-events: none; }
+
+    .stepper { display: inline-flex; align-items: center; border: 1px solid var(--border-gold-strong); border-radius: 4px; background: #FFF; }
+    .stepper button { width: 36px; height: 36px; background: #FFF; border: none; font-size: 18px; font-weight: 700; color: var(--gold-dark); cursor: pointer; }
+    .stepper input { width: 44px; height: 36px; border: none; border-left: 1px solid var(--border-gold); border-right: 1px solid var(--border-gold); text-align: center; font-size: 14px; font-weight: 700; color: var(--gold-dark); }
+
+    .btn-amazon { flex: 1; min-width: 180px; background: #FFD814; color: #0F1111; border: 1px solid #FCD200; border-radius: 20px; padding: 9px 18px; font-size: 13px; font-weight: 700; cursor: pointer; }
+    .btn-amazon:hover { background: #F7CA00; }
+    .btn-amazon.added { background: #2E7D32; color: #FFF; border-color: #1B5E20; }
+
+    /* Extra Designs Hidden Initially */
+    #extra-designs { display: none; }
+    .view-more-banner { background: #FFF; border: 2px dashed var(--border-gold-strong); border-radius: 8px; padding: 22px; text-align: center; margin: 20px 0; }
+
+    /* Pricing Tiers */
+    .pricing-section { padding: 50px 0; background: linear-gradient(180deg, var(--bg-cream), #F6EFE2); border-top: 1px solid var(--border-gold); border-bottom: 1px solid var(--border-gold); }
+    .tiers-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .tier-card { background: #FFF; border: 1px solid var(--border-gold-strong); border-radius: 8px; padding: 26px 20px; display: flex; flex-direction: column; position: relative; }
+    .tier-card.featured { border: 2px solid var(--gold-primary); background: #FFFCF7; box-shadow: 0 14px 30px rgba(148,104,26,0.15); }
+    .featured-tag { position: absolute; top: -13px; left: 50%; transform: translateX(-50%); background: var(--gold-dark); color: #FFF; padding: 4px 14px; border-radius: 14px; font-size: 10.5px; font-weight: 800; text-transform: uppercase; white-space: nowrap; border: 1px solid #E5C378; }
+
+    .why-section { padding: 50px 0; border-bottom: 1px solid var(--border-gold); }
+    .why-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+    .why-card { background: #FFF; border: 1px solid var(--border-gold); border-radius: 6px; padding: 20px 16px; border-left: 3px solid var(--gold-primary); }
+
+    .faq-section { padding: 50px 0; background: #FFF; border-bottom: 1px solid var(--border-gold); }
+    .faq-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .faq-card { background: var(--bg-cream); border: 1px solid var(--border-gold); border-radius: 6px; padding: 18px; }
+
+    /* Cart Drawer */
+    .drawer-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.55); z-index: 2000; opacity: 0; visibility: hidden; transition: all 0.25s; }
+    .drawer-overlay.open { opacity: 1; visibility: visible; }
+    .drawer { position: fixed; top: 0; right: -420px; width: 400px; max-width: 90vw; height: 100vh; background: #FFF; z-index: 2001; display: flex; flex-direction: column; transition: right 0.3s cubic-bezier(0.16, 1, 0.3, 1); box-shadow: -5px 0 25px rgba(0,0,0,0.2); }
+    .drawer.open { right: 0; }
+    .drawer-head { padding: 16px 20px; background: var(--gold-cream); border-bottom: 1px solid var(--border-gold-strong); display: flex; justify-content: space-between; align-items: center; }
+    .drawer-body { flex: 1; overflow-y: auto; padding: 16px 20px; display: flex; flex-direction: column; gap: 12px; }
+    .drawer-item { display: grid; grid-template-columns: 50px 1fr auto; gap: 10px; align-items: center; padding-bottom: 10px; border-bottom: 1px solid #EEE; }
+    .drawer-item img { width: 50px; height: 58px; object-fit: cover; border-radius: 3px; border: 1px solid var(--border-gold); }
+    .drawer-foot { padding: 16px 20px; background: #FDFBF7; border-top: 1px solid var(--border-gold); display: flex; flex-direction: column; gap: 10px; }
+
+    .dock { position: fixed; bottom: 20px; right: 20px; display: flex; gap: 8px; z-index: 1000; background: #FFF; padding: 5px; border-radius: 30px; border: 1px solid var(--border-gold-strong); box-shadow: 0 8px 20px rgba(0,0,0,0.2); }
+    .dock-count { background: var(--gold-dark); color: #FFF; border-radius: 50%; width: 18px; height: 18px; display: inline-flex; align-items: center; justify-content: center; font-size: 10px; margin-left: 4px; }
+
+    @media (max-width: 850px) {
+      .product-grid { grid-template-columns: 1fr; }
+      .tiers-grid { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: repeat(2, 1fr); }
+      .faq-grid { grid-template-columns: 1fr; }
+      .product-card { min-height: auto; }
+    }
+    @media (max-width: 550px) {
+      .why-grid { grid-template-columns: 1fr; }
     }
-
-    .section-title {
-      font-size: 28px;
-      color: var(--gold-dark);
-      font-weight: 700;
-      position: relative;
-      display: inline-block;
-      padding-bottom: 12px;
-    }
-
-    .section-title::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 70px;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
-    }
-
-    .section-desc {
-      font-size: 14px;
-      color: var(--text-muted);
-      margin-top: 10px;
-      max-width: 640px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .tiers-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 26px;
-      align-items: stretch;
-    }
-
-    .tier-card {
-      background: #FFFFFF;
-      border: 1px solid var(--border-gold-strong);
-      border-radius: 10px;
-      padding: 30px 24px;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      box-shadow: var(--shadow-royal);
-    }
-
-    .tier-card.recommended-tier {
-      border: 2px solid var(--gold-primary);
-      background: linear-gradient(180deg, #FFFFFF, #FAF5EA);
-      box-shadow: 0 20px 48px rgba(148, 104, 26, 0.2);
-      transform: scale(1.02);
-      z-index: 2;
-    }
-
-    .recommended-crown-badge {
-      position: absolute;
-      top: -15px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: linear-gradient(135deg, var(--gold-dark), var(--gold-primary));
-      color: #FFFFFF;
-      padding: 6px 18px;
-      border-radius: 20px;
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      box-shadow: 0 4px 12px rgba(104, 66, 9, 0.3);
-      border: 1px solid var(--gold-accent);
-      white-space: nowrap;
-    }
-
-    .tier-header {
-      text-align: center;
-      padding-bottom: 18px;
-      border-bottom: 1px dashed var(--border-gold);
-      margin-bottom: 18px;
-    }
-
-    .tier-size-tag {
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--gold-deep);
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 6px;
-    }
-
-    .tier-name {
-      font-size: 22px;
-      color: var(--gold-dark);
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-
-    .tier-rate-box {
-      background: var(--gold-cream);
-      border: 1px solid var(--border-gold);
-      border-radius: 6px;
-      padding: 10px 12px;
-      margin: 10px 0 6px;
-    }
-
-    .rate-main {
-      font-size: 24px;
-      font-weight: 800;
-      color: var(--gold-dark);
-    }
-
-    .rate-unit {
-      font-size: 12px;
-      color: var(--text-muted);
-      font-weight: 600;
-    }
-
-    .tier-moq {
-      font-size: 12px;
-      color: var(--text-muted);
-      font-weight: 700;
-      margin-top: 4px;
-    }
-
-    .shipping-badge-pill {
-      display: inline-block;
-      margin-top: 8px;
-      padding: 5px 12px;
-      border-radius: 4px;
-      font-size: 11.5px;
-      font-weight: 700;
-    }
-
-    .shipping-badge-free {
-      background: #E8F5E9;
-      color: #1B5E20;
-      border: 1px solid #A5D6A7;
-    }
-
-    .shipping-badge-paid {
-      background: #F5F5F5;
-      color: #616161;
-      border: 1px solid #E0E0E0;
-    }
-
-    .tier-features-list {
-      list-style: none;
-      margin-bottom: 22px;
-      flex-grow: 1;
-    }
-
-    .tier-features-list li {
-      position: relative;
-      padding-left: 18px;
-      margin-bottom: 10px;
-      font-size: 12.8px;
-      color: var(--text-dark);
-      line-height: 1.45;
-    }
-
-    .tier-features-list li::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 6px;
-      width: 6px;
-      height: 6px;
-      background: var(--gold-primary);
-      transform: rotate(45deg);
-    }
-
-    .tier-features-list li strong {
-      color: var(--gold-dark);
-      font-weight: 700;
-    }
-
-    .tier-partner-box {
-      background: var(--gold-cream);
-      border: 1px solid var(--border-gold);
-      padding: 12px;
-      border-radius: 6px;
-      margin-bottom: 18px;
-      font-size: 12px;
-    }
-
-    .tier-partner-box p {
-      color: var(--gold-dark);
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-
-    /* WHY PARTNER WITH JEWLLZ */
-    .why-partner-section {
-      padding: 56px 0;
-      background: var(--bg-cream);
-      border-bottom: 1px solid var(--border-gold);
-    }
-
-    .reasons-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-    }
-
-    .reason-card {
-      background: #FFFFFF;
-      border: 1px solid var(--border-gold);
-      border-radius: 8px;
-      padding: 22px 18px;
-      box-shadow: var(--shadow-royal);
-      position: relative;
-      overflow: hidden;
-      transition: all 0.3s ease;
-    }
-
-    .reason-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 4px;
-      height: 100%;
-      background: linear-gradient(180deg, var(--gold-dark), var(--gold-soft));
-    }
-
-    .reason-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-hover);
-      border-color: var(--gold-primary);
-    }
-
-    .reason-icon-seal {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: var(--gold-cream);
-      border: 1px solid var(--border-gold-strong);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 14px;
-      font-size: 16px;
-      color: var(--gold-dark);
-      font-weight: 800;
-      font-family: 'Cinzel', serif;
-    }
-
-    .reason-title {
-      font-size: 14.5px;
-      color: var(--gold-dark);
-      font-weight: 700;
-      margin-bottom: 6px;
-    }
-
-    .reason-desc {
-      font-size: 12.5px;
-      color: var(--text-muted);
-      line-height: 1.5;
-    }
-
-    /* FAQ ACCORDION STYLE */
-    .faq-section {
-      padding: 56px 0;
-      background: #FFFFFF;
-      border-bottom: 1px solid var(--border-gold);
-    }
-
-    .faq-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-    }
-
-    .faq-card {
-      background: var(--bg-cream);
-      border: 1px solid var(--border-gold);
-      border-radius: 6px;
-      padding: 18px;
-    }
-
-    .faq-q {
-      font-size: 14px;
-      color: var(--gold-dark);
-      font-weight: 700;
-      margin-bottom: 6px;
-      line-height: 1.4;
-    }
-
-    .faq-a {
-      font-size: 12.8px;
-      color: var(--text-muted);
-      line-height: 1.55;
-    }
-
-    /* COMMUNITY & FOOTER BANNER */
-    .community-cta-section {
-      background: linear-gradient(135deg, #231C14, #120E0A);
-      color: #F8F3E6;
-      padding: 48px 0;
-      text-align: center;
-      border-top: 2px solid var(--gold-soft);
-    }
-
-    .community-box {
-      max-width: 720px;
-      margin: 0 auto;
-    }
-
-    .community-title {
-      font-size: 24px;
-      color: var(--gold-accent);
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-
-    .community-desc {
-      font-size: 13.5px;
-      color: #DACDBA;
-      margin-bottom: 22px;
-    }
-
-    /* FOOTER */
-    .master-footer {
-      background: #14100D;
-      color: #BFB3A2;
-      padding: 38px 0 24px;
-      font-size: 12px;
-      border-top: 1px solid rgba(255,255,255,0.06);
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr;
-      gap: 30px;
-      margin-bottom: 26px;
-    }
-
-    .footer-col h4 {
-      color: var(--gold-soft);
-      font-size: 13px;
-      font-weight: 700;
-      margin-bottom: 10px;
-      letter-spacing: 0.08em;
-    }
-
-    .footer-col p {
-      margin-bottom: 6px;
-      line-height: 1.55;
-    }
-
-    .footer-bottom-line {
-      border-top: 1px solid rgba(255,255,255,0.08);
-      padding-top: 18px;
-      text-align: center;
-      font-size: 11px;
-      color: #8C8070;
-    }
-
-    /* SLIDEOUT CART DRAWER */
-    .cart-drawer-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: rgba(0,0,0,0.6);
-      backdrop-filter: blur(4px);
-      z-index: 2000;
-      opacity: 0;
-      visibility: hidden;
-      transition: all 0.3s ease;
-    }
-
-    .cart-drawer-overlay.open {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    .cart-drawer {
-      position: fixed;
-      top: 0;
-      right: -480px;
-      width: 440px;
-      max-width: 92vw;
-      height: 100vh;
-      background: #FFFFFF;
-      box-shadow: -10px 0 30px rgba(0,0,0,0.25);
-      z-index: 2001;
-      display: flex;
-      flex-direction: column;
-      transition: right 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    .cart-drawer.open {
-      right: 0;
-    }
-
-    .cart-drawer-header {
-      padding: 18px 20px;
-      background: var(--gold-cream);
-      border-bottom: 1px solid var(--border-gold-strong);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .cart-drawer-header h3 {
-      font-size: 16px;
-      color: var(--gold-dark);
-      font-weight: 700;
-    }
-
-    .close-drawer-btn {
-      background: none;
-      border: none;
-      font-size: 22px;
-      cursor: pointer;
-      color: var(--gold-dark);
-      line-height: 1;
-    }
-
-    .cart-items-scroll {
-      flex: 1;
-      overflow-y: auto;
-      padding: 16px 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
-
-    .cart-item-row {
-      display: grid;
-      grid-template-columns: 56px 1fr auto;
-      gap: 12px;
-      align-items: center;
-      padding-bottom: 12px;
-      border-bottom: 1px solid rgba(0,0,0,0.06);
-    }
-
-    .cart-item-thumb {
-      width: 56px;
-      height: 65px;
-      object-fit: cover;
-      border-radius: 4px;
-      border: 1px solid var(--border-gold);
-    }
-
-    .cart-item-title {
-      font-size: 13px;
-      font-weight: 700;
-      color: var(--gold-dark);
-    }
-
-    .cart-item-weight {
-      font-size: 12px;
-      color: var(--text-muted);
-    }
-
-    .cart-drawer-footer {
-      padding: 18px 20px;
-      background: #FDFBF7;
-      border-top: 1px solid var(--border-gold);
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .cart-summary-line {
-      display: flex;
-      justify-content: space-between;
-      font-size: 13.5px;
-    }
-
-    .tier-qualifier-badge {
-      background: var(--gold-cream);
-      border: 1px solid var(--border-gold-strong);
-      padding: 8px 12px;
-      border-radius: 4px;
-      font-size: 11.5px;
-      font-weight: 700;
-      color: var(--gold-dark);
-      text-align: center;
-    }
-
-    /* FLOATING QUICK DOCK */
-    .floating-cart-dock {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      display: flex;
-      gap: 10px;
-      z-index: 1050;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
-      border-radius: 50px;
-      padding: 6px;
-      background: rgba(255, 255, 255, 0.98);
-      border: 1px solid var(--border-gold-strong);
-      backdrop-filter: blur(8px);
-    }
-
-    .cart-bubble-count {
-      background: var(--gold-dark);
-      color: #FFFFFF;
-      border-radius: 50%;
-      width: 20px;
-      height: 20px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 11px;
-      font-weight: 800;
-    }
-
-    /* RESPONSIVE STYLING */
-    @media (max-width: 900px) {
-      .product-layout-grid {
-        grid-template-columns: 1fr;
-      }
-      .tiers-grid {
-        grid-template-columns: 1fr;
-      }
-      .tier-card.recommended-tier {
-        transform: none;
-      }
-      .reasons-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .faq-grid {
-        grid-template-columns: 1fr;
-      }
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-      .product-single-page-card {
-        min-height: auto;
-      }
-    }
-
-    @media (max-width: 600px) {
-      .header-content {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .header-actions {
-        width: 100%;
-        justify-content: flex-start;
-      }
-      .reasons-grid {
-        grid-template-columns: 1fr;
-      }
-      .floating-cart-dock {
-        left: 16px;
-        right: 16px;
-        bottom: 16px;
-        justify-content: center;
-      }
-    }
-
-    /* STRICT A4 PDF PRINT OPTIMIZATION */
     @media print {
-      @page {
-        size: A4 portrait;
-        margin: 10mm;
-      }
-
-      body {
-        background: #FFFFFF !important;
-        color: #000000 !important;
-      }
-
-      .floating-cart-dock,
-      .cart-drawer-overlay,
-      .cart-drawer,
-      .brand-header,
-      .top-statutory-bar,
-      .community-cta-section,
-      .view-more-banner,
-      .amazon-cart-block,
-      .zoom-hint-badge {
-        display: none !important;
-      }
-
-      /* Force show all designs in PDF printout */
-      #extra-designs-wrapper {
-        display: block !important;
-      }
-
-      .product-single-page-card {
-        min-height: 100vh !important;
-        page-break-after: always !important;
-        break-after: page !important;
-        page-break-inside: avoid !important;
-        break-inside: avoid !important;
-        border-bottom: none !important;
-        padding: 0 !important;
-        margin: 0 !important;
-        justify-content: center !important;
-      }
-
-      .product-layout-grid {
-        box-shadow: none !important;
-        border: 1px solid #CCC !important;
-        page-break-inside: avoid !important;
-        break-inside: avoid !important;
-      }
-
-      .tier-card,
-      .reason-card,
-      .faq-card {
-        page-break-inside: avoid !important;
-        break-inside: avoid !important;
-        box-shadow: none !important;
-      }
-
-      .page-break-print {
-        page-break-before: always !important;
-        break-before: page !important;
-      }
+      .dock, .drawer, .drawer-overlay, .header, .top-bar, .view-more-banner, .amazon-box { display: none !important; }
+      #extra-designs { display: block !important; }
+      .product-card { page-break-after: always !important; min-height: 100vh !important; justify-content: center !important; border: none !important; }
     }
   </style>
 </head>
 <body>
 
-  <!-- STATUTORY HEADER STRIP -->
-  <aside class="top-statutory-bar" aria-label="Statutory Details">
-    <div class="container top-statutory-inner">
-      <div class="statutory-badge">
-        <span class="statutory-dot"></span>
-        <span>Govt. Registered MCA Entity: <strong>Indoroute Global LLP</strong></span>
-      </div>
-      <div class="statutory-badge">
-        <span class="statutory-dot"></span>
-        <span>GSTIN: <strong>20AALFI6848K1Z2</strong></span>
-      </div>
-      <div class="statutory-badge">
-        <span class="statutory-dot"></span>
-        <span>PAN: <strong>AALFI6848K</strong></span>
-      </div>
-      <div class="statutory-badge">
-        <span class="statutory-dot"></span>
-        <span>Helpline: <strong>+91 9310370080</strong></span>
-      </div>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div>Indoroute Global LLP | GSTIN: 20AALFI6848K1Z2 | PAN: AALFI6848K</div>
+      <div>Helpline Support: +91 9310370080</div>
     </div>
-  </aside>
+  </div>
 
-  <!-- STICKY MASTER BRAND HEADER -->
-  <header class="brand-header">
-    <div class="container header-content">
-      <div class="logo-container">
-        <img src="https://i.pinimg.com/736x/f8/8e/28/f88e2848edc91933b8554b2c839c81ea.jpg" alt="JEWLLZ Logo" class="main-logo-img">
-        <div class="brand-titles">
-          <h1>JEWLLZ</h1>
-          <p>By Indoroute Global LLP</p>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo-box">
+        <img src="https://i.pinimg.com/736x/f8/8e/28/f88e2848edc91933b8554b2c839c81ea.jpg" alt="Logo" class="logo-img">
+        <div>
+          <h1 style="font-size: 18px; color: var(--gold-dark);">JEWLLZ</h1>
+          <p style="font-size: 11px; color: var(--text-muted); text-transform: uppercase;">By Indoroute Global LLP</p>
         </div>
       </div>
-
-      <nav class="header-actions" aria-label="Primary Navigation">
-        <a href="https://chat.whatsapp.com/Bxrgvnalg7nG2d5FcKlQCG" target="_blank" rel="noopener" class="btn btn-whatsapp">
-          Join WhatsApp Community
-        </a>
-        <a href="#wholesale-tiers" class="btn btn-outline-gold">
-          View Kit Pricing Tiers
-        </a>
-        <button type="button" class="btn btn-gold" onclick="window.print()">
-          Download A4 PDF Catalogue
-        </button>
-      </nav>
+      <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+        <a href="https://chat.whatsapp.com/Bxrgvnalg7nG2d5FcKlQCG" target="_blank" class="btn btn-whatsapp">Join WhatsApp Community</a>
+        <button type="button" class="btn btn-gold" onclick="window.print()">Download PDF</button>
+      </div>
     </div>
   </header>
 
-  <!-- HERO & INTRO -->
-  <main>
-  <section class="hero-banner">
+  <!-- Hero -->
+  <section class="hero">
     <div class="container">
-      <div class="hero-tagline-badge">Quality You Can Trust</div>
-      <h2 class="hero-title">Premium Lightweight 92.5 Silver Wholesaler</h2>
-      <p class="hero-subtagline serif-font">"Specially Crafted for New generation"</p>
-      <p class="hero-quote">
-        Direct factory manufacturing, transparent wholesale charges, and complete digital marketing kits designed to solve retail jewellery challenges.
-      </p>
-
-      <!-- Terms & Conditions Copy (First Page) -->
-      <div class="terms-box" style="max-width: 940px; margin: 0 auto; text-align: left;">
-        <div class="terms-title">Standard Wholesale Terms &amp; Conditions</div>
-        Sample kits are 100% owned by the buyer upon receipt and can be retailed immediately without pre-packing restrictions. Centralized tags with customer pre-booking QR codes are included. Long-lasting plating with proper care.
+      <span class="badge">Quality You Can Trust</span>
+      <h2>Premium Lightweight 92.5 Silver Wholesaler</h2>
+      <p class="serif" style="color: var(--gold-deep); font-size: 16px;">"Specially Crafted for New generation"</p>
+      <div class="terms-box">
+        <strong>Wholesale Terms &amp; Conditions:</strong> Sample kits are 100% owned by the buyer upon receipt and can be retailed immediately without pre-packing restrictions. Centralized tags with customer pre-booking QR codes are included. Long-lasting plating with proper care.
       </div>
     </div>
   </section>
 
-  <!-- 1 PRODUCT PER PAGE GALLERY -->
-  <section class="product-showcase-section" id="designs-gallery">
-    <div class="container">
+  <!-- Products Section -->
+  <section class="container" style="padding-top: 20px;">
 
-      <!-- ================= PRIMARY TOP 5 PRODUCTS ================= -->
-
-      <!-- PRODUCT 1 -->
-      <article class="product-single-page-card" id="card-JW01">
-        <div class="product-layout-grid">
-          <div class="ratio-12-14-container" onclick="toggleZoom(this)" onmousemove="handleZoomPan(event, this)">
-            <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1786898866894-j370vy8cg.avif" alt="Jewellery Design JW-01" class="product-img-main" loading="eager">
-            <span class="zoom-hint-badge">Click to Inspect Zoom</span>
+    <!-- 1 -->
+    <article class="product-card">
+      <div class="product-grid">
+        <div class="img-wrap" onclick="toggleZoom(this)" onmousemove="doZoom(event, this)">
+          <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1786898866894-j370vy8cg.avif" alt="JW-01">
+          <span class="zoom-hint">Click to Zoom</span>
+        </div>
+        <div>
+          <span style="font-size: 12px; color: var(--gold-deep); font-weight: 700;">DESIGN #01</span>
+          <h3 style="font-size: 22px; color: var(--gold-dark); margin: 4px 0 10px;">Item Code: JW-01</h3>
+          <div style="background: var(--gold-cream); padding: 8px 14px; border-radius: 4px; display: inline-block; margin-bottom: 14px;">
+            Net Weight: <strong style="font-size: 20px; color: var(--gold-dark);">4.83 g</strong>
           </div>
-          <div class="product-details-col">
-            <div class="product-meta-header">
-              <span class="design-code-pill">Design #1 of Collection</span>
-              <h3 class="product-display-name">92.5 Sterling Silver Design JW-01</h3>
-              <div class="weight-metric-card">
-                <span class="label">Net Weight:</span>
-                <span class="value">4.83 g</span>
-              </div>
+          <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 16px;">Surface Finish: Long-lasting plating with proper care</p>
+          
+          <div class="amazon-box" style="display: flex; gap: 10px; align-items: center;">
+            <div class="stepper">
+              <button type="button" onclick="changeQty('JW-01', -1)">-</button>
+              <input type="text" id="qty-JW-01" value="1" readonly>
+              <button type="button" onclick="changeQty('JW-01', 1)">+</button>
             </div>
-            <table class="spec-table">
-              <tr><td>Category</td><td>Premium Lightweight Silver</td></tr>
-              <tr><td>Surface Finish</td><td>Long-lasting plating with proper care</td></tr>
-              <tr><td>Tags</td><td>Pre-attached QR Dynamic Customer Price Tag</td></tr>
-            </table>
-            <div class="amazon-cart-block">
-              <div class="amazon-stepper-row">
-                <div class="qty-stepper">
-                  <button type="button" class="stepper-btn" onclick="stepQty('JW-01', -1)">-</button>
-                  <input type="text" id="qty-JW-01" class="qty-input" value="1" readonly>
-                  <button type="button" class="stepper-btn" onclick="stepQty('JW-01', 1)">+</button>
-                </div>
-                <button type="button" class="btn-add-amazon" id="btn-add-JW-01" onclick="addToWholesaleCart('JW-01', 4.83, 'https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1786898866894-j370vy8cg.avif')">
-                  Add to Wholesale Box
-                </button>
-              </div>
-            </div>
+            <button type="button" class="btn-amazon" data-code="JW-01" data-weight="4.83" data-img="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1786898866894-j370vy8cg.avif" onclick="handleAddToCart(this)">
+              Add to Wholesale Box
+            </button>
           </div>
         </div>
-      </article>
-
-      <!-- PRODUCT 2 -->
-      <article class="product-single-page-card" id="card-JW02">
-        <div class="product-layout-grid">
-          <div class="ratio-12-14-container" onclick="toggleZoom(this)" onmousemove="handleZoomPan(event, this)">
-            <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345094591-6t8xtjba4.avif" alt="Jewellery Design JW-02" class="product-img-main" loading="lazy">
-            <span class="zoom-hint-badge">Click to Inspect Zoom</span>
-          </div>
-          <div class="product-details-col">
-            <div class="product-meta-header">
-              <span class="design-code-pill">Design #2 of Collection</span>
-              <h3 class="product-display-name">92.5 Sterling Silver Design JW-02</h3>
-              <div class="weight-metric-card">
-                <span class="label">Net Weight:</span>
-                <span class="value">5.10 g</span>
-              </div>
-            </div>
-            <table class="spec-table">
-              <tr><td>Category</td><td>Premium Lightweight Silver</td></tr>
-              <tr><td>Surface Finish</td><td>Long-lasting plating with proper care</td></tr>
-              <tr><td>Tags</td><td>Pre-attached QR Dynamic Customer Price Tag</td></tr>
-            </table>
-            <div class="amazon-cart-block">
-              <div class="amazon-stepper-row">
-                <div class="qty-stepper">
-                  <button type="button" class="stepper-btn" onclick="stepQty('JW-02', -1)">-</button>
-                  <input type="text" id="qty-JW-02" class="qty-input" value="1" readonly>
-                  <button type="button" class="stepper-btn" onclick="stepQty('JW-02', 1)">+</button>
-                </div>
-                <button type="button" class="btn-add-amazon" id="btn-add-JW-02" onclick="addToWholesaleCart('JW-02', 5.10, 'https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345094591-6t8xtjba4.avif')">
-                  Add to Wholesale Box
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- PRODUCT 3 -->
-      <article class="product-single-page-card" id="card-JW03">
-        <div class="product-layout-grid">
-          <div class="ratio-12-14-container" onclick="toggleZoom(this)" onmousemove="handleZoomPan(event, this)">
-            <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773160588677-tl2g8c96z.avif" alt="Jewellery Design JW-03" class="product-img-main" loading="lazy">
-            <span class="zoom-hint-badge">Click to Inspect Zoom</span>
-          </div>
-          <div class="product-details-col">
-            <div class="product-meta-header">
-              <span class="design-code-pill">Design #3 of Collection</span>
-              <h3 class="product-display-name">92.5 Sterling Silver Design JW-03</h3>
-              <div class="weight-metric-card">
-                <span class="label">Net Weight:</span>
-                <span class="value">4.50 g</span>
-              </div>
-            </div>
-            <table class="spec-table">
-              <tr><td>Category</td><td>Premium Lightweight Silver</td></tr>
-              <tr><td>Surface Finish</td><td>Long-lasting plating with proper care</td></tr>
-              <tr><td>Tags</td><td>Pre-attached QR Dynamic Customer Price Tag</td></tr>
-            </table>
-            <div class="amazon-cart-block">
-              <div class="amazon-stepper-row">
-                <div class="qty-stepper">
-                  <button type="button" class="stepper-btn" onclick="stepQty('JW-03', -1)">-</button>
-                  <input type="text" id="qty-JW-03" class="qty-input" value="1" readonly>
-                  <button type="button" class="stepper-btn" onclick="stepQty('JW-03', 1)">+</button>
-                </div>
-                <button type="button" class="btn-add-amazon" id="btn-add-JW-03" onclick="addToWholesaleCart('JW-03', 4.50, 'https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773160588677-tl2g8c96z.avif')">
-                  Add to Wholesale Box
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- PRODUCT 4 -->
-      <article class="product-single-page-card" id="card-JW04">
-        <div class="product-layout-grid">
-          <div class="ratio-12-14-container" onclick="toggleZoom(this)" onmousemove="handleZoomPan(event, this)">
-            <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781344951823-pa2almxjq.avif" alt="Jewellery Design JW-04" class="product-img-main" loading="lazy">
-            <span class="zoom-hint-badge">Click to Inspect Zoom</span>
-          </div>
-          <div class="product-details-col">
-            <div class="product-meta-header">
-              <span class="design-code-pill">Design #4 of Collection</span>
-              <h3 class="product-display-name">92.5 Sterling Silver Design JW-04</h3>
-              <div class="weight-metric-card">
-                <span class="label">Net Weight:</span>
-                <span class="value">4.50 g</span>
-              </div>
-            </div>
-            <table class="spec-table">
-              <tr><td>Category</td><td>Premium Lightweight Silver</td></tr>
-              <tr><td>Surface Finish</td><td>Long-lasting plating with proper care</td></tr>
-              <tr><td>Tags</td><td>Pre-attached QR Dynamic Customer Price Tag</td></tr>
-            </table>
-            <div class="amazon-cart-block">
-              <div class="amazon-stepper-row">
-                <div class="qty-stepper">
-                  <button type="button" class="stepper-btn" onclick="stepQty('JW-04', -1)">-</button>
-                  <input type="text" id="qty-JW-04" class="qty-input" value="1" readonly>
-                  <button type="button" class="stepper-btn" onclick="stepQty('JW-04', 1)">+</button>
-                </div>
-                <button type="button" class="btn-add-amazon" id="btn-add-JW-04" onclick="addToWholesaleCart('JW-04', 4.50, 'https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781344951823-pa2almxjq.avif')">
-                  Add to Wholesale Box
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- PRODUCT 5 -->
-      <article class="product-single-page-card" id="card-JW05">
-        <div class="product-layout-grid">
-          <div class="ratio-12-14-container" onclick="toggleZoom(this)" onmousemove="handleZoomPan(event, this)">
-            <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781344929948-c6thg7mug.avif" alt="Jewellery Design JW-05" class="product-img-main" loading="lazy">
-            <span class="zoom-hint-badge">Click to Inspect Zoom</span>
-          </div>
-          <div class="product-details-col">
-            <div class="product-meta-header">
-              <span class="design-code-pill">Design #5 of Collection</span>
-              <h3 class="product-display-name">92.5 Sterling Silver Design JW-05</h3>
-              <div class="weight-metric-card">
-                <span class="label">Net Weight:</span>
-                <span class="value">5.64 g</span>
-              </div>
-            </div>
-            <table class="spec-table">
-              <tr><td>Category</td><td>Premium Lightweight Silver</td></tr>
-              <tr><td>Surface Finish</td><td>Long-lasting plating with proper care</td></tr>
-              <tr><td>Tags</td><td>Pre-attached QR Dynamic Customer Price Tag</td></tr>
-            </table>
-            <div class="amazon-cart-block">
-              <div class="amazon-stepper-row">
-                <div class="qty-stepper">
-                  <button type="button" class="stepper-btn" onclick="stepQty('JW-05', -1)">-</button>
-                  <input type="text" id="qty-JW-05" class="qty-input" value="1" readonly>
-                  <button type="button" class="stepper-btn" onclick="stepQty('JW-05', 1)">+</button>
-                </div>
-                <button type="button" class="btn-add-amazon" id="btn-add-JW-05" onclick="addToWholesaleCart('JW-05', 5.64, 'https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781344929948-c6thg7mug.avif')">
-                  Add to Wholesale Box
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- VIEW MORE BUTTON (Directly after Product 5 - Strictly Collapsed by Default) -->
-      <div class="view-more-banner" id="view-more-banner-box">
-        <h3>Want to explore more curated silver designs?</h3>
-        <p>18 additional designs are available in this collection. Click below to view them, or scroll down directly to explore Kit Tiers &amp; Pricing.</p>
-        <button type="button" class="btn btn-gold" id="toggle-designs-btn" onclick="toggleExtraDesigns()">
-          View More Designs (+18 Items)
-        </button>
       </div>
+    </article>
 
-      <!-- ================= COLLAPSIBLE EXTRA DESIGNS (6 TO 23) ================= -->
-      <div id="extra-designs-wrapper">
-
-        <!-- PRODUCT 6 -->
-        <article class="product-single-page-card">
-          <div class="product-layout-grid">
-            <div class="ratio-12-14-container" onclick="toggleZoom(this)" onmousemove="handleZoomPan(event, this)">
-              <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781344986881-e5bqoksiq.avif" alt="Jewellery Design JW-06" class="product-img-main" loading="lazy">
-              <span class="zoom-hint-badge">Click to Inspect Zoom</span>
+    <!-- 2 -->
+    <article class="product-card">
+      <div class="product-grid">
+        <div class="img-wrap" onclick="toggleZoom(this)" onmousemove="doZoom(event, this)">
+          <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345094591-6t8xtjba4.avif" alt="JW-02">
+          <span class="zoom-hint">Click to Zoom</span>
+        </div>
+        <div>
+          <span style="font-size: 12px; color: var(--gold-deep); font-weight: 700;">DESIGN #02</span>
+          <h3 style="font-size: 22px; color: var(--gold-dark); margin: 4px 0 10px;">Item Code: JW-02</h3>
+          <div style="background: var(--gold-cream); padding: 8px 14px; border-radius: 4px; display: inline-block; margin-bottom: 14px;">
+            Net Weight: <strong style="font-size: 20px; color: var(--gold-dark);">5.10 g</strong>
+          </div>
+          <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 16px;">Surface Finish: Long-lasting plating with proper care</p>
+          
+          <div class="amazon-box" style="display: flex; gap: 10px; align-items: center;">
+            <div class="stepper">
+              <button type="button" onclick="changeQty('JW-02', -1)">-</button>
+              <input type="text" id="qty-JW-02" value="1" readonly>
+              <button type="button" onclick="changeQty('JW-02', 1)">+</button>
             </div>
-            <div class="product-details-col">
-              <div class="product-meta-header">
-                <span class="design-code-pill">Design #6 of Collection</span>
-                <h3 class="product-display-name">92.5 Sterling Silver Design JW-06</h3>
-                <div class="weight-metric-card"><span class="label">Net Weight:</span><span class="value">4.43 g</span></div>
+            <button type="button" class="btn-amazon" data-code="JW-02" data-weight="5.10" data-img="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345094591-6t8xtjba4.avif" onclick="handleAddToCart(this)">
+              Add to Wholesale Box
+            </button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 3 -->
+    <article class="product-card">
+      <div class="product-grid">
+        <div class="img-wrap" onclick="toggleZoom(this)" onmousemove="doZoom(event, this)">
+          <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773160588677-tl2g8c96z.avif" alt="JW-03">
+          <span class="zoom-hint">Click to Zoom</span>
+        </div>
+        <div>
+          <span style="font-size: 12px; color: var(--gold-deep); font-weight: 700;">DESIGN #03</span>
+          <h3 style="font-size: 22px; color: var(--gold-dark); margin: 4px 0 10px;">Item Code: JW-03</h3>
+          <div style="background: var(--gold-cream); padding: 8px 14px; border-radius: 4px; display: inline-block; margin-bottom: 14px;">
+            Net Weight: <strong style="font-size: 20px; color: var(--gold-dark);">4.50 g</strong>
+          </div>
+          <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 16px;">Surface Finish: Long-lasting plating with proper care</p>
+          
+          <div class="amazon-box" style="display: flex; gap: 10px; align-items: center;">
+            <div class="stepper">
+              <button type="button" onclick="changeQty('JW-03', -1)">-</button>
+              <input type="text" id="qty-JW-03" value="1" readonly>
+              <button type="button" onclick="changeQty('JW-03', 1)">+</button>
+            </div>
+            <button type="button" class="btn-amazon" data-code="JW-03" data-weight="4.50" data-img="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773160588677-tl2g8c96z.avif" onclick="handleAddToCart(this)">
+              Add to Wholesale Box
+            </button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 4 -->
+    <article class="product-card">
+      <div class="product-grid">
+        <div class="img-wrap" onclick="toggleZoom(this)" onmousemove="doZoom(event, this)">
+          <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781344951823-pa2almxjq.avif" alt="JW-04">
+          <span class="zoom-hint">Click to Zoom</span>
+        </div>
+        <div>
+          <span style="font-size: 12px; color: var(--gold-deep); font-weight: 700;">DESIGN #04</span>
+          <h3 style="font-size: 22px; color: var(--gold-dark); margin: 4px 0 10px;">Item Code: JW-04</h3>
+          <div style="background: var(--gold-cream); padding: 8px 14px; border-radius: 4px; display: inline-block; margin-bottom: 14px;">
+            Net Weight: <strong style="font-size: 20px; color: var(--gold-dark);">4.50 g</strong>
+          </div>
+          <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 16px;">Surface Finish: Long-lasting plating with proper care</p>
+          
+          <div class="amazon-box" style="display: flex; gap: 10px; align-items: center;">
+            <div class="stepper">
+              <button type="button" onclick="changeQty('JW-04', -1)">-</button>
+              <input type="text" id="qty-JW-04" value="1" readonly>
+              <button type="button" onclick="changeQty('JW-04', 1)">+</button>
+            </div>
+            <button type="button" class="btn-amazon" data-code="JW-04" data-weight="4.50" data-img="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781344951823-pa2almxjq.avif" onclick="handleAddToCart(this)">
+              Add to Wholesale Box
+            </button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 5 -->
+    <article class="product-card" id="card-JW05">
+      <div class="product-grid">
+        <div class="img-wrap" onclick="toggleZoom(this)" onmousemove="doZoom(event, this)">
+          <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781344929948-c6thg7mug.avif" alt="JW-05">
+          <span class="zoom-hint">Click to Zoom</span>
+        </div>
+        <div>
+          <span style="font-size: 12px; color: var(--gold-deep); font-weight: 700;">DESIGN #05</span>
+          <h3 style="font-size: 22px; color: var(--gold-dark); margin: 4px 0 10px;">Item Code: JW-05</h3>
+          <div style="background: var(--gold-cream); padding: 8px 14px; border-radius: 4px; display: inline-block; margin-bottom: 14px;">
+            Net Weight: <strong style="font-size: 20px; color: var(--gold-dark);">5.64 g</strong>
+          </div>
+          <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 16px;">Surface Finish: Long-lasting plating with proper care</p>
+          
+          <div class="amazon-box" style="display: flex; gap: 10px; align-items: center;">
+            <div class="stepper">
+              <button type="button" onclick="changeQty('JW-05', -1)">-</button>
+              <input type="text" id="qty-JW-05" value="1" readonly>
+              <button type="button" onclick="changeQty('JW-05', 1)">+</button>
+            </div>
+            <button type="button" class="btn-amazon" data-code="JW-05" data-weight="5.64" data-img="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781344929948-c6thg7mug.avif" onclick="handleAddToCart(this)">
+              Add to Wholesale Box
+            </button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Toggle View More Button -->
+    <div class="view-more-banner">
+      <h3 style="color: var(--gold-dark); margin-bottom: 6px;">Want to see more designs?</h3>
+      <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 14px;">18 additional designs are available in this catalog.</p>
+      <button type="button" class="btn btn-gold" id="btn-toggle-extra" onclick="toggleExtra()">
+        View More Designs (+18 Items)
+      </button>
+    </div>
+
+    <!-- Extra 18 Designs (Strictly Hidden Initially) -->
+    <div id="extra-designs">
+
+      <!-- 6 -->
+      <article class="product-card">
+        <div class="product-grid">
+          <div class="img-wrap" onclick="toggleZoom(this)" onmousemove="doZoom(event, this)">
+            <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781344986881-e5bqoksiq.avif" alt="JW-06">
+            <span class="zoom-hint">Click to Zoom</span>
+          </div>
+          <div>
+            <span style="font-size: 12px; color: var(--gold-deep); font-weight: 700;">DESIGN #06</span>
+            <h3 style="font-size: 22px; color: var(--gold-dark); margin: 4px 0 10px;">Item Code: JW-06</h3>
+            <div style="background: var(--gold-cream); padding: 8px 14px; border-radius: 4px; display: inline-block; margin-bottom: 14px;">
+              Net Weight: <strong style="font-size: 20px; color: var(--gold-dark);">4.43 g</strong>
+            </div>
+            <div class="amazon-box" style="display: flex; gap: 10px; align-items: center;">
+              <div class="stepper">
+                <button type="button" onclick="changeQty('JW-06', -1)">-</button>
+                <input type="text" id="qty-JW-06" value="1" readonly>
+                <button type="button" onclick="changeQty('JW-06', 1)">+</button>
               </div>
-              <table class="spec-table">
-                <tr><td>Category</td><td>Premium Lightweight Silver</td></tr>
-                <tr><td>Surface Finish</td><td>Long-lasting plating with proper care</td></tr>
-              </table>
-              <div class="amazon-cart-block">
-                <div class="amazon-stepper-row">
-                  <div class="qty-stepper">
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-06', -1)">-</button>
-                    <input type="text" id="qty-JW-06" class="qty-input" value="1" readonly>
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-06', 1)">+</button>
-                  </div>
-                  <button type="button" class="btn-add-amazon" id="btn-add-JW-06" onclick="addToWholesaleCart('JW-06', 4.43, 'https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781344986881-e5bqoksiq.avif')">
-                    Add to Wholesale Box
-                  </button>
-                </div>
-              </div>
+              <button type="button" class="btn-amazon" data-code="JW-06" data-weight="4.43" data-img="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781344986881-e5bqoksiq.avif" onclick="handleAddToCart(this)">
+                Add to Wholesale Box
+              </button>
             </div>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <!-- PRODUCT 7 -->
-        <article class="product-single-page-card">
-          <div class="product-layout-grid">
-            <div class="ratio-12-14-container" onclick="toggleZoom(this)" onmousemove="handleZoomPan(event, this)">
-              <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345072112-n7qpio8uf.avif" alt="Jewellery Design JW-07" class="product-img-main" loading="lazy">
-              <span class="zoom-hint-badge">Click to Inspect Zoom</span>
+      <!-- 7 -->
+      <article class="product-card">
+        <div class="product-grid">
+          <div class="img-wrap" onclick="toggleZoom(this)" onmousemove="doZoom(event, this)">
+            <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345072112-n7qpio8uf.avif" alt="JW-07">
+            <span class="zoom-hint">Click to Zoom</span>
+          </div>
+          <div>
+            <span style="font-size: 12px; color: var(--gold-deep); font-weight: 700;">DESIGN #07</span>
+            <h3 style="font-size: 22px; color: var(--gold-dark); margin: 4px 0 10px;">Item Code: JW-07</h3>
+            <div style="background: var(--gold-cream); padding: 8px 14px; border-radius: 4px; display: inline-block; margin-bottom: 14px;">
+              Net Weight: <strong style="font-size: 20px; color: var(--gold-dark);">5.30 g</strong>
             </div>
-            <div class="product-details-col">
-              <div class="product-meta-header">
-                <span class="design-code-pill">Design #7 of Collection</span>
-                <h3 class="product-display-name">92.5 Sterling Silver Design JW-07</h3>
-                <div class="weight-metric-card"><span class="label">Net Weight:</span><span class="value">5.30 g</span></div>
+            <div class="amazon-box" style="display: flex; gap: 10px; align-items: center;">
+              <div class="stepper">
+                <button type="button" onclick="changeQty('JW-07', -1)">-</button>
+                <input type="text" id="qty-JW-07" value="1" readonly>
+                <button type="button" onclick="changeQty('JW-07', 1)">+</button>
               </div>
-              <table class="spec-table">
-                <tr><td>Category</td><td>Premium Lightweight Silver</td></tr>
-                <tr><td>Surface Finish</td><td>Long-lasting plating with proper care</td></tr>
-              </table>
-              <div class="amazon-cart-block">
-                <div class="amazon-stepper-row">
-                  <div class="qty-stepper">
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-07', -1)">-</button>
-                    <input type="text" id="qty-JW-07" class="qty-input" value="1" readonly>
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-07', 1)">+</button>
-                  </div>
-                  <button type="button" class="btn-add-amazon" id="btn-add-JW-07" onclick="addToWholesaleCart('JW-07', 5.30, 'https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345072112-n7qpio8uf.avif')">
-                    Add to Wholesale Box
-                  </button>
-                </div>
-              </div>
+              <button type="button" class="btn-amazon" data-code="JW-07" data-weight="5.30" data-img="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345072112-n7qpio8uf.avif" onclick="handleAddToCart(this)">
+                Add to Wholesale Box
+              </button>
             </div>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <!-- PRODUCT 8 -->
-        <article class="product-single-page-card">
-          <div class="product-layout-grid">
-            <div class="ratio-12-14-container" onclick="toggleZoom(this)" onmousemove="handleZoomPan(event, this)">
-              <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345050324-f3fxraj70.avif" alt="Jewellery Design JW-08" class="product-img-main" loading="lazy">
-              <span class="zoom-hint-badge">Click to Inspect Zoom</span>
+      <!-- 8 -->
+      <article class="product-card">
+        <div class="product-grid">
+          <div class="img-wrap" onclick="toggleZoom(this)" onmousemove="doZoom(event, this)">
+            <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345050324-f3fxraj70.avif" alt="JW-08">
+            <span class="zoom-hint">Click to Zoom</span>
+          </div>
+          <div>
+            <span style="font-size: 12px; color: var(--gold-deep); font-weight: 700;">DESIGN #08</span>
+            <h3 style="font-size: 22px; color: var(--gold-dark); margin: 4px 0 10px;">Item Code: JW-08</h3>
+            <div style="background: var(--gold-cream); padding: 8px 14px; border-radius: 4px; display: inline-block; margin-bottom: 14px;">
+              Net Weight: <strong style="font-size: 20px; color: var(--gold-dark);">4.14 g</strong>
             </div>
-            <div class="product-details-col">
-              <div class="product-meta-header">
-                <span class="design-code-pill">Design #8 of Collection</span>
-                <h3 class="product-display-name">92.5 Sterling Silver Design JW-08</h3>
-                <div class="weight-metric-card"><span class="label">Net Weight:</span><span class="value">4.14 g</span></div>
+            <div class="amazon-box" style="display: flex; gap: 10px; align-items: center;">
+              <div class="stepper">
+                <button type="button" onclick="changeQty('JW-08', -1)">-</button>
+                <input type="text" id="qty-JW-08" value="1" readonly>
+                <button type="button" onclick="changeQty('JW-08', 1)">+</button>
               </div>
-              <table class="spec-table">
-                <tr><td>Category</td><td>Premium Lightweight Silver</td></tr>
-                <tr><td>Surface Finish</td><td>Long-lasting plating with proper care</td></tr>
-              </table>
-              <div class="amazon-cart-block">
-                <div class="amazon-stepper-row">
-                  <div class="qty-stepper">
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-08', -1)">-</button>
-                    <input type="text" id="qty-JW-08" class="qty-input" value="1" readonly>
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-08', 1)">+</button>
-                  </div>
-                  <button type="button" class="btn-add-amazon" id="btn-add-JW-08" onclick="addToWholesaleCart('JW-08', 4.14, 'https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345050324-f3fxraj70.avif')">
-                    Add to Wholesale Box
-                  </button>
-                </div>
-              </div>
+              <button type="button" class="btn-amazon" data-code="JW-08" data-weight="4.14" data-img="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345050324-f3fxraj70.avif" onclick="handleAddToCart(this)">
+                Add to Wholesale Box
+              </button>
             </div>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <!-- PRODUCT 9 -->
-        <article class="product-single-page-card">
-          <div class="product-layout-grid">
-            <div class="ratio-12-14-container" onclick="toggleZoom(this)" onmousemove="handleZoomPan(event, this)">
-              <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345032245-6hrlyzmmi.avif" alt="Jewellery Design JW-09" class="product-img-main" loading="lazy">
-              <span class="zoom-hint-badge">Click to Inspect Zoom</span>
+      <!-- 9 -->
+      <article class="product-card">
+        <div class="product-grid">
+          <div class="img-wrap" onclick="toggleZoom(this)" onmousemove="doZoom(event, this)">
+            <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345032245-6hrlyzmmi.avif" alt="JW-09">
+            <span class="zoom-hint">Click to Zoom</span>
+          </div>
+          <div>
+            <span style="font-size: 12px; color: var(--gold-deep); font-weight: 700;">DESIGN #09</span>
+            <h3 style="font-size: 22px; color: var(--gold-dark); margin: 4px 0 10px;">Item Code: JW-09</h3>
+            <div style="background: var(--gold-cream); padding: 8px 14px; border-radius: 4px; display: inline-block; margin-bottom: 14px;">
+              Net Weight: <strong style="font-size: 20px; color: var(--gold-dark);">5.14 g</strong>
             </div>
-            <div class="product-details-col">
-              <div class="product-meta-header">
-                <span class="design-code-pill">Design #9 of Collection</span>
-                <h3 class="product-display-name">92.5 Sterling Silver Design JW-09</h3>
-                <div class="weight-metric-card"><span class="label">Net Weight:</span><span class="value">5.14 g</span></div>
+            <div class="amazon-box" style="display: flex; gap: 10px; align-items: center;">
+              <div class="stepper">
+                <button type="button" onclick="changeQty('JW-09', -1)">-</button>
+                <input type="text" id="qty-JW-09" value="1" readonly>
+                <button type="button" onclick="changeQty('JW-09', 1)">+</button>
               </div>
-              <table class="spec-table">
-                <tr><td>Category</td><td>Premium Lightweight Silver</td></tr>
-                <tr><td>Surface Finish</td><td>Long-lasting plating with proper care</td></tr>
-              </table>
-              <div class="amazon-cart-block">
-                <div class="amazon-stepper-row">
-                  <div class="qty-stepper">
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-09', -1)">-</button>
-                    <input type="text" id="qty-JW-09" class="qty-input" value="1" readonly>
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-09', 1)">+</button>
-                  </div>
-                  <button type="button" class="btn-add-amazon" id="btn-add-JW-09" onclick="addToWholesaleCart('JW-09', 5.14, 'https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345032245-6hrlyzmmi.avif')">
-                    Add to Wholesale Box
-                  </button>
-                </div>
-              </div>
+              <button type="button" class="btn-amazon" data-code="JW-09" data-weight="5.14" data-img="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345032245-6hrlyzmmi.avif" onclick="handleAddToCart(this)">
+                Add to Wholesale Box
+              </button>
             </div>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <!-- PRODUCT 10 -->
-        <article class="product-single-page-card">
-          <div class="product-layout-grid">
-            <div class="ratio-12-14-container" onclick="toggleZoom(this)" onmousemove="handleZoomPan(event, this)">
-              <img src="https://glimya.com/jewel/products/JEWLLZ-MSUN33N63YJ6/Gold_bracelet_worn_on_wrist_202608091104-1789319426684-309228579.avif" alt="Jewellery Design JW-10" class="product-img-main" loading="lazy">
-              <span class="zoom-hint-badge">Click to Inspect Zoom</span>
+      <!-- 10 -->
+      <article class="product-card">
+        <div class="product-grid">
+          <div class="img-wrap" onclick="toggleZoom(this)" onmousemove="doZoom(event, this)">
+            <img src="https://glimya.com/jewel/products/JEWLLZ-MSUN33N63YJ6/Gold_bracelet_worn_on_wrist_202608091104-1789319426684-309228579.avif" alt="JW-10">
+            <span class="zoom-hint">Click to Zoom</span>
+          </div>
+          <div>
+            <span style="font-size: 12px; color: var(--gold-deep); font-weight: 700;">DESIGN #10</span>
+            <h3 style="font-size: 22px; color: var(--gold-dark); margin: 4px 0 10px;">Item Code: JW-10</h3>
+            <div style="background: var(--gold-cream); padding: 8px 14px; border-radius: 4px; display: inline-block; margin-bottom: 14px;">
+              Net Weight: <strong style="font-size: 20px; color: var(--gold-dark);">4.64 g</strong>
             </div>
-            <div class="product-details-col">
-              <div class="product-meta-header">
-                <span class="design-code-pill">Design #10 of Collection</span>
-                <h3 class="product-display-name">92.5 Sterling Silver Design JW-10</h3>
-                <div class="weight-metric-card"><span class="label">Net Weight:</span><span class="value">4.64 g</span></div>
+            <div class="amazon-box" style="display: flex; gap: 10px; align-items: center;">
+              <div class="stepper">
+                <button type="button" onclick="changeQty('JW-10', -1)">-</button>
+                <input type="text" id="qty-JW-10" value="1" readonly>
+                <button type="button" onclick="changeQty('JW-10', 1)">+</button>
               </div>
-              <table class="spec-table">
-                <tr><td>Category</td><td>Premium Lightweight Silver</td></tr>
-                <tr><td>Surface Finish</td><td>Long-lasting plating with proper care</td></tr>
-              </table>
-              <div class="amazon-cart-block">
-                <div class="amazon-stepper-row">
-                  <div class="qty-stepper">
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-10', -1)">-</button>
-                    <input type="text" id="qty-JW-10" class="qty-input" value="1" readonly>
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-10', 1)">+</button>
-                  </div>
-                  <button type="button" class="btn-add-amazon" id="btn-add-JW-10" onclick="addToWholesaleCart('JW-10', 4.64, 'https://glimya.com/jewel/products/JEWLLZ-MSUN33N63YJ6/Gold_bracelet_worn_on_wrist_202608091104-1789319426684-309228579.avif')">
-                    Add to Wholesale Box
-                  </button>
-                </div>
-              </div>
+              <button type="button" class="btn-amazon" data-code="JW-10" data-weight="4.64" data-img="https://glimya.com/jewel/products/JEWLLZ-MSUN33N63YJ6/Gold_bracelet_worn_on_wrist_202608091104-1789319426684-309228579.avif" onclick="handleAddToCart(this)">
+                Add to Wholesale Box
+              </button>
             </div>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <!-- PRODUCT 11 -->
-        <article class="product-single-page-card">
-          <div class="product-layout-grid">
-            <div class="ratio-12-14-container" onclick="toggleZoom(this)" onmousemove="handleZoomPan(event, this)">
-              <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345246039-khu40emdz.avif" alt="Jewellery Design JW-11" class="product-img-main" loading="lazy">
-              <span class="zoom-hint-badge">Click to Inspect Zoom</span>
+      <!-- 11 -->
+      <article class="product-card">
+        <div class="product-grid">
+          <div class="img-wrap" onclick="toggleZoom(this)" onmousemove="doZoom(event, this)">
+            <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345246039-khu40emdz.avif" alt="JW-11">
+            <span class="zoom-hint">Click to Zoom</span>
+          </div>
+          <div>
+            <span style="font-size: 12px; color: var(--gold-deep); font-weight: 700;">DESIGN #11</span>
+            <h3 style="font-size: 22px; color: var(--gold-dark); margin: 4px 0 10px;">Item Code: JW-11</h3>
+            <div style="background: var(--gold-cream); padding: 8px 14px; border-radius: 4px; display: inline-block; margin-bottom: 14px;">
+              Net Weight: <strong style="font-size: 20px; color: var(--gold-dark);">4.64 g</strong>
             </div>
-            <div class="product-details-col">
-              <div class="product-meta-header">
-                <span class="design-code-pill">Design #11 of Collection</span>
-                <h3 class="product-display-name">92.5 Sterling Silver Design JW-11</h3>
-                <div class="weight-metric-card"><span class="label">Net Weight:</span><span class="value">4.64 g</span></div>
+            <div class="amazon-box" style="display: flex; gap: 10px; align-items: center;">
+              <div class="stepper">
+                <button type="button" onclick="changeQty('JW-11', -1)">-</button>
+                <input type="text" id="qty-JW-11" value="1" readonly>
+                <button type="button" onclick="changeQty('JW-11', 1)">+</button>
               </div>
-              <table class="spec-table">
-                <tr><td>Category</td><td>Premium Lightweight Silver</td></tr>
-                <tr><td>Surface Finish</td><td>Long-lasting plating with proper care</td></tr>
-              </table>
-              <div class="amazon-cart-block">
-                <div class="amazon-stepper-row">
-                  <div class="qty-stepper">
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-11', -1)">-</button>
-                    <input type="text" id="qty-JW-11" class="qty-input" value="1" readonly>
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-11', 1)">+</button>
-                  </div>
-                  <button type="button" class="btn-add-amazon" id="btn-add-JW-11" onclick="addToWholesaleCart('JW-11', 4.64, 'https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345246039-khu40emdz.avif')">
-                    Add to Wholesale Box
-                  </button>
-                </div>
-              </div>
+              <button type="button" class="btn-amazon" data-code="JW-11" data-weight="4.64" data-img="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345246039-khu40emdz.avif" onclick="handleAddToCart(this)">
+                Add to Wholesale Box
+              </button>
             </div>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <!-- PRODUCT 12 -->
-        <article class="product-single-page-card">
-          <div class="product-layout-grid">
-            <div class="ratio-12-14-container" onclick="toggleZoom(this)" onmousemove="handleZoomPan(event, this)">
-              <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345195532-9mlw0alkq.avif" alt="Jewellery Design JW-12" class="product-img-main" loading="lazy">
-              <span class="zoom-hint-badge">Click to Inspect Zoom</span>
+      <!-- 12 -->
+      <article class="product-card">
+        <div class="product-grid">
+          <div class="img-wrap" onclick="toggleZoom(this)" onmousemove="doZoom(event, this)">
+            <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345195532-9mlw0alkq.avif" alt="JW-12">
+            <span class="zoom-hint">Click to Zoom</span>
+          </div>
+          <div>
+            <span style="font-size: 12px; color: var(--gold-deep); font-weight: 700;">DESIGN #12</span>
+            <h3 style="font-size: 22px; color: var(--gold-dark); margin: 4px 0 10px;">Item Code: JW-12</h3>
+            <div style="background: var(--gold-cream); padding: 8px 14px; border-radius: 4px; display: inline-block; margin-bottom: 14px;">
+              Net Weight: <strong style="font-size: 20px; color: var(--gold-dark);">3.93 g</strong>
             </div>
-            <div class="product-details-col">
-              <div class="product-meta-header">
-                <span class="design-code-pill">Design #12 of Collection</span>
-                <h3 class="product-display-name">92.5 Sterling Silver Design JW-12</h3>
-                <div class="weight-metric-card"><span class="label">Net Weight:</span><span class="value">3.93 g</span></div>
+            <div class="amazon-box" style="display: flex; gap: 10px; align-items: center;">
+              <div class="stepper">
+                <button type="button" onclick="changeQty('JW-12', -1)">-</button>
+                <input type="text" id="qty-JW-12" value="1" readonly>
+                <button type="button" onclick="changeQty('JW-12', 1)">+</button>
               </div>
-              <table class="spec-table">
-                <tr><td>Category</td><td>Premium Lightweight Silver</td></tr>
-                <tr><td>Surface Finish</td><td>Long-lasting plating with proper care</td></tr>
-              </table>
-              <div class="amazon-cart-block">
-                <div class="amazon-stepper-row">
-                  <div class="qty-stepper">
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-12', -1)">-</button>
-                    <input type="text" id="qty-JW-12" class="qty-input" value="1" readonly>
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-12', 1)">+</button>
-                  </div>
-                  <button type="button" class="btn-add-amazon" id="btn-add-JW-12" onclick="addToWholesaleCart('JW-12', 3.93, 'https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345195532-9mlw0alkq.avif')">
-                    Add to Wholesale Box
-                  </button>
-                </div>
-              </div>
+              <button type="button" class="btn-amazon" data-code="JW-12" data-weight="3.93" data-img="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345195532-9mlw0alkq.avif" onclick="handleAddToCart(this)">
+                Add to Wholesale Box
+              </button>
             </div>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <!-- PRODUCT 13 -->
-        <article class="product-single-page-card">
-          <div class="product-layout-grid">
-            <div class="ratio-12-14-container" onclick="toggleZoom(this)" onmousemove="handleZoomPan(event, this)">
-              <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345167903-f98qzfpg8.avif" alt="Jewellery Design JW-13" class="product-img-main" loading="lazy">
-              <span class="zoom-hint-badge">Click to Inspect Zoom</span>
+      <!-- 13 -->
+      <article class="product-card">
+        <div class="product-grid">
+          <div class="img-wrap" onclick="toggleZoom(this)" onmousemove="doZoom(event, this)">
+            <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345167903-f98qzfpg8.avif" alt="JW-13">
+            <span class="zoom-hint">Click to Zoom</span>
+          </div>
+          <div>
+            <span style="font-size: 12px; color: var(--gold-deep); font-weight: 700;">DESIGN #13</span>
+            <h3 style="font-size: 22px; color: var(--gold-dark); margin: 4px 0 10px;">Item Code: JW-13</h3>
+            <div style="background: var(--gold-cream); padding: 8px 14px; border-radius: 4px; display: inline-block; margin-bottom: 14px;">
+              Net Weight: <strong style="font-size: 20px; color: var(--gold-dark);">3.93 g</strong>
             </div>
-            <div class="product-details-col">
-              <div class="product-meta-header">
-                <span class="design-code-pill">Design #13 of Collection</span>
-                <h3 class="product-display-name">92.5 Sterling Silver Design JW-13</h3>
-                <div class="weight-metric-card"><span class="label">Net Weight:</span><span class="value">3.93 g</span></div>
+            <div class="amazon-box" style="display: flex; gap: 10px; align-items: center;">
+              <div class="stepper">
+                <button type="button" onclick="changeQty('JW-13', -1)">-</button>
+                <input type="text" id="qty-JW-13" value="1" readonly>
+                <button type="button" onclick="changeQty('JW-13', 1)">+</button>
               </div>
-              <table class="spec-table">
-                <tr><td>Category</td><td>Premium Lightweight Silver</td></tr>
-                <tr><td>Surface Finish</td><td>Long-lasting plating with proper care</td></tr>
-              </table>
-              <div class="amazon-cart-block">
-                <div class="amazon-stepper-row">
-                  <div class="qty-stepper">
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-13', -1)">-</button>
-                    <input type="text" id="qty-JW-13" class="qty-input" value="1" readonly>
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-13', 1)">+</button>
-                  </div>
-                  <button type="button" class="btn-add-amazon" id="btn-add-JW-13" onclick="addToWholesaleCart('JW-13', 3.93, 'https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345167903-f98qzfpg8.avif')">
-                    Add to Wholesale Box
-                  </button>
-                </div>
-              </div>
+              <button type="button" class="btn-amazon" data-code="JW-13" data-weight="3.93" data-img="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345167903-f98qzfpg8.avif" onclick="handleAddToCart(this)">
+                Add to Wholesale Box
+              </button>
             </div>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <!-- PRODUCT 14 -->
-        <article class="product-single-page-card">
-          <div class="product-layout-grid">
-            <div class="ratio-12-14-container" onclick="toggleZoom(this)" onmousemove="handleZoomPan(event, this)">
-              <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345150495-1uq9kl4pn.avif" alt="Jewellery Design JW-14" class="product-img-main" loading="lazy">
-              <span class="zoom-hint-badge">Click to Inspect Zoom</span>
+      <!-- 14 -->
+      <article class="product-card">
+        <div class="product-grid">
+          <div class="img-wrap" onclick="toggleZoom(this)" onmousemove="doZoom(event, this)">
+            <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345150495-1uq9kl4pn.avif" alt="JW-14">
+            <span class="zoom-hint">Click to Zoom</span>
+          </div>
+          <div>
+            <span style="font-size: 12px; color: var(--gold-deep); font-weight: 700;">DESIGN #14</span>
+            <h3 style="font-size: 22px; color: var(--gold-dark); margin: 4px 0 10px;">Item Code: JW-14</h3>
+            <div style="background: var(--gold-cream); padding: 8px 14px; border-radius: 4px; display: inline-block; margin-bottom: 14px;">
+              Net Weight: <strong style="font-size: 20px; color: var(--gold-dark);">2.22 g</strong>
             </div>
-            <div class="product-details-col">
-              <div class="product-meta-header">
-                <span class="design-code-pill">Design #14 of Collection</span>
-                <h3 class="product-display-name">92.5 Sterling Silver Design JW-14</h3>
-                <div class="weight-metric-card"><span class="label">Net Weight:</span><span class="value">2.22 g</span></div>
+            <div class="amazon-box" style="display: flex; gap: 10px; align-items: center;">
+              <div class="stepper">
+                <button type="button" onclick="changeQty('JW-14', -1)">-</button>
+                <input type="text" id="qty-JW-14" value="1" readonly>
+                <button type="button" onclick="changeQty('JW-14', 1)">+</button>
               </div>
-              <table class="spec-table">
-                <tr><td>Category</td><td>Premium Lightweight Silver</td></tr>
-                <tr><td>Surface Finish</td><td>Long-lasting plating with proper care</td></tr>
-              </table>
-              <div class="amazon-cart-block">
-                <div class="amazon-stepper-row">
-                  <div class="qty-stepper">
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-14', -1)">-</button>
-                    <input type="text" id="qty-JW-14" class="qty-input" value="1" readonly>
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-14', 1)">+</button>
-                  </div>
-                  <button type="button" class="btn-add-amazon" id="btn-add-JW-14" onclick="addToWholesaleCart('JW-14', 2.22, 'https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345150495-1uq9kl4pn.avif')">
-                    Add to Wholesale Box
-                  </button>
-                </div>
-              </div>
+              <button type="button" class="btn-amazon" data-code="JW-14" data-weight="2.22" data-img="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345150495-1uq9kl4pn.avif" onclick="handleAddToCart(this)">
+                Add to Wholesale Box
+              </button>
             </div>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <!-- PRODUCT 15 -->
-        <article class="product-single-page-card">
-          <div class="product-layout-grid">
-            <div class="ratio-12-14-container" onclick="toggleZoom(this)" onmousemove="handleZoomPan(event, this)">
-              <img src="https://glimya.com/jewel/products/JEWLLZ-MMKVI69X5TV3/Image%20generation_202604180814_01-1776512113975-840537962.avif" alt="Jewellery Design JW-15" class="product-img-main" loading="lazy">
-              <span class="zoom-hint-badge">Click to Inspect Zoom</span>
+      <!-- 15 -->
+      <article class="product-card">
+        <div class="product-grid">
+          <div class="img-wrap" onclick="toggleZoom(this)" onmousemove="doZoom(event, this)">
+            <img src="https://glimya.com/jewel/products/JEWLLZ-MMKVI69X5TV3/Image%20generation_202604180814_01-1776512113975-840537962.avif" alt="JW-15">
+            <span class="zoom-hint">Click to Zoom</span>
+          </div>
+          <div>
+            <span style="font-size: 12px; color: var(--gold-deep); font-weight: 700;">DESIGN #15</span>
+            <h3 style="font-size: 22px; color: var(--gold-dark); margin: 4px 0 10px;">Item Code: JW-15</h3>
+            <div style="background: var(--gold-cream); padding: 8px 14px; border-radius: 4px; display: inline-block; margin-bottom: 14px;">
+              Net Weight: <strong style="font-size: 20px; color: var(--gold-dark);">3.125 g</strong>
             </div>
-            <div class="product-details-col">
-              <div class="product-meta-header">
-                <span class="design-code-pill">Design #15 of Collection</span>
-                <h3 class="product-display-name">92.5 Sterling Silver Design JW-15</h3>
-                <div class="weight-metric-card"><span class="label">Net Weight:</span><span class="value">3.125 g</span></div>
+            <div class="amazon-box" style="display: flex; gap: 10px; align-items: center;">
+              <div class="stepper">
+                <button type="button" onclick="changeQty('JW-15', -1)">-</button>
+                <input type="text" id="qty-JW-15" value="1" readonly>
+                <button type="button" onclick="changeQty('JW-15', 1)">+</button>
               </div>
-              <table class="spec-table">
-                <tr><td>Category</td><td>Premium Lightweight Silver</td></tr>
-                <tr><td>Surface Finish</td><td>Long-lasting plating with proper care</td></tr>
-              </table>
-              <div class="amazon-cart-block">
-                <div class="amazon-stepper-row">
-                  <div class="qty-stepper">
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-15', -1)">-</button>
-                    <input type="text" id="qty-JW-15" class="qty-input" value="1" readonly>
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-15', 1)">+</button>
-                  </div>
-                  <button type="button" class="btn-add-amazon" id="btn-add-JW-15" onclick="addToWholesaleCart('JW-15', 3.125, 'https://glimya.com/jewel/products/JEWLLZ-MMKVI69X5TV3/Image%20generation_202604180814_01-1776512113975-840537962.avif')">
-                    Add to Wholesale Box
-                  </button>
-                </div>
-              </div>
+              <button type="button" class="btn-amazon" data-code="JW-15" data-weight="3.125" data-img="https://glimya.com/jewel/products/JEWLLZ-MMKVI69X5TV3/Image%20generation_202604180814_01-1776512113975-840537962.avif" onclick="handleAddToCart(this)">
+                Add to Wholesale Box
+              </button>
             </div>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <!-- PRODUCT 16 -->
-        <article class="product-single-page-card">
-          <div class="product-layout-grid">
-            <div class="ratio-12-14-container" onclick="toggleZoom(this)" onmousemove="handleZoomPan(event, this)">
-              <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773162204944-i73r2x7hr.avif" alt="Jewellery Design JW-16" class="product-img-main" loading="lazy">
-              <span class="zoom-hint-badge">Click to Inspect Zoom</span>
+      <!-- 16 -->
+      <article class="product-card">
+        <div class="product-grid">
+          <div class="img-wrap" onclick="toggleZoom(this)" onmousemove="doZoom(event, this)">
+            <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773162204944-i73r2x7hr.avif" alt="JW-16">
+            <span class="zoom-hint">Click to Zoom</span>
+          </div>
+          <div>
+            <span style="font-size: 12px; color: var(--gold-deep); font-weight: 700;">DESIGN #16</span>
+            <h3 style="font-size: 22px; color: var(--gold-dark); margin: 4px 0 10px;">Item Code: JW-16</h3>
+            <div style="background: var(--gold-cream); padding: 8px 14px; border-radius: 4px; display: inline-block; margin-bottom: 14px;">
+              Net Weight: <strong style="font-size: 20px; color: var(--gold-dark);">1.86 g</strong>
             </div>
-            <div class="product-details-col">
-              <div class="product-meta-header">
-                <span class="design-code-pill">Design #16 of Collection</span>
-                <h3 class="product-display-name">92.5 Sterling Silver Design JW-16</h3>
-                <div class="weight-metric-card"><span class="label">Net Weight:</span><span class="value">1.86 g</span></div>
+            <div class="amazon-box" style="display: flex; gap: 10px; align-items: center;">
+              <div class="stepper">
+                <button type="button" onclick="changeQty('JW-16', -1)">-</button>
+                <input type="text" id="qty-JW-16" value="1" readonly>
+                <button type="button" onclick="changeQty('JW-16', 1)">+</button>
               </div>
-              <table class="spec-table">
-                <tr><td>Category</td><td>Premium Lightweight Silver</td></tr>
-                <tr><td>Surface Finish</td><td>Long-lasting plating with proper care</td></tr>
-              </table>
-              <div class="amazon-cart-block">
-                <div class="amazon-stepper-row">
-                  <div class="qty-stepper">
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-16', -1)">-</button>
-                    <input type="text" id="qty-JW-16" class="qty-input" value="1" readonly>
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-16', 1)">+</button>
-                  </div>
-                  <button type="button" class="btn-add-amazon" id="btn-add-JW-16" onclick="addToWholesaleCart('JW-16', 1.86, 'https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773162204944-i73r2x7hr.avif')">
-                    Add to Wholesale Box
-                  </button>
-                </div>
-              </div>
+              <button type="button" class="btn-amazon" data-code="JW-16" data-weight="1.86" data-img="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773162204944-i73r2x7hr.avif" onclick="handleAddToCart(this)">
+                Add to Wholesale Box
+              </button>
             </div>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <!-- PRODUCT 17 -->
-        <article class="product-single-page-card">
-          <div class="product-layout-grid">
-            <div class="ratio-12-14-container" onclick="toggleZoom(this)" onmousemove="handleZoomPan(event, this)">
-              <img src="https://glimya.com/jewel/products/JEWLLZ-MMKUWURGGU51/Image%20generation_202604231130_02-1776944379490-299255272.avif" alt="Jewellery Design JW-17" class="product-img-main" loading="lazy">
-              <span class="zoom-hint-badge">Click to Inspect Zoom</span>
+      <!-- 17 -->
+      <article class="product-card">
+        <div class="product-grid">
+          <div class="img-wrap" onclick="toggleZoom(this)" onmousemove="doZoom(event, this)">
+            <img src="https://glimya.com/jewel/products/JEWLLZ-MMKUWURGGU51/Image%20generation_202604231130_02-1776944379490-299255272.avif" alt="JW-17">
+            <span class="zoom-hint">Click to Zoom</span>
+          </div>
+          <div>
+            <span style="font-size: 12px; color: var(--gold-deep); font-weight: 700;">DESIGN #17</span>
+            <h3 style="font-size: 22px; color: var(--gold-dark); margin: 4px 0 10px;">Item Code: JW-17</h3>
+            <div style="background: var(--gold-cream); padding: 8px 14px; border-radius: 4px; display: inline-block; margin-bottom: 14px;">
+              Net Weight: <strong style="font-size: 20px; color: var(--gold-dark);">2.29 g</strong>
             </div>
-            <div class="product-details-col">
-              <div class="product-meta-header">
-                <span class="design-code-pill">Design #17 of Collection</span>
-                <h3 class="product-display-name">92.5 Sterling Silver Design JW-17</h3>
-                <div class="weight-metric-card"><span class="label">Net Weight:</span><span class="value">2.29 g</span></div>
+            <div class="amazon-box" style="display: flex; gap: 10px; align-items: center;">
+              <div class="stepper">
+                <button type="button" onclick="changeQty('JW-17', -1)">-</button>
+                <input type="text" id="qty-JW-17" value="1" readonly>
+                <button type="button" onclick="changeQty('JW-17', 1)">+</button>
               </div>
-              <table class="spec-table">
-                <tr><td>Category</td><td>Premium Lightweight Silver</td></tr>
-                <tr><td>Surface Finish</td><td>Long-lasting plating with proper care</td></tr>
-              </table>
-              <div class="amazon-cart-block">
-                <div class="amazon-stepper-row">
-                  <div class="qty-stepper">
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-17', -1)">-</button>
-                    <input type="text" id="qty-JW-17" class="qty-input" value="1" readonly>
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-17', 1)">+</button>
-                  </div>
-                  <button type="button" class="btn-add-amazon" id="btn-add-JW-17" onclick="addToWholesaleCart('JW-17', 2.29, 'https://glimya.com/jewel/products/JEWLLZ-MMKUWURGGU51/Image%20generation_202604231130_02-1776944379490-299255272.avif')">
-                    Add to Wholesale Box
-                  </button>
-                </div>
-              </div>
+              <button type="button" class="btn-amazon" data-code="JW-17" data-weight="2.29" data-img="https://glimya.com/jewel/products/JEWLLZ-MMKUWURGGU51/Image%20generation_202604231130_02-1776944379490-299255272.avif" onclick="handleAddToCart(this)">
+                Add to Wholesale Box
+              </button>
             </div>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <!-- PRODUCT 18 -->
-        <article class="product-single-page-card">
-          <div class="product-layout-grid">
-            <div class="ratio-12-14-container" onclick="toggleZoom(this)" onmousemove="handleZoomPan(event, this)">
-              <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773161626532-enrtgrvo2.avif" alt="Jewellery Design JW-18" class="product-img-main" loading="lazy">
-              <span class="zoom-hint-badge">Click to Inspect Zoom</span>
+      <!-- 18 -->
+      <article class="product-card">
+        <div class="product-grid">
+          <div class="img-wrap" onclick="toggleZoom(this)" onmousemove="doZoom(event, this)">
+            <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773161626532-enrtgrvo2.avif" alt="JW-18">
+            <span class="zoom-hint">Click to Zoom</span>
+          </div>
+          <div>
+            <span style="font-size: 12px; color: var(--gold-deep); font-weight: 700;">DESIGN #18</span>
+            <h3 style="font-size: 22px; color: var(--gold-dark); margin: 4px 0 10px;">Item Code: JW-18</h3>
+            <div style="background: var(--gold-cream); padding: 8px 14px; border-radius: 4px; display: inline-block; margin-bottom: 14px;">
+              Net Weight: <strong style="font-size: 20px; color: var(--gold-dark);">2.29 g</strong>
             </div>
-            <div class="product-details-col">
-              <div class="product-meta-header">
-                <span class="design-code-pill">Design #18 of Collection</span>
-                <h3 class="product-display-name">92.5 Sterling Silver Design JW-18</h3>
-                <div class="weight-metric-card"><span class="label">Net Weight:</span><span class="value">2.29 g</span></div>
+            <div class="amazon-box" style="display: flex; gap: 10px; align-items: center;">
+              <div class="stepper">
+                <button type="button" onclick="changeQty('JW-18', -1)">-</button>
+                <input type="text" id="qty-JW-18" value="1" readonly>
+                <button type="button" onclick="changeQty('JW-18', 1)">+</button>
               </div>
-              <table class="spec-table">
-                <tr><td>Category</td><td>Premium Lightweight Silver</td></tr>
-                <tr><td>Surface Finish</td><td>Long-lasting plating with proper care</td></tr>
-              </table>
-              <div class="amazon-cart-block">
-                <div class="amazon-stepper-row">
-                  <div class="qty-stepper">
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-18', -1)">-</button>
-                    <input type="text" id="qty-JW-18" class="qty-input" value="1" readonly>
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-18', 1)">+</button>
-                  </div>
-                  <button type="button" class="btn-add-amazon" id="btn-add-JW-18" onclick="addToWholesaleCart('JW-18', 2.29, 'https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773161626532-enrtgrvo2.avif')">
-                    Add to Wholesale Box
-                  </button>
-                </div>
-              </div>
+              <button type="button" class="btn-amazon" data-code="JW-18" data-weight="2.29" data-img="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773161626532-enrtgrvo2.avif" onclick="handleAddToCart(this)">
+                Add to Wholesale Box
+              </button>
             </div>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <!-- PRODUCT 19 -->
-        <article class="product-single-page-card">
-          <div class="product-layout-grid">
-            <div class="ratio-12-14-container" onclick="toggleZoom(this)" onmousemove="handleZoomPan(event, this)">
-              <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773160117584-p5bsscolx.avif" alt="Jewellery Design JW-19" class="product-img-main" loading="lazy">
-              <span class="zoom-hint-badge">Click to Inspect Zoom</span>
+      <!-- 19 -->
+      <article class="product-card">
+        <div class="product-grid">
+          <div class="img-wrap" onclick="toggleZoom(this)" onmousemove="doZoom(event, this)">
+            <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773160117584-p5bsscolx.avif" alt="JW-19">
+            <span class="zoom-hint">Click to Zoom</span>
+          </div>
+          <div>
+            <span style="font-size: 12px; color: var(--gold-deep); font-weight: 700;">DESIGN #19</span>
+            <h3 style="font-size: 22px; color: var(--gold-dark); margin: 4px 0 10px;">Item Code: JW-19</h3>
+            <div style="background: var(--gold-cream); padding: 8px 14px; border-radius: 4px; display: inline-block; margin-bottom: 14px;">
+              Net Weight: <strong style="font-size: 20px; color: var(--gold-dark);">3.31 g</strong>
             </div>
-            <div class="product-details-col">
-              <div class="product-meta-header">
-                <span class="design-code-pill">Design #19 of Collection</span>
-                <h3 class="product-display-name">92.5 Sterling Silver Design JW-19</h3>
-                <div class="weight-metric-card"><span class="label">Net Weight:</span><span class="value">3.31 g</span></div>
+            <div class="amazon-box" style="display: flex; gap: 10px; align-items: center;">
+              <div class="stepper">
+                <button type="button" onclick="changeQty('JW-19', -1)">-</button>
+                <input type="text" id="qty-JW-19" value="1" readonly>
+                <button type="button" onclick="changeQty('JW-19', 1)">+</button>
               </div>
-              <table class="spec-table">
-                <tr><td>Category</td><td>Premium Lightweight Silver</td></tr>
-                <tr><td>Surface Finish</td><td>Long-lasting plating with proper care</td></tr>
-              </table>
-              <div class="amazon-cart-block">
-                <div class="amazon-stepper-row">
-                  <div class="qty-stepper">
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-19', -1)">-</button>
-                    <input type="text" id="qty-JW-19" class="qty-input" value="1" readonly>
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-19', 1)">+</button>
-                  </div>
-                  <button type="button" class="btn-add-amazon" id="btn-add-JW-19" onclick="addToWholesaleCart('JW-19', 3.31, 'https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773160117584-p5bsscolx.avif')">
-                    Add to Wholesale Box
-                  </button>
-                </div>
-              </div>
+              <button type="button" class="btn-amazon" data-code="JW-19" data-weight="3.31" data-img="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773160117584-p5bsscolx.avif" onclick="handleAddToCart(this)">
+                Add to Wholesale Box
+              </button>
             </div>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <!-- PRODUCT 20 -->
-        <article class="product-single-page-card">
-          <div class="product-layout-grid">
-            <div class="ratio-12-14-container" onclick="toggleZoom(this)" onmousemove="handleZoomPan(event, this)">
-              <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773159556650-6zz0oepz5.avif" alt="Jewellery Design JW-20" class="product-img-main" loading="lazy">
-              <span class="zoom-hint-badge">Click to Inspect Zoom</span>
+      <!-- 20 -->
+      <article class="product-card">
+        <div class="product-grid">
+          <div class="img-wrap" onclick="toggleZoom(this)" onmousemove="doZoom(event, this)">
+            <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773159556650-6zz0oepz5.avif" alt="JW-20">
+            <span class="zoom-hint">Click to Zoom</span>
+          </div>
+          <div>
+            <span style="font-size: 12px; color: var(--gold-deep); font-weight: 700;">DESIGN #20</span>
+            <h3 style="font-size: 22px; color: var(--gold-dark); margin: 4px 0 10px;">Item Code: JW-20</h3>
+            <div style="background: var(--gold-cream); padding: 8px 14px; border-radius: 4px; display: inline-block; margin-bottom: 14px;">
+              Net Weight: <strong style="font-size: 20px; color: var(--gold-dark);">2.33 g</strong>
             </div>
-            <div class="product-details-col">
-              <div class="product-meta-header">
-                <span class="design-code-pill">Design #20 of Collection</span>
-                <h3 class="product-display-name">92.5 Sterling Silver Design JW-20</h3>
-                <div class="weight-metric-card"><span class="label">Net Weight:</span><span class="value">2.33 g</span></div>
+            <div class="amazon-box" style="display: flex; gap: 10px; align-items: center;">
+              <div class="stepper">
+                <button type="button" onclick="changeQty('JW-20', -1)">-</button>
+                <input type="text" id="qty-JW-20" value="1" readonly>
+                <button type="button" onclick="changeQty('JW-20', 1)">+</button>
               </div>
-              <table class="spec-table">
-                <tr><td>Category</td><td>Premium Lightweight Silver</td></tr>
-                <tr><td>Surface Finish</td><td>Long-lasting plating with proper care</td></tr>
-              </table>
-              <div class="amazon-cart-block">
-                <div class="amazon-stepper-row">
-                  <div class="qty-stepper">
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-20', -1)">-</button>
-                    <input type="text" id="qty-JW-20" class="qty-input" value="1" readonly>
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-20', 1)">+</button>
-                  </div>
-                  <button type="button" class="btn-add-amazon" id="btn-add-JW-20" onclick="addToWholesaleCart('JW-20', 2.33, 'https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773159556650-6zz0oepz5.avif')">
-                    Add to Wholesale Box
-                  </button>
-                </div>
-              </div>
+              <button type="button" class="btn-amazon" data-code="JW-20" data-weight="2.33" data-img="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773159556650-6zz0oepz5.avif" onclick="handleAddToCart(this)">
+                Add to Wholesale Box
+              </button>
             </div>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <!-- PRODUCT 21 -->
-        <article class="product-single-page-card">
-          <div class="product-layout-grid">
-            <div class="ratio-12-14-container" onclick="toggleZoom(this)" onmousemove="handleZoomPan(event, this)">
-              <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773159515900-v3hhadsmn.avif" alt="Jewellery Design JW-21" class="product-img-main" loading="lazy">
-              <span class="zoom-hint-badge">Click to Inspect Zoom</span>
+      <!-- 21 -->
+      <article class="product-card">
+        <div class="product-grid">
+          <div class="img-wrap" onclick="toggleZoom(this)" onmousemove="doZoom(event, this)">
+            <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773159515900-v3hhadsmn.avif" alt="JW-21">
+            <span class="zoom-hint">Click to Zoom</span>
+          </div>
+          <div>
+            <span style="font-size: 12px; color: var(--gold-deep); font-weight: 700;">DESIGN #21</span>
+            <h3 style="font-size: 22px; color: var(--gold-dark); margin: 4px 0 10px;">Item Code: JW-21</h3>
+            <div style="background: var(--gold-cream); padding: 8px 14px; border-radius: 4px; display: inline-block; margin-bottom: 14px;">
+              Net Weight: <strong style="font-size: 20px; color: var(--gold-dark);">2.33 g</strong>
             </div>
-            <div class="product-details-col">
-              <div class="product-meta-header">
-                <span class="design-code-pill">Design #21 of Collection</span>
-                <h3 class="product-display-name">92.5 Sterling Silver Design JW-21</h3>
-                <div class="weight-metric-card"><span class="label">Net Weight:</span><span class="value">2.33 g</span></div>
+            <div class="amazon-box" style="display: flex; gap: 10px; align-items: center;">
+              <div class="stepper">
+                <button type="button" onclick="changeQty('JW-21', -1)">-</button>
+                <input type="text" id="qty-JW-21" value="1" readonly>
+                <button type="button" onclick="changeQty('JW-21', 1)">+</button>
               </div>
-              <table class="spec-table">
-                <tr><td>Category</td><td>Premium Lightweight Silver</td></tr>
-                <tr><td>Surface Finish</td><td>Long-lasting plating with proper care</td></tr>
-              </table>
-              <div class="amazon-cart-block">
-                <div class="amazon-stepper-row">
-                  <div class="qty-stepper">
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-21', -1)">-</button>
-                    <input type="text" id="qty-JW-21" class="qty-input" value="1" readonly>
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-21', 1)">+</button>
-                  </div>
-                  <button type="button" class="btn-add-amazon" id="btn-add-JW-21" onclick="addToWholesaleCart('JW-21', 2.33, 'https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773159515900-v3hhadsmn.avif')">
-                    Add to Wholesale Box
-                  </button>
-                </div>
-              </div>
+              <button type="button" class="btn-amazon" data-code="JW-21" data-weight="2.33" data-img="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773159515900-v3hhadsmn.avif" onclick="handleAddToCart(this)">
+                Add to Wholesale Box
+              </button>
             </div>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <!-- PRODUCT 22 -->
-        <article class="product-single-page-card">
-          <div class="product-layout-grid">
-            <div class="ratio-12-14-container" onclick="toggleZoom(this)" onmousemove="handleZoomPan(event, this)">
-              <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773158574494-j36md31yw.avif" alt="Jewellery Design JW-22" class="product-img-main" loading="lazy">
-              <span class="zoom-hint-badge">Click to Inspect Zoom</span>
+      <!-- 22 -->
+      <article class="product-card">
+        <div class="product-grid">
+          <div class="img-wrap" onclick="toggleZoom(this)" onmousemove="doZoom(event, this)">
+            <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773158574494-j36md31yw.avif" alt="JW-22">
+            <span class="zoom-hint">Click to Zoom</span>
+          </div>
+          <div>
+            <span style="font-size: 12px; color: var(--gold-deep); font-weight: 700;">DESIGN #22</span>
+            <h3 style="font-size: 22px; color: var(--gold-dark); margin: 4px 0 10px;">Item Code: JW-22</h3>
+            <div style="background: var(--gold-cream); padding: 8px 14px; border-radius: 4px; display: inline-block; margin-bottom: 14px;">
+              Net Weight: <strong style="font-size: 20px; color: var(--gold-dark);">5.57 g</strong>
             </div>
-            <div class="product-details-col">
-              <div class="product-meta-header">
-                <span class="design-code-pill">Design #22 of Collection</span>
-                <h3 class="product-display-name">92.5 Sterling Silver Design JW-22</h3>
-                <div class="weight-metric-card"><span class="label">Net Weight:</span><span class="value">5.57 g</span></div>
+            <div class="amazon-box" style="display: flex; gap: 10px; align-items: center;">
+              <div class="stepper">
+                <button type="button" onclick="changeQty('JW-22', -1)">-</button>
+                <input type="text" id="qty-JW-22" value="1" readonly>
+                <button type="button" onclick="changeQty('JW-22', 1)">+</button>
               </div>
-              <table class="spec-table">
-                <tr><td>Category</td><td>Premium Lightweight Silver</td></tr>
-                <tr><td>Surface Finish</td><td>Long-lasting plating with proper care</td></tr>
-              </table>
-              <div class="amazon-cart-block">
-                <div class="amazon-stepper-row">
-                  <div class="qty-stepper">
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-22', -1)">-</button>
-                    <input type="text" id="qty-JW-22" class="qty-input" value="1" readonly>
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-22', 1)">+</button>
-                  </div>
-                  <button type="button" class="btn-add-amazon" id="btn-add-JW-22" onclick="addToWholesaleCart('JW-22', 5.57, 'https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773158574494-j36md31yw.avif')">
-                    Add to Wholesale Box
-                  </button>
-                </div>
-              </div>
+              <button type="button" class="btn-amazon" data-code="JW-22" data-weight="5.57" data-img="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773158574494-j36md31yw.avif" onclick="handleAddToCart(this)">
+                Add to Wholesale Box
+              </button>
             </div>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <!-- PRODUCT 23 -->
-        <article class="product-single-page-card">
-          <div class="product-layout-grid">
-            <div class="ratio-12-14-container" onclick="toggleZoom(this)" onmousemove="handleZoomPan(event, this)">
-              <img src="https://glimya.com/jewel/products/JEWLLZ-MMKSGEO0OSNB/Gold_necklace_suspended_in_air_202608081108-1786167764102-184080441.avif" alt="Jewellery Design JW-23" class="product-img-main" loading="lazy">
-              <span class="zoom-hint-badge">Click to Inspect Zoom</span>
+      <!-- 23 -->
+      <article class="product-card">
+        <div class="product-grid">
+          <div class="img-wrap" onclick="toggleZoom(this)" onmousemove="doZoom(event, this)">
+            <img src="https://glimya.com/jewel/products/JEWLLZ-MMKSGEO0OSNB/Gold_necklace_suspended_in_air_202608081108-1786167764102-184080441.avif" alt="JW-23">
+            <span class="zoom-hint">Click to Zoom</span>
+          </div>
+          <div>
+            <span style="font-size: 12px; color: var(--gold-deep); font-weight: 700;">DESIGN #23</span>
+            <h3 style="font-size: 22px; color: var(--gold-dark); margin: 4px 0 10px;">Item Code: JW-23</h3>
+            <div style="background: var(--gold-cream); padding: 8px 14px; border-radius: 4px; display: inline-block; margin-bottom: 14px;">
+              Net Weight: <strong style="font-size: 20px; color: var(--gold-dark);">2.28 g</strong>
             </div>
-            <div class="product-details-col">
-              <div class="product-meta-header">
-                <span class="design-code-pill">Design #23 of Collection</span>
-                <h3 class="product-display-name">92.5 Sterling Silver Design JW-23</h3>
-                <div class="weight-metric-card"><span class="label">Net Weight:</span><span class="value">2.28 g</span></div>
+            <div class="amazon-box" style="display: flex; gap: 10px; align-items: center;">
+              <div class="stepper">
+                <button type="button" onclick="changeQty('JW-23', -1)">-</button>
+                <input type="text" id="qty-JW-23" value="1" readonly>
+                <button type="button" onclick="changeQty('JW-23', 1)">+</button>
               </div>
-              <table class="spec-table">
-                <tr><td>Category</td><td>Premium Lightweight Silver</td></tr>
-                <tr><td>Surface Finish</td><td>Long-lasting plating with proper care</td></tr>
-              </table>
-              <div class="amazon-cart-block">
-                <div class="amazon-stepper-row">
-                  <div class="qty-stepper">
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-23', -1)">-</button>
-                    <input type="text" id="qty-JW-23" class="qty-input" value="1" readonly>
-                    <button type="button" class="stepper-btn" onclick="stepQty('JW-23', 1)">+</button>
-                  </div>
-                  <button type="button" class="btn-add-amazon" id="btn-add-JW-23" onclick="addToWholesaleCart('JW-23', 2.28, 'https://glimya.com/jewel/products/JEWLLZ-MMKSGEO0OSNB/Gold_necklace_suspended_in_air_202608081108-1786167764102-184080441.avif')">
-                    Add to Wholesale Box
-                  </button>
-                </div>
-              </div>
+              <button type="button" class="btn-amazon" data-code="JW-23" data-weight="2.28" data-img="https://glimya.com/jewel/products/JEWLLZ-MMKSGEO0OSNB/Gold_necklace_suspended_in_air_202608081108-1786167764102-184080441.avif" onclick="handleAddToCart(this)">
+                Add to Wholesale Box
+              </button>
             </div>
           </div>
-        </article>
-
-      </div> <!-- End #extra-designs-wrapper -->
+        </div>
+      </article>
 
     </div>
   </section>
 
-  <!-- WHOLESALE ORDER SAMPLE TIERS SECTION (DIRECTLY ACCESSIBLE AFTER 5 DESIGNS) -->
-  <section class="pricing-tiers-section page-break-print" id="wholesale-tiers">
+  <!-- Pricing Tiers -->
+  <section class="pricing-section">
     <div class="container">
-      <div class="section-header">
-        <span class="section-eyebrow">Direct Wholesale Slabs</span>
-        <h2 class="section-title">Wholesale Partnership Tiers</h2>
-        <p class="section-desc">
-          Select your customized assortment size. Each kit comes equipped with direct factory pricing and comprehensive digital marketing assets.
-        </p>
+      <div style="text-align: center; margin-bottom: 30px;">
+        <h2 style="font-size: 26px; color: var(--gold-dark);">Wholesale Partnership Tiers</h2>
       </div>
 
       <div class="tiers-grid">
-
-        <!-- 5 PCS TIER -->
+        <!-- 5 Pcs -->
         <div class="tier-card">
-          <div class="tier-header">
-            <div class="tier-size-tag">Starter Tier</div>
-            <h3 class="tier-name">Mini Kit (5 Pieces)</h3>
-            <div class="tier-rate-box">
-              <div class="rate-main">&#8377;155 <span class="rate-unit">/ gram making</span></div>
-              <div class="tier-moq">Minimum Order: 20 Grams (5 Pcs MOQ)</div>
-            </div>
-            <div>
-              <span class="shipping-badge-pill shipping-badge-paid">+ &#8377;300 Shipping Charges</span>
-            </div>
-          </div>
-
-          <ul class="tier-features-list">
-            <li><strong>Full high-definition video of all ordered jewellery pieces</strong></li>
-            <li>Official Jewllz Collaboration Certificate</li>
-            <li>Collaboration Instagram Post on Jewllz Network</li>
-            <li>Digital Catalogue with your shop name (subdomain website)</li>
-            <li>Jewllz Loyalty Coins credited on order</li>
+          <span style="font-size: 11px; font-weight: 700; color: var(--gold-deep);">MINI KIT</span>
+          <h3 style="color: var(--gold-dark); margin-bottom: 6px;">5 Pieces Order</h3>
+          <p style="font-size: 20px; font-weight: 800; color: var(--gold-dark);">₹155 / g making</p>
+          <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 12px;">Min. 20g Order | +₹300 Shipping</p>
+          <ul style="font-size: 12.5px; padding-left: 18px; margin-bottom: 18px; flex: 1;">
+            <li>Full high-definition video of all ordered jewellery pieces</li>
+            <li>Collaboration certificate with Jewllz</li>
+            <li>Collaboration Instagram Post</li>
+            <li>Digital Catalogue with your shop name (subdomain)</li>
+            <li>Jewllz Loyalty Coins</li>
             <li>Long-lasting plating with proper care</li>
           </ul>
-
-          <div style="margin-top: auto;">
-            <button type="button" class="btn btn-outline-gold" style="width: 100%;" onclick="openDrawer()">
-              Build 5 Pcs Kit in Cart
-            </button>
-          </div>
+          <button type="button" class="btn btn-outline" onclick="openDrawer()">Open Cart</button>
         </div>
 
-        <!-- 10 PCS TIER -->
+        <!-- 10 Pcs -->
         <div class="tier-card">
-          <div class="tier-header">
-            <div class="tier-size-tag">Boutique Growth</div>
-            <h3 class="tier-name">Classic Kit (10 Pieces)</h3>
-            <div class="tier-rate-box">
-              <div class="rate-main">&#8377;150 <span class="rate-unit">/ gram making</span></div>
-              <div class="tier-moq">Minimum Order: 45 Grams (10 Pcs MOQ)</div>
-            </div>
-            <div>
-              <span class="shipping-badge-pill shipping-badge-paid">+ &#8377;300 Shipping Charges</span>
-            </div>
-          </div>
-
-          <ul class="tier-features-list">
-            <li><strong>Full high-definition video of all ordered jewellery pieces</strong></li>
-            <li><strong>All ordered item photos ready to use on social media</strong></li>
-            <li>Official Jewllz Collaboration Certificate</li>
-            <li>Collaboration Instagram Post on Jewllz Network</li>
-            <li>Digital Catalogue with your shop name (subdomain website)</li>
-            <li>Jewllz Loyalty Coins credited on order</li>
+          <span style="font-size: 11px; font-weight: 700; color: var(--gold-deep);">CLASSIC KIT</span>
+          <h3 style="color: var(--gold-dark); margin-bottom: 6px;">10 Pieces Order</h3>
+          <p style="font-size: 20px; font-weight: 800; color: var(--gold-dark);">₹150 / g making</p>
+          <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 12px;">Min. 45g Order | +₹300 Shipping</p>
+          <ul style="font-size: 12.5px; padding-left: 18px; margin-bottom: 18px; flex: 1;">
+            <li>Full high-definition video of all ordered jewellery pieces</li>
+            <li>All ordered item photos ready to use on social media</li>
+            <li>Collaboration certificate with Jewllz</li>
+            <li>Collaboration Instagram Post</li>
+            <li>Digital Catalogue with your shop name (subdomain)</li>
+            <li>Jewllz Loyalty Coins</li>
           </ul>
-
-          <div style="margin-top: auto;">
-            <button type="button" class="btn btn-outline-gold" style="width: 100%;" onclick="openDrawer()">
-              Build 10 Pcs Kit in Cart
-            </button>
-          </div>
+          <button type="button" class="btn btn-outline" onclick="openDrawer()">Open Cart</button>
         </div>
 
-        <!-- 20 PCS TIER (HIGHLY RECOMMENDED) -->
-        <div class="tier-card recommended-tier">
-          <div class="recommended-crown-badge">Recommended by Jewllz</div>
-          <div class="tier-header" style="margin-top: 10px;">
-            <div class="tier-size-tag">High-Volume Partner</div>
-            <h3 class="tier-name">Mega Kit (20 Pieces)</h3>
-            <div class="tier-rate-box" style="background:#FFF8E8; border-color: var(--gold-soft);">
-              <div class="rate-main" style="color: var(--gold-dark);">&#8377;135 <span class="rate-unit">/ gram making</span></div>
-              <div class="tier-moq">Minimum Order: 90 Grams (20 Pcs MOQ)</div>
-            </div>
-            <div>
-              <span class="shipping-badge-pill shipping-badge-free"><strong>Free Insured Express Shipping Across India</strong></span>
-            </div>
-          </div>
-
-          <ul class="tier-features-list">
-            <li><strong>Full high-definition video of all ordered jewellery pieces</strong></li>
-            <li><strong>1 Custom Viral 9:16 Instagram Reel produced for your brand</strong></li>
-            <li><strong>All ordered items' High-Resolution Product Posters for social media</strong></li>
-            <li><strong>1 Premium Brand Logo Animation Video</strong> for your store</li>
-            <li>Digital Catalogue with your shop name (subdomain website)</li>
-            <li>Official Jewllz Collaboration Certificate &amp; Joint Instagram Post</li>
-            <li><strong>Free Insured Express Shipping Across India</strong></li>
-            <li>Jewllz Loyalty Coins credited on order</li>
+        <!-- 20 Pcs (Recommended) -->
+        <div class="tier-card featured">
+          <span class="featured-tag">Recommended by Jewllz</span>
+          <span style="font-size: 11px; font-weight: 700; color: var(--gold-deep); margin-top: 8px;">MEGA KIT</span>
+          <h3 style="color: var(--gold-dark); margin-bottom: 6px;">20 Pieces Order</h3>
+          <p style="font-size: 22px; font-weight: 800; color: var(--gold-dark);">₹135 / g making</p>
+          <p style="font-size: 12px; color: #1B5E20; font-weight: 700; margin-bottom: 12px;">Min. 90g Order | <strong>FREE Shipping</strong></p>
+          <ul style="font-size: 12.5px; padding-left: 18px; margin-bottom: 14px; flex: 1;">
+            <li>Full high-definition video of all ordered jewellery pieces</li>
+            <li>1 Custom Viral 9:16 Instagram Reel produced for your brand</li>
+            <li>Product Posters ready to use on social media</li>
+            <li>1 brand logo animation video</li>
+            <li>Collaboration certificate &amp; Collaboration Instagram Post</li>
+            <li>Digital Catalogue with your shop name (subdomain)</li>
+            <li><strong>Free Shipping across India</strong></li>
           </ul>
-
-          <div class="tier-partner-box">
-            <p>Includes Meta Ads Ad Set configured by Ofbuzz Technology:</p>
-            <a href="https://www.ofbuzztechnology.in" target="_blank" rel="noopener" class="btn btn-gold" style="width: 100%; padding: 8px 12px; font-size: 11.5px;">
-              Visit Ofbuzz Technology
-            </a>
+          <div style="background: var(--gold-cream); padding: 8px; border-radius: 4px; margin-bottom: 12px; font-size: 11.5px;">
+            Meta Ads Ad Set By Ofbuzz Technology:<br>
+            <a href="https://www.ofbuzztechnology.in" target="_blank" class="btn btn-gold" style="padding: 4px 10px; font-size: 11px; margin-top: 4px;">Visit Ofbuzz Technology</a>
           </div>
-
-          <div style="margin-top: auto;">
-            <button type="button" class="btn btn-gold" style="width: 100%;" onclick="openDrawer()">
-              Build Recommended 20 Pcs Kit
-            </button>
-          </div>
+          <button type="button" class="btn btn-gold" onclick="openDrawer()">Open Cart</button>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- WHY PARTNER WITH JEWLLZ -->
-  <section class="why-partner-section">
+  <!-- Why Partner -->
+  <section class="why-section">
     <div class="container">
-      <div class="section-header">
-        <span class="section-eyebrow">Trust &amp; Advantage</span>
-        <h2 class="section-title">Why Partner With Jewllz</h2>
-        <p class="section-desc">
-          Your trust is our priority. Engineered from the ground up to empower Indian retail jewellers.
-        </p>
+      <div style="text-align: center; margin-bottom: 30px;">
+        <h2 style="font-size: 26px; color: var(--gold-dark);">Why Partner With Jewllz</h2>
       </div>
-
-      <div class="reasons-grid">
-        <div class="reason-card">
-          <div class="reason-icon-seal">01</div>
-          <h3 class="reason-title">100% Certified Silver</h3>
-          <p class="reason-desc">Certified 92.5+ silver purity with invoice transparency.</p>
+      <div class="why-grid">
+        <div class="why-card">
+          <h4 style="color: var(--gold-dark); margin-bottom: 4px;">100% Certified Silver</h4>
+          <p style="font-size: 12.5px; color: var(--text-muted);">Certified 92.5+ silver purity with invoice transparency.</p>
         </div>
-
-        <div class="reason-card">
-          <div class="reason-icon-seal">02</div>
-          <h3 class="reason-title">Transparent Pricing</h3>
-          <p class="reason-desc">Clear, fixed factory making charges per gram without hidden retail markups.</p>
+        <div class="why-card">
+          <h4 style="color: var(--gold-dark); margin-bottom: 4px;">Transparent Pricing</h4>
+          <p style="font-size: 12.5px; color: var(--text-muted);">Clear, fixed factory making charges per gram.</p>
         </div>
-
-        <div class="reason-card">
-          <div class="reason-icon-seal">03</div>
-          <h3 class="reason-title">Custom On-Demand Designs</h3>
-          <p class="reason-desc">Crafted cleanly to match real market trends, eliminating dead showroom inventory.</p>
+        <div class="why-card">
+          <h4 style="color: var(--gold-dark); margin-bottom: 4px;">Custom On-Demand</h4>
+          <p style="font-size: 12.5px; color: var(--text-muted);">Designs crafted only when demand exists.</p>
         </div>
-
-        <div class="reason-card">
-          <div class="reason-icon-seal">04</div>
-          <h3 class="reason-title">No Pressure to Buy</h3>
-          <p class="reason-desc">Explore sample kits freely, test customer interest in your boutique, and re-order on your terms.</p>
+        <div class="why-card">
+          <h4 style="color: var(--gold-dark); margin-bottom: 4px;">No Pressure to Buy</h4>
+          <p style="font-size: 12.5px; color: var(--text-muted);">Explore sample kits freely and reorder whenever ready.</p>
         </div>
-
-        <div class="reason-card">
-          <div class="reason-icon-seal">05</div>
-          <h3 class="reason-title">Jeweller-Assisted Buying</h3>
-          <p class="reason-desc">Personalized guidance from experienced wholesale specialists and craftsmen.</p>
+        <div class="why-card">
+          <h4 style="color: var(--gold-dark); margin-bottom: 4px;">Jeweller-Assisted</h4>
+          <p style="font-size: 12.5px; color: var(--text-muted);">Guidance from experienced silver specialists.</p>
         </div>
-
-        <div class="reason-card">
-          <div class="reason-icon-seal">06</div>
-          <h3 class="reason-title">Direct Factory Dispatch</h3>
-          <p class="reason-desc">Insured express delivery directly from factory manufacturing units.</p>
+        <div class="why-card">
+          <h4 style="color: var(--gold-dark); margin-bottom: 4px;">Factory Dispatch</h4>
+          <p style="font-size: 12.5px; color: var(--text-muted);">Insured express delivery direct from manufacturing.</p>
         </div>
-
-        <div class="reason-card">
-          <div class="reason-icon-seal">07</div>
-          <h3 class="reason-title">Secure Verified Payments</h3>
-          <p class="reason-desc">Instant 1-click UPI, dynamic QR payment verification, and secure SME gateway support.</p>
+        <div class="why-card">
+          <h4 style="color: var(--gold-dark); margin-bottom: 4px;">Secure Payments</h4>
+          <p style="font-size: 12.5px; color: var(--text-muted);">Instant UPI, dynamic QR and SME gateway payments.</p>
         </div>
-
-        <div class="reason-card">
-          <div class="reason-icon-seal">08</div>
-          <h3 class="reason-title">Long-Lasting Plating</h3>
-          <p class="reason-desc">High-precision electroplating ensures durable shine and long-lasting finish with proper care.</p>
+        <div class="why-card">
+          <h4 style="color: var(--gold-dark); margin-bottom: 4px;">Long-Lasting Plating</h4>
+          <p style="font-size: 12.5px; color: var(--text-muted);">Long-lasting plating with proper care.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FREQUENTLY ASKED QUESTIONS -->
+  <!-- FAQs -->
   <section class="faq-section">
     <div class="container">
-      <div class="section-header">
-        <span class="section-eyebrow">Clear Information</span>
-        <h2 class="section-title">Frequently Asked Questions</h2>
-        <p class="section-desc">
-          Everything you need to know about curating and ordering your wholesale jewellery kit.
-        </p>
+      <div style="text-align: center; margin-bottom: 30px;">
+        <h2 style="font-size: 26px; color: var(--gold-dark);">Frequently Asked Questions</h2>
       </div>
-
       <div class="faq-grid">
         <div class="faq-card">
-          <div class="faq-q">What is included in the Wholesale Jewelry Sample Kit?</div>
-          <div class="faq-a">Each kit includes authentic 92.5 Sterling Silver jewellery pieces hand-picked by you, authentic certified purity, protective pouches, and transparent cost breakdowns.</div>
+          <h4 style="color: var(--gold-dark); margin-bottom: 4px;">What is included in the Sample Kit?</h4>
+          <p style="font-size: 12.5px; color: var(--text-muted);">Each kit includes authentic 92.5 Sterling Silver jewellery pieces hand-picked by you with transparent cost breakdowns.</p>
         </div>
-
         <div class="faq-card">
-          <div class="faq-q">How does the factory making charge pricing work?</div>
-          <div class="faq-a">You get direct factory transparency: you pay introductory wholesale making charges (starting from &#8377;135/g to &#8377;155/g depending on kit tier), with zero retail markups, that too with ultra low MOQ.</div>
+          <h4 style="color: var(--gold-dark); margin-bottom: 4px;">How does making charge pricing work?</h4>
+          <p style="font-size: 12.5px; color: var(--text-muted);">You get factory transparency: fixed making charges (starting from ₹135/g to ₹155/g depending on kit tier) with ultra low MOQ.</p>
         </div>
-
         <div class="faq-card">
-          <div class="faq-q">Can I keep the sample pieces or sell them in my store?</div>
-          <div class="faq-a">Yes, 100%. All sample kit pieces are completely yours upon delivery. You can display them in your boutique showcase, test customer demand, or retail them immediately.</div>
+          <div class="faq-q">Can I keep the sample pieces or sell them?</div>
+          <p style="font-size: 12.5px; color: var(--text-muted);">Yes, 100%. All sample kit pieces are completely yours upon delivery to showcase or retail immediately.</p>
         </div>
-
         <div class="faq-card">
-          <div class="faq-q">How many pieces can I choose, and can I mix categories?</div>
-          <div class="faq-a">You can choose Mini Kit (5 pieces), Classic Kit (10 pieces), or Mega Kit (20 pieces). You have total freedom to mix rings, pendants, earrings, bracelets, and chains across the entire catalog.</div>
+          <h4 style="color: var(--gold-dark); margin-bottom: 4px;">How fast is dispatch?</h4>
+          <p style="font-size: 12.5px; color: var(--text-muted);">Dispatched via express insured courier within 24 to 48 hours. Mega kits include free delivery across India.</p>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="faq-card">
-          <div class="faq-q">How fast is dispatch and what are delivery charges?</div>
-          <div class="faq-a">Kits are dispatched via express insured courier within 24 to 48 hours of order placement. Mega kits include 100% free delivery across India.</div>
-        </div>
+  <!-- Community CTA -->
+  <section style="background: #1A1510; color: #FFF; padding: 40px 0; text-align: center;">
+    <div class="container">
+      <h3 style="color: var(--gold-soft); font-size: 22px; margin-bottom: 8px;">Join Our Official WhatsApp Community</h3>
+      <p style="font-size: 13px; color: #CCC; margin-bottom: 18px;">Get direct catalogue releases and batch availability updates.</p>
+      <a href="https://chat.whatsapp.com/Bxrgvnalg7nG2d5FcKlQCG" target="_blank" class="btn btn-whatsapp" style="padding: 10px 24px;">Join WhatsApp Community</a>
+    </div>
+  </section>
 
-        <div class="faq-card">
-          <div class="faq-q">What payment options are available?</div>
+  <!-- Footer -->
+  <footer style="background: #14100D; color: #AAA; padding: 30px 0; font-size: 12px; border-top: 1px solid rgba(255,255,255,0.08);">
+    <div class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+      <div>
+        <h4 style="color: var(--gold-soft); margin-bottom: 6px;">JEWLLZ BY INDOROUTE GLOBAL LLP</h4>
+        <p>Shiv Shakti Colony, Sukhdev Nagar, Chas, Bokaro, Jharkhand, 827013</p>
+        <p>Email: info@jewllz.in | Helpline: +91 9310370080</p>
+      </div>
+      <div>
+        <p>GSTIN: 20AALFI6848K1Z2 | PAN: AALFI6848K</p>
+        <p><a href="https://jewllz.in/" target="_blank" style="color: var(--gold-soft);">Visit Official Jewllz Portal</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Drawer Cart -->
+  <div class="drawer-overlay" id="drawer-overlay" onclick="closeDrawer()"></div>
+  <aside class="drawer" id="cart-drawer">
+    <div class="drawer-head">
+      <h3 style="font-size: 16px; color: var(--gold-dark);">Your Wholesale Sample Box</h3>
+      <button type="button" style="background:none; border:none; font-size:22px; cursor:pointer;" onclick="closeDrawer()">&times;</button>
+    </div>
+    <div class="drawer-body" id="drawer-items">
+      <p style="text-align: center; color: #888; margin-top: 40px;">Your sample box is empty.<br>Add items using the Add to Wholesale Box button.</p>
+    </div>
+    <div class="drawer-foot">
+      <div style="display: flex; justify-content: space-between; font-size: 13px;">
+        <span>Total Selected:</span>
+        <strong id="cart-qty-text">0 Pieces</strong>
+      </div>
+      <div style="display: flex; justify-content: space-between; font-size: 13px;">
+        <span>Total Net Weight:</span>
+        <strong id="cart-weight-text">0.00 Grams</strong>
+      </div>
+      <div id="cart-tier-note" style="font-size: 11px; text-align: center; background: var(--gold-cream); padding: 6px; border-radius: 4px; color: var(--gold-dark); font-weight: 600;">
+        Add min. 5 pcs (20g) for Mini Kit Tier
+      </div>
+      <button type="button" class="btn btn-whatsapp" style="width: 100%;" onclick="checkoutWhatsApp()">
+        Order via WhatsApp Now
+      </button>
+    </div>
+  </aside>
+
+  <!-- Sticky Dock -->
+  <div class="dock">
+    <button type="button" class="btn btn-whatsapp" style="padding: 6px 14px; font-size: 12px; border-radius: 20px;" onclick="openDrawer()">
+      Wholesale Box <span class="dock-count" id="dock-count">0</span>
+    </button>
+    <button type="button" class="btn btn-gold" style="padding: 6px 14px; font-size: 12px; border-radius: 20px;" onclick="window.print()">
+      PDF
+    </button>
+  </div>
+
+  <script>
+    // State
+    const cart = new Map();
+
+    // Zoom Handlers
+    function toggleZoom(wrap) {
+      wrap.classList.toggle('zoomed');
+      if (!wrap.classList.contains('zoomed')) {
+        const img = wrap.querySelector('img');
+        if (img) img.style.transformOrigin = 'center center';
+      }
+    }
+    function doZoom(e, wrap) {
+      if (!wrap.classList.contains('zoomed')) return;
+      const rect = wrap.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      const img = wrap.querySelector('img');
+      if (img) img.style.transformOrigin = `${x}% ${y}%`;
+    }
+
+    // Toggle 18 Extra Designs
+    function toggleExtra() {
+      const el = document.getElementById('extra-designs');
+      const btn = document.getElementById('btn-toggle-extra');
+      if (el.style.display === 'block') {
+        el.style.display = 'none';
+        btn.innerText = 'View More Designs (+18 Items)';
+        document.getElementById('card-JW05').scrollIntoView({ behavior: 'smooth' });
+      } else {
+        el.style.display = 'block';
+        btn.innerText = 'Show Less Designs';
+      }
+    }
+
+    // Quantity Stepper
+    function changeQty(code, delta) {
+      const input = document.getElementById(`qty-${code}`);
+      if (!input) return;
+      let val = parseInt(input.value) || 1;
+      val += delta;
+      if (val < 1) val = 1;
+      input.value = val;
+    }
+
+    // Add to Cart
+    function handleAddToCart(btn) {
+      const code = btn.getAttribute('data-code');
+      const weight = parseFloat(btn.getAttribute('data-weight'));
+      const img = btn.getAttribute('data-img');
+      const input = document.getElementById(`qty-${code}`);
+      const qty = input ? parseInt(input.value) || 1 : 1;
+
+      if (cart.has(code)) {
+        cart.get(code).qty += qty;
+      } else {
+        cart.set(code, { code, weight, img, qty });
+      }
+
+      btn.classList.add('added');
+      btn.innerText = 'Added ✓';
+      setTimeout(() => {
+        btn.classList.remove('added');
+        btn.innerText = 'Add to Wholesale Box';
+      }, 1000);
+
+      renderCart();
+      openDrawer();
+    }
+
+    function removeCartItem(code) {
+      cart.delete(code);
+      renderCart();
+    }
+
+    function renderCart() {
+      const box = document.getElementById('drawer-items');
+      let totalQty = 0;
+      let totalWeight = 0;
+
+      if (cart.size === 0) {
+        box.innerHTML = '<p style="text-align: center; color: #888; margin-top: 40px;">Your sample box is empty.<br>Add items using the Add to Wholesale Box button.</p>';
+      } else {
+        box.innerHTML = '';
+        cart.forEach(item => {
+          totalQty += item.qty;
+          totalWeight += (item.weight * item.qty);
+
+          const div = document.createElement('div');
+          div.className = 'drawer-item';
+          div.innerHTML = `
+            <img src="${item.img}" alt="${item.code}">
+            <div>
+              <div style="font-size: 13px; font-weight: 700; color: #684209;">${item.code} (x${item.qty})</div>
+              <div style="font-size: 11.5px; color: #666;">${item.weight}g each | Total: ${(item.weight * item.qty).toFixed(2)}g</div>
+            </div>
+            <button type="button" style="background:none; border:none; color:#C62828; font-size:18px; cursor:pointer;" onclick="removeCartItem('${item.code}')">&times;</button>
+          `;
+          box.appendChild(div);
+        });
+      }
+
+      document.getElementById('cart-qty-text').innerText = `${totalQty} Pieces`;
+      document.getElementById('cart-weight-text').innerText = `${totalWeight.toFixed(2)} Grams`;
+      document.getElementById('dock-count').innerText = totalQty;
+
+      const note = document.getElementById('cart-tier-note');
+      if (totalQty >= 20 && totalWeight >= 90) {
+        note.innerHTML = '<span style="color:#1B5E20;">QUALIFIED: Mega Kit (20 Pcs / 90g)</span> - Free Shipping!';
+      } else if (totalQty >= 10 && totalWeight >= 45) {
+        note.innerHTML = '<span style="color:#1565C0;">QUALIFIED: Classic Kit (10 Pcs / 45g)</span>';
+      } else if (totalQty >= 5 && totalWeight >= 20) {
+        note.innerHTML = '<span style="color:#E65100;">QUALIFIED: Mini Kit (5 Pcs / 20g)</span>';
+      } else {
+        note.innerHTML = 'Add min. 5 pcs (20g) for Mini Kit Tier';
+      }
+    }
+
+    // Normal Overlay (No browser history traps)
+    function openDrawer() {
+      document.getElementById('cart-drawer').classList.add('open');
+      document.getElementById('drawer-overlay').classList.add('open');
+    }
+    function closeDrawer() {
+      document.getElementById('cart-drawer').classList.remove('open');
+      document.getElementById('drawer-overlay').classList.remove('open');
+    }
+
+    // Checkout via WhatsApp
+    function checkoutWhatsApp() {
+      const phone = '919310370080';
+      if (cart.size === 0) {
+        window.open(`https://wa.me/${phone}?text=${encodeURIComponent('Hello Jewllz Team, I would like to inquire about the Wholesale Sample Kits.')}`, '_blank');
+        return;
+      }
+
+      let msg = 'Hello Jewllz Team,\nI want to place an order for the following 92.5 silver items:\n\n';
+      let i = 1;
+      let totalQty = 0;
+      let totalWeight = 0;
+
+      cart.forEach(item => {
+        msg += `${i}. Code: ${item.code} | Qty: ${item.qty} | Weight: ${(item.weight * item.qty).toFixed(2)}g\n   Image: ${item.img}\n\n`;
+        totalQty += item.qty;
+        totalWeight += (item.weight * item.qty);
+        i++;
+      });
+
+      msg += `Total Qty: ${totalQty} Pieces\n`;
+      msg += `Estimated Weight: ${totalWeight.toFixed(2)} Grams\n\n`;
+      msg += 'Please send invoice calculation.';
+
+      window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`, '_blank');
+    }
+  </script>
+</body>
+</html>
