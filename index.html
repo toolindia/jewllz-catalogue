@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jewllz | Luxury 92.5 Sterling Silver Wholesale Catalogue</title>
+  
+  <!-- Fonts: Cinzel, Cormorant Garamond, Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            royal: {
+              black: '#0D0C0A',
+              charcoal: '#171512',
+              cream: '#FDFBF7',
+              parchment: '#F5EFE6',
+              goldBase: '#B8860B',
+              goldDark: '#785208',
+              goldDeep: '#523704',
+              goldBorder: '#D4AF37',
+              goldLight: '#E6CA65'
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            display: ['"Cinzel"', 'serif'],
+            sans: ['"Montserrat"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Luxury styling tokens */
+    :root {
+      --gold-grad: linear-gradient(135deg, #785208 0%, #B8860B 50%, #E6CA65 100%);
+      --gold-foil: linear-gradient(145deg, #f7ecd5 0%, #ecd49e 50%, #c4993a 100%);
+      --dark-foil: linear-gradient(180deg, #1b1915 0%, #0d0c0a 100%);
+    }
+
+    body {
+      background-color: #FDFBF7;
+      color: #171512;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .font-cinzel { font-family: 'Cinzel', serif; }
+    .font-cormorant { font-family: 'Cormorant Garamond', Georgia, serif; }
+
+    .gold-title {
+      background: var(--gold-grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .gold-border-ornate {
+      border: 1px solid #D4AF37;
+      box-shadow: 0 0 0 3px #FDFBF7, 0 0 0 4px #D4AF37;
+    }
+
+    .gold-foil-bg {
+      background: var(--gold-foil);
+    }
+
+    /* Scroll Creative Reveal Animations */
+    .reveal-elem {
+      opacity: 0;
+      transform: translateY(35px) scale(0.98);
+      transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+
+    .reveal-elem.visible {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    /* Subtle Gold Shimmer Effect */
+    @keyframes goldShimmer {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+    .shimmer-badge {
+      background: linear-gradient(90deg, #523704 0%, #B8860B 50%, #523704 100%);
+      background-size: 200% 100%;
+      animation: goldShimmer 6s infinite linear;
+    }
+
+    /* Print & A4 PDF Formatting */
+    @media print {
+      @page {
+        size: A4 portrait;
+        margin: 12mm 10mm;
+      }
+      body {
+        background-color: #FFFFFF !important;
+        color: #000000 !important;
+        font-size: 11pt;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .page-break-before {
+        page-break-before: always !important;
+        break-before: page !important;
+      }
+      .page-break-after {
+        page-break-after: always !important;
+        break-after: page !important;
+      }
+      .avoid-break {
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+      }
+      .reveal-elem {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+      .shadow-2xl, .shadow-xl, .shadow-lg, .shadow-md {
+        box-shadow: none !important;
+      }
+      .product-page-item {
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        margin-bottom: 24mm !important;
+      }
+    }
+  </style>
+</head>
+<body class="selection:bg-amber-200 selection:text-amber-950">
+
+  <!-- Floating PDF Download & Contact Ribbon (Hidden in Print) -->
+  <aside class="no-print fixed bottom-6 right-6 z-50 flex flex-col sm:flex-row items-center gap-3">
+    <button onclick="window.print()" class="flex items-center space-x-2 bg-royal-charcoal text-amber-200 border-2 border-royal-goldBorder hover:bg-black font-cinzel font-bold text-xs uppercase px-5 py-3.5 rounded-full shadow-2xl transition hover:scale-105 active:scale-95">
+      <svg class="w-4 h-4 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+      </svg>
+      <span>Download PDF Catalogue</span>
+    </button>
+    <a href="https://wa.me/919310370080" class="flex items-center space-x-2 bg-emerald-800 text-white hover:bg-emerald-700 font-sans font-semibold text-xs px-5 py-3.5 rounded-full shadow-2xl transition hover:scale-105">
+      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.941-.708-1.792s.448-1.272.607-1.446c.159-.175.348-.219.463-.219.116 0 .232.001.333.006.107.005.249-.041.389.296.145.348.492 1.2.535 1.288.043.088.072.19.014.305-.058.116-.087.189-.174.291-.087.102-.183.228-.261.306-.087.087-.179.182-.077.357.101.174.45 1.044 1.159 1.674.526.467.97.611 1.115.683.145.072.232.059.319-.043.087-.101.376-.436.478-.582.101-.145.203-.122.34-.072.138.05 1.278.602 1.498.711.22.109.366.163.42.253.054.09.054.522-.09.927z"/>
+      </svg>
+      <span>Order on WhatsApp</span>
+    </a>
+  </aside>
+
+  <!-- Legal Header Bar -->
+  <header class="bg-royal-charcoal text-amber-200 border-b border-royal-goldDark text-[11px] py-2 px-4 tracking-wider">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3 text-center sm:text-left">
+      <div>
+        <span class="font-semibold text-white">Indoroute Global LLP</span> (Govt. Registered MCA Entity) &bull; BIS Hallmarked 92.5 Sterling Silver &bull; GSTIN: <span class="font-mono text-amber-300">20AALFI6848K1Z2</span>
+      </div>
+      <div class="flex items-center space-x-4 mx-auto sm:mx-0">
+        <a href="https://jewllz.in/" target="_blank" rel="noopener noreferrer" class="hover:text-white underline">jewllz.in</a>
+        <span>Trade Helpline: +91 9310370080</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Terms & Commercial Conditions (Top Placement Copy) -->
+  <section class="bg-amber-50/80 border-b border-amber-200/80 px-4 py-2.5 text-center text-xs text-royal-goldDark">
+    <p class="max-w-6xl mx-auto leading-relaxed">
+      <strong>Standard Trade Terms:</strong> Live 92.5 bullion rates are locked at proforma generation. All weights are net silver weights. Every sample kit includes custom unboxing video, collaboration certification, and white-label digital showcase domain.
+    </p>
+  </section>
+
+  <!-- COVER SECTION -->
+  <section class="reveal-elem relative max-w-5xl mx-auto px-4 pt-10 pb-8 text-center">
+    <!-- Uncut Logo Presentation Container -->
+    <div class="flex justify-center mb-6">
+      <div class="p-3 bg-white rounded-2xl shadow-xl border-2 border-royal-goldBorder inline-block">
+        <img 
+          src="https://i.pinimg.com/736x/f8/8e/28/f88e2848edc91933b8554b2c839c81ea.jpg" 
+          alt="Jewllz Fine Jewellery Official Logo" 
+          class="h-28 sm:h-36 md:h-44 w-auto object-contain mx-auto block"
+          loading="eager"
+        />
+      </div>
+    </div>
+
+    <!-- Royal Typography Header -->
+    <div class="space-y-3">
+      <span class="inline-block px-5 py-1 text-xs font-cinzel font-bold tracking-[0.3em] uppercase text-royal-goldDark bg-amber-100/70 border border-royal-goldBorder/60 rounded-full">
+        Direct B2B Factory Catalogue
+      </span>
+      <h1 class="text-4xl sm:text-6xl font-cinzel font-black tracking-wider text-royal-charcoal uppercase">
+        JEWLLZ
+      </h1>
+      <p class="text-2xl sm:text-3xl font-cormorant italic font-semibold gold-title">
+        Quality You Can Trust
+      </p>
+      <div class="w-24 h-0.5 bg-royal-goldBorder mx-auto my-3"></div>
+      <p class="text-sm sm:text-base font-cinzel tracking-wider text-stone-700 uppercase font-semibold">
+        Premium Lightweight 92.5 Silver Wholesaler
+      </p>
+      <p class="text-sm font-cormorant italic text-stone-600 text-lg">
+        "Specially Crafted for New Generation Retailers"
+      </p>
+    </div>
+
+    <!-- Quick Assurance Badges -->
+    <div class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl mx-auto text-xs font-semibold text-royal-goldDeep">
+      <div class="p-2.5 rounded-xl bg-white border border-royal-goldBorder/70 shadow-sm">
+        BIS Hallmarked 92.5
+      </div>
+      <div class="p-2.5 rounded-xl bg-white border border-royal-goldBorder/70 shadow-sm">
+        Live Bullion Formula
+      </div>
+      <div class="p-2.5 rounded-xl bg-white border border-royal-goldBorder/70 shadow-sm">
+        1-Year Anti-Tarnish Finish
+      </div>
+      <div class="p-2.5 rounded-xl bg-white border border-royal-goldBorder/70 shadow-sm">
+        Instant QR Smart Tagging
+      </div>
+    </div>
+  </section>
+
+  <!-- 1:1 PRODUCT SHOWCASE -->
+  <section class="max-w-4xl mx-auto px-4 py-8">
+    <div class="text-center mb-10 reveal-elem">
+      <span class="text-xs font-cinzel uppercase tracking-[0.3em] text-royal-goldDark font-bold">Curated Masterpieces</span>
+      <h2 class="text-3xl sm:text-4xl font-cormorant font-bold text-royal-charcoal mt-1">Lightweight 92.5 Hallmarked Gallery</h2>
+      <p class="text-xs text-stone-500 max-w-lg mx-auto mt-2">
+        Each item is individually crafted, BIS hallmarked, and photographed at true 1:1 square aspect ratio for retail preview.
+      </p>
+    </div>
+
+    <!-- Big Product Showcase Cards -->
+    <div class="space-y-16">
+
+      <!-- Product Item 1 -->
+      <article class="reveal-elem product-page-item bg-white p-5 sm:p-8 rounded-3xl border-2 border-royal-goldBorder shadow-xl max-w-2xl mx-auto">
+        <div class="w-full aspect-square bg-[#FBF9F5] rounded-2xl overflow-hidden border border-amber-200/60 p-2 flex items-center justify-center relative">
+          <img 
+            src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1786898866894-j370vy8cg.avif" 
+            alt="Jewllz 92.5 Silver Design 4.83g" 
+            class="w-full h-full object-cover rounded-xl"
+            loading="lazy"
+          />
+          <div class="absolute top-4 left-4 bg-royal-charcoal/90 text-amber-200 text-xs font-cinzel px-3 py-1 rounded-md border border-royal-goldBorder backdrop-blur-sm">
+            BIS 925 Hallmark
+          </div>
+        </div>
+        <div class="mt-6 flex flex-wrap items-center justify-between border-t border-amber-200/80 pt-5 gap-3">
+          <div>
+            <span class="text-xs uppercase font-cinzel tracking-wider text-stone-500 font-semibold block">Design Code #JLZ-101</span>
+            <h3 class="text-xl font-cormorant font-bold text-royal-charcoal">Fine 92.5 Sterling Silver Edition</h3>
+          </div>
+          <div class="bg-amber-50 px-5 py-2.5 rounded-xl border border-royal-goldBorder text-right">
+            <span class="text-[11px] font-cinzel uppercase text-royal-goldDark block font-semibold">Net Silver Weight</span>
+            <span class="text-2xl font-cinzel font-bold text-royal-charcoal">4.83 g</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product Item 2 -->
+      <article class="reveal-elem product-page-item bg-white p-5 sm:p-8 rounded-3xl border-2 border-royal-goldBorder shadow-xl max-w-2xl mx-auto">
+        <div class="w-full aspect-square bg-[#FBF9F5] rounded-2xl overflow-hidden border border-amber-200/60 p-2 flex items-center justify-center relative">
+          <img 
+            src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345094591-6t8xtjba4.avif" 
+            alt="Jewllz 92.5 Silver Design 5.10g" 
+            class="w-full h-full object-cover rounded-xl"
+            loading="lazy"
+          />
+          <div class="absolute top-4 left-4 bg-royal-charcoal/90 text-amber-200 text-xs font-cinzel px-3 py-1 rounded-md border border-royal-goldBorder backdrop-blur-sm">
+            BIS 925 Hallmark
+          </div>
+        </div>
+        <div class="mt-6 flex flex-wrap items-center justify-between border-t border-amber-200/80 pt-5 gap-3">
+          <div>
+            <span class="text-xs uppercase font-cinzel tracking-wider text-stone-500 font-semibold block">Design Code #JLZ-102</span>
+            <h3 class="text-xl font-cormorant font-bold text-royal-charcoal">Fine 92.5 Sterling Silver Edition</h3>
+          </div>
+          <div class="bg-amber-50 px-5 py-2.5 rounded-xl border border-royal-goldBorder text-right">
+            <span class="text-[11px] font-cinzel uppercase text-royal-goldDark block font-semibold">Net Silver Weight</span>
+            <span class="text-2xl font-cinzel font-bold text-royal-charcoal">5.10 g</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product Item 3 -->
+      <article class="reveal-elem product-page-item bg-white p-5 sm:p-8 rounded-3xl border-2 border-royal-goldBorder shadow-xl max-w-2xl mx-auto">
+        <div class="w-full aspect-square bg-[#FBF9F5] rounded-2xl overflow-hidden border border-amber-200/60 p-2 flex items-center justify-center relative">
+          <img 
+            src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773160588677-tl2g8c96z.avif" 
+            alt="Jewllz 92.5 Silver Design 4.50g" 
+            class="w-full h-full object-cover rounded-xl"
+            loading="lazy"
+          />
+          <div class="absolute top-4 left-4 bg-royal-charcoal/90 text-amber-200 text-xs font-cinzel px-3 py-1 rounded-md border border-royal-goldBorder backdrop-blur-sm">
+            BIS 925 Hallmark
+          </div>
+        </div>
+        <div class="mt-6 flex flex-wrap items-center justify-between border-t border-amber-200/80 pt-5 gap-3">
+          <div>
+            <span class="text-xs uppercase font-cinzel tracking-wider text-stone-500 font-semibold block">Design Code #JLZ-103</span>
+            <h3 class="text-xl font-cormorant font-bold text-royal-charcoal">Fine 92.5 Sterling Silver Edition</h3>
+          </div>
+          <div class="bg-amber-50 px-5 py-2.5 rounded-xl border border-royal-goldBorder text-right">
+            <span class="text-[11px] font-cinzel uppercase text-royal-goldDark block font-semibold">Net Silver Weight</span>
+            <span class="text-2xl font-cinzel font-bold text-royal-charcoal">4.50 g</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product Item 4 -->
+      <article class="reveal-elem product-page-item bg-white p-5 sm:p-8 rounded-3xl border-2 border-royal-goldBorder shadow-xl max-w-2xl mx-auto">
+        <div class="w-full aspect-square bg-[#FBF9F5] rounded-2xl overflow-hidden border border-amber-200/60 p-2 flex items-center justify-center relative">
+          <img 
+            src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781344951823-pa2almxjq.avif" 
+            alt="Jewllz 92.5 Silver Design 4.50g" 
+            class="w-full h-full object-cover rounded-xl"
+            loading="lazy"
+          />
+          <div class="absolute top-4 left-4 bg-royal-charcoal/90 text-amber-200 text-xs font-cinzel px-3 py-1 rounded-md border border-royal-goldBorder backdrop-blur-sm">
+            BIS 925 Hallmark
+          </div>
+        </div>
+        <div class="mt-6 flex flex-wrap items-center justify-between border-t border-amber-200/80 pt-5 gap-3">
+          <div>
+            <span class="text-xs uppercase font-cinzel tracking-wider text-stone-500 font-semibold block">Design Code #JLZ-104</span>
+            <h3 class="text-xl font-cormorant font-bold text-royal-charcoal">Fine 92.5 Sterling Silver Edition</h3>
+          </div>
+          <div class="bg-amber-50 px-5 py-2.5 rounded-xl border border-royal-goldBorder text-right">
+            <span class="text-[11px] font-cinzel uppercase text-royal-goldDark block font-semibold">Net Silver Weight</span>
+            <span class="text-2xl font-cinzel font-bold text-royal-charcoal">4.50 g</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product Item 5 -->
+      <article class="reveal-elem product-page-item bg-white p-5 sm:p-8 rounded-3xl border-2 border-royal-goldBorder shadow-xl max-w-2xl mx-auto">
+        <div class="w-full aspect-square bg-[#FBF9F5] rounded-2xl overflow-hidden border border-amber-200/60 p-2 flex items-center justify-center relative">
+          <img 
+            src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781344929948-c6thg7mug.avif" 
+            alt="Jewllz 92.5 Silver Design 5.64g" 
+            class="w-full h-full object-cover rounded-xl"
+            loading="lazy"
+          />
+          <div class="absolute top-4 left-4 bg-royal-charcoal/90 text-amber-200 text-xs font-cinzel px-3 py-1 rounded-md border border-royal-goldBorder backdrop-blur-sm">
+            BIS 925 Hallmark
+          </div>
+        </div>
+        <div class="mt-6 flex flex-wrap items-center justify-between border-t border-amber-200/80 pt-5 gap-3">
+          <div>
+            <span class="text-xs uppercase font-cinzel tracking-wider text-stone-500 font-semibold block">Design Code #JLZ-105</span>
+            <h3 class="text-xl font-cormorant font-bold text-royal-charcoal">Fine 92.5 Sterling Silver Edition</h3>
+          </div>
+          <div class="bg-amber-50 px-5 py-2.5 rounded-xl border border-royal-goldBorder text-right">
+            <span class="text-[11px] font-cinzel uppercase text-royal-goldDark block font-semibold">Net Silver Weight</span>
+            <span class="text-2xl font-cinzel font-bold text-royal-charcoal">5.64 g</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product Item 6 -->
+      <article class="reveal-elem product-page-item bg-white p-5 sm:p-8 rounded-3xl border-2 border-royal-goldBorder shadow-xl max-w-2xl mx-auto">
+        <div class="w-full aspect-square bg-[#FBF9F5] rounded-2xl overflow-hidden border border-amber-200/60 p-2 flex items-center justify-center relative">
+          <img 
+            src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781344986881-e5bqoksiq.avif" 
+            alt="Jewllz 92.5 Silver Design 4.43g" 
+            class="w-full h-full object-cover rounded-xl"
+            loading="lazy"
+          />
+          <div class="absolute top-4 left-4 bg-royal-charcoal/90 text-amber-200 text-xs font-cinzel px-3 py-1 rounded-md border border-royal-goldBorder backdrop-blur-sm">
+            BIS 925 Hallmark
+          </div>
+        </div>
+        <div class="mt-6 flex flex-wrap items-center justify-between border-t border-amber-200/80 pt-5 gap-3">
+          <div>
+            <span class="text-xs uppercase font-cinzel tracking-wider text-stone-500 font-semibold block">Design Code #JLZ-106</span>
+            <h3 class="text-xl font-cormorant font-bold text-royal-charcoal">Fine 92.5 Sterling Silver Edition</h3>
+          </div>
+          <div class="bg-amber-50 px-5 py-2.5 rounded-xl border border-royal-goldBorder text-right">
+            <span class="text-[11px] font-cinzel uppercase text-royal-goldDark block font-semibold">Net Silver Weight</span>
+            <span class="text-2xl font-cinzel font-bold text-royal-charcoal">4.43 g</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product Item 7 -->
+      <article class="reveal-elem product-page-item bg-white p-5 sm:p-8 rounded-3xl border-2 border-royal-goldBorder shadow-xl max-w-2xl mx-auto">
+        <div class="w-full aspect-square bg-[#FBF9F5] rounded-2xl overflow-hidden border border-amber-200/60 p-2 flex items-center justify-center relative">
+          <img 
+            src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345072112-n7qpio8uf.avif" 
+            alt="Jewllz 92.5 Silver Design 5.30g" 
+            class="w-full h-full object-cover rounded-xl"
+            loading="lazy"
+          />
+          <div class="absolute top-4 left-4 bg-royal-charcoal/90 text-amber-200 text-xs font-cinzel px-3 py-1 rounded-md border border-royal-goldBorder backdrop-blur-sm">
+            BIS 925 Hallmark
+          </div>
+        </div>
+        <div class="mt-6 flex flex-wrap items-center justify-between border-t border-amber-200/80 pt-5 gap-3">
+          <div>
+            <span class="text-xs uppercase font-cinzel tracking-wider text-stone-500 font-semibold block">Design Code #JLZ-107</span>
+            <h3 class="text-xl font-cormorant font-bold text-royal-charcoal">Fine 92.5 Sterling Silver Edition</h3>
+          </div>
+          <div class="bg-amber-50 px-5 py-2.5 rounded-xl border border-royal-goldBorder text-right">
+            <span class="text-[11px] font-cinzel uppercase text-royal-goldDark block font-semibold">Net Silver Weight</span>
+            <span class="text-2xl font-cinzel font-bold text-royal-charcoal">5.30 g</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product Item 8 -->
+      <article class="reveal-elem product-page-item bg-white p-5 sm:p-8 rounded-3xl border-2 border-royal-goldBorder shadow-xl max-w-2xl mx-auto">
+        <div class="w-full aspect-square bg-[#FBF9F5] rounded-2xl overflow-hidden border border-amber-200/60 p-2 flex items-center justify-center relative">
+          <img 
+            src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345050324-f3fxraj70.avif" 
+            alt="Jewllz 92.5 Silver Design 4.14g" 
+            class="w-full h-full object-cover rounded-xl"
+            loading="lazy"
+          />
+          <div class="absolute top-4 left-4 bg-royal-charcoal/90 text-amber-200 text-xs font-cinzel px-3 py-1 rounded-md border border-royal-goldBorder backdrop-blur-sm">
+            BIS 925 Hallmark
+          </div>
+        </div>
+        <div class="mt-6 flex flex-wrap items-center justify-between border-t border-amber-200/80 pt-5 gap-3">
+          <div>
+            <span class="text-xs uppercase font-cinzel tracking-wider text-stone-500 font-semibold block">Design Code #JLZ-108</span>
+            <h3 class="text-xl font-cormorant font-bold text-royal-charcoal">Fine 92.5 Sterling Silver Edition</h3>
+          </div>
+          <div class="bg-amber-50 px-5 py-2.5 rounded-xl border border-royal-goldBorder text-right">
+            <span class="text-[11px] font-cinzel uppercase text-royal-goldDark block font-semibold">Net Silver Weight</span>
+            <span class="text-2xl font-cinzel font-bold text-royal-charcoal">4.14 g</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product Item 9 -->
+      <article class="reveal-elem product-page-item bg-white p-5 sm:p-8 rounded-3xl border-2 border-royal-goldBorder shadow-xl max-w-2xl mx-auto">
+        <div class="w-full aspect-square bg-[#FBF9F5] rounded-2xl overflow-hidden border border-amber-200/60 p-2 flex items-center justify-center relative">
+          <img 
+            src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345032245-6hrlyzmmi.avif" 
+            alt="Jewllz 92.5 Silver Design 5.14g" 
+            class="w-full h-full object-cover rounded-xl"
+            loading="lazy"
+          />
+          <div class="absolute top-4 left-4 bg-royal-charcoal/90 text-amber-200 text-xs font-cinzel px-3 py-1 rounded-md border border-royal-goldBorder backdrop-blur-sm">
+            BIS 925 Hallmark
+          </div>
+        </div>
+        <div class="mt-6 flex flex-wrap items-center justify-between border-t border-amber-200/80 pt-5 gap-3">
+          <div>
+            <span class="text-xs uppercase font-cinzel tracking-wider text-stone-500 font-semibold block">Design Code #JLZ-109</span>
+            <h3 class="text-xl font-cormorant font-bold text-royal-charcoal">Fine 92.5 Sterling Silver Edition</h3>
+          </div>
+          <div class="bg-amber-50 px-5 py-2.5 rounded-xl border border-royal-goldBorder text-right">
+            <span class="text-[11px] font-cinzel uppercase text-royal-goldDark block font-semibold">Net Silver Weight</span>
+            <span class="text-2xl font-cinzel font-bold text-royal-charcoal">5.14 g</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product Item 10 -->
+      <article class="reveal-elem product-page-item bg-white p-5 sm:p-8 rounded-3xl border-2 border-royal-goldBorder shadow-xl max-w-2xl mx-auto">
+        <div class="w-full aspect-square bg-[#FBF9F5] rounded-2xl overflow-hidden border border-amber-200/60 p-2 flex items-center justify-center relative">
+          <img 
+            src="https://glimya.com/jewel/products/JEWLLZ-MSUN33N63YJ6/Gold_bracelet_worn_on_wrist_202608091104-1789319426684-309228579.avif" 
+            alt="Gold bracelet lightweight 4.64g" 
+            class="w-full h-full object-cover rounded-xl"
+            loading="lazy"
+          />
+          <div class="absolute top-4 left-4 bg-royal-charcoal/90 text-amber-200 text-xs font-cinzel px-3 py-1 rounded-md border border-royal-goldBorder backdrop-blur-sm">
+            BIS 925 Hallmark
+          </div>
+        </div>
+        <div class="mt-6 flex flex-wrap items-center justify-between border-t border-amber-200/80 pt-5 gap-3">
+          <div>
+            <span class="text-xs uppercase font-cinzel tracking-wider text-stone-500 font-semibold block">Design Code #JLZ-110</span>
+            <h3 class="text-xl font-cormorant font-bold text-royal-charcoal">Luxe Gold Finish Wrist Bracelet</h3>
+          </div>
+          <div class="bg-amber-50 px-5 py-2.5 rounded-xl border border-royal-goldBorder text-right">
+            <span class="text-[11px] font-cinzel uppercase text-royal-goldDark block font-semibold">Net Silver Weight</span>
+            <span class="text-2xl font-cinzel font-bold text-royal-charcoal">4.64 g</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product Item 11 -->
+      <article class="reveal-elem product-page-item bg-white p-5 sm:p-8 rounded-3xl border-2 border-royal-goldBorder shadow-xl max-w-2xl mx-auto">
+        <div class="w-full aspect-square bg-[#FBF9F5] rounded-2xl overflow-hidden border border-amber-200/60 p-2 flex items-center justify-center relative">
+          <img 
+            src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345246039-khu40emdz.avif" 
+            alt="Jewllz 92.5 Silver Design 4.64g" 
+            class="w-full h-full object-cover rounded-xl"
+            loading="lazy"
+          />
+          <div class="absolute top-4 left-4 bg-royal-charcoal/90 text-amber-200 text-xs font-cinzel px-3 py-1 rounded-md border border-royal-goldBorder backdrop-blur-sm">
+            BIS 925 Hallmark
+          </div>
+        </div>
+        <div class="mt-6 flex flex-wrap items-center justify-between border-t border-amber-200/80 pt-5 gap-3">
+          <div>
+            <span class="text-xs uppercase font-cinzel tracking-wider text-stone-500 font-semibold block">Design Code #JLZ-111</span>
+            <h3 class="text-xl font-cormorant font-bold text-royal-charcoal">Fine 92.5 Sterling Silver Edition</h3>
+          </div>
+          <div class="bg-amber-50 px-5 py-2.5 rounded-xl border border-royal-goldBorder text-right">
+            <span class="text-[11px] font-cinzel uppercase text-royal-goldDark block font-semibold">Net Silver Weight</span>
+            <span class="text-2xl font-cinzel font-bold text-royal-charcoal">4.64 g</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product Item 12 -->
+      <article class="reveal-elem product-page-item bg-white p-5 sm:p-8 rounded-3xl border-2 border-royal-goldBorder shadow-xl max-w-2xl mx-auto">
+        <div class="w-full aspect-square bg-[#FBF9F5] rounded-2xl overflow-hidden border border-amber-200/60 p-2 flex items-center justify-center relative">
+          <img 
+            src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345195532-9mlw0alkq.avif" 
+            alt="Jewllz 92.5 Silver Design 3.93g" 
+            class="w-full h-full object-cover rounded-xl"
+            loading="lazy"
+          />
+          <div class="absolute top-4 left-4 bg-royal-charcoal/90 text-amber-200 text-xs font-cinzel px-3 py-1 rounded-md border border-royal-goldBorder backdrop-blur-sm">
+            BIS 925 Hallmark
+          </div>
+        </div>
+        <div class="mt-6 flex flex-wrap items-center justify-between border-t border-amber-200/80 pt-5 gap-3">
+          <div>
+            <span class="text-xs uppercase font-cinzel tracking-wider text-stone-500 font-semibold block">Design Code #JLZ-112</span>
+            <h3 class="text-xl font-cormorant font-bold text-royal-charcoal">Fine 92.5 Sterling Silver Edition</h3>
+          </div>
+          <div class="bg-amber-50 px-5 py-2.5 rounded-xl border border-royal-goldBorder text-right">
+            <span class="text-[11px] font-cinzel uppercase text-royal-goldDark block font-semibold">Net Silver Weight</span>
+            <span class="text-2xl font-cinzel font-bold text-royal-charcoal">3.93 g</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product Item 13 -->
+      <article class="reveal-elem product-page-item bg-white p-5 sm:p-8 rounded-3xl border-2 border-royal-goldBorder shadow-xl max-w-2xl mx-auto">
+        <div class="w-full aspect-square bg-[#FBF9F5] rounded-2xl overflow-hidden border border-amber-200/60 p-2 flex items-center justify-center relative">
+          <img 
+            src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345167903-f98qzfpg8.avif" 
+            alt="Jewllz 92.5 Silver Design 3.93g" 
+            class="w-full h-full object-cover rounded-xl"
+            loading="lazy"
+          />
+          <div class="absolute top-4 left-4 bg-royal-charcoal/90 text-amber-200 text-xs font-cinzel px-3 py-1 rounded-md border border-royal-goldBorder backdrop-blur-sm">
+            BIS 925 Hallmark
+          </div>
+        </div>
+        <div class="mt-6 flex flex-wrap items-center justify-between border-t border-amber-200/80 pt-5 gap-3">
+          <div>
+            <span class="text-xs uppercase font-cinzel tracking-wider text-stone-500 font-semibold block">Design Code #JLZ-113</span>
+            <h3 class="text-xl font-cormorant font-bold text-royal-charcoal">Fine 92.5 Sterling Silver Edition</h3>
+          </div>
+          <div class="bg-amber-50 px-5 py-2.5 rounded-xl border border-royal-goldBorder text-right">
+            <span class="text-[11px] font-cinzel uppercase text-royal-goldDark block font-semibold">Net Silver Weight</span>
+            <span class="text-2xl font-cinzel font-bold text-royal-charcoal">3.93 g</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product Item 14 -->
+      <article class="reveal-elem product-page-item bg-white p-5 sm:p-8 rounded-3xl border-2 border-royal-goldBorder shadow-xl max-w-2xl mx-auto">
+        <div class="w-full aspect-square bg-[#FBF9F5] rounded-2xl overflow-hidden border border-amber-200/60 p-2 flex items-center justify-center relative">
+          <img 
+            src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345150495-1uq9kl4pn.avif" 
+            alt="Jewllz 92.5 Silver Design 2.22g" 
+            class="w-full h-full object-cover rounded-xl"
+            loading="lazy"
+          />
+          <div class="absolute top-4 left-4 bg-royal-charcoal/90 text-amber-200 text-xs font-cinzel px-3 py-1 rounded-md border border-royal-goldBorder backdrop-blur-sm">
+            BIS 925 Hallmark
+          </div>
+        </div>
+        <div class="mt-6 flex flex-wrap items-center justify-between border-t border-amber-200/80 pt-5 gap-3">
+          <div>
+            <span class="text-xs uppercase font-cinzel tracking-wider text-stone-500 font-semibold block">Design Code #JLZ-114</span>
+            <h3 class="text-xl font-cormorant font-bold text-royal-charcoal">Fine 92.5 Sterling Silver Edition</h3>
+          </div>
+          <div class="bg-amber-50 px-5 py-2.5 rounded-xl border border-royal-goldBorder text-right">
+            <span class="text-[11px] font-cinzel uppercase text-royal-goldDark block font-semibold">Net Silver Weight</span>
+            <span class="text-2xl font-cinzel font-bold text-royal-charcoal">2.22 g</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product Item 15 -->
+      <article class="reveal-elem product-page-item bg-white p-5 sm:p-8 rounded-3xl border-2 border-royal-goldBorder shadow-xl max-w-2xl mx-auto">
+        <div class="w-full aspect-square bg-[#FBF9F5] rounded-2xl overflow-hidden border border-amber-200/60 p-2 flex items-center justify-center relative">
+          <img 
+            src="https://glimya.com/jewel/products/JEWLLZ-MMKVI69X5TV3/Image%20generation_202604180814_01-1776512113975-840537962.avif" 
+            alt="Jewllz 92.5 Silver Design 3.125g" 
+            class="w-full h-full object-cover rounded-xl"
+            loading="lazy"
+          />
+          <div class="absolute top-4 left-4 bg-royal-charcoal/90 text-amber-200 text-xs font-cinzel px-3 py-1 rounded-md border border-royal-goldBorder backdrop-blur-sm">
+            BIS 925 Hallmark
+          </div>
+        </div>
+        <div class="mt-6 flex flex-wrap items-center justify-between border-t border-amber-200/80 pt-5 gap-3">
+          <div>
+            <span class="text-xs uppercase font-cinzel tracking-wider text-stone-500 font-semibold block">Design Code #JLZ-115</span>
+            <h3 class="text-xl font-cormorant font-bold text-royal-charcoal">Fine 92.5 Sterling Silver Edition</h3>
+          </div>
+          <div class="bg-amber-50 px-5 py-2.5 rounded-xl border border-royal-goldBorder text-right">
+            <span class="text-[11px] font-cinzel uppercase text-royal-goldDark block font-semibold">Net Silver Weight</span>
+            <span class="text-2xl font-cinzel font-bold text-royal-charcoal">3.125 g</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product Item 16 -->
+      <article class="reveal-elem product-page-item bg-white p-5 sm:p-8 rounded-3xl border-2 border-royal-goldBorder shadow-xl max-w-2xl mx-auto">
+        <div class="w-full aspect-square bg-[#FBF9F5] rounded-2xl overflow-hidden border border-amber-200/60 p-2 flex items-center justify-center relative">
+          <img 
+            src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773162204944-i73r2x7hr.avif" 
+            alt="Jewllz 92.5 Silver Design 1.86g" 
+            class="w-full h-full object-cover rounded-xl"
+            loading="lazy"
+          />
+          <div class="absolute top-4 left-4 bg-royal-charcoal/90 text-amber-200 text-xs font-cinzel px-3 py-1 rounded-md border border-royal-goldBorder backdrop-blur-sm">
+            BIS 925 Hallmark
+          </div>
+        </div>
+        <div class="mt-6 flex flex-wrap items-center justify-between border-t border-amber-200/80 pt-5 gap-3">
+          <div>
+            <span class="text-xs uppercase font-cinzel tracking-wider text-stone-500 font-semibold block">Design Code #JLZ-116</span>
+            <h3 class="text-xl font-cormorant font-bold text-royal-charcoal">Fine 92.5 Sterling Silver Edition</h3>
+          </div>
+          <div class="bg-amber-50 px-5 py-2.5 rounded-xl border border-royal-goldBorder text-right">
+            <span class="text-[11px] font-cinzel uppercase text-royal-goldDark block font-semibold">Net Silver Weight</span>
+            <span class="text-2xl font-cinzel font-bold text-royal-charcoal">1.86 g</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product Item 17 -->
+      <article class="reveal-elem product-page-item bg-white p-5 sm:p-8 rounded-3xl border-2 border-royal-goldBorder shadow-xl max-w-2xl mx-auto">
+        <div class="w-full aspect-square bg-[#FBF9F5] rounded-2xl overflow-hidden border border-amber-200/60 p-2 flex items-center justify-center relative">
+          <img 
+            src="https://glimya.com/jewel/products/JEWLLZ-MMKUWURGGU51/Image%20generation_202604231130_02-1776944379490-299255272.avif" 
+            alt="Jewllz 92.5 Silver Design 2.29g" 
+            class="w-full h-full object-cover rounded-xl"
+            loading="lazy"
+          />
+          <div class="absolute top-4 left-4 bg-royal-charcoal/90 text-amber-200 text-xs font-cinzel px-3 py-1 rounded-md border border-royal-goldBorder backdrop-blur-sm">
+            BIS 925 Hallmark
+          </div>
+        </div>
+        <div class="mt-6 flex flex-wrap items-center justify-between border-t border-amber-200/80 pt-5 gap-3">
+          <div>
+            <span class="text-xs uppercase font-cinzel tracking-wider text-stone-500 font-semibold block">Design Code #JLZ-117</span>
+            <h3 class="text-xl font-cormorant font-bold text-royal-charcoal">Fine 92.5 Sterling Silver Edition</h3>
+          </div>
+          <div class="bg-amber-50 px-5 py-2.5 rounded-xl border border-royal-goldBorder text-right">
+            <span class="text-[11px] font-cinzel uppercase text-royal-goldDark block font-semibold">Net Silver Weight</span>
+            <span class="text-2xl font-cinzel font-bold text-royal-charcoal">2.29 g</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product Item 18 -->
+      <article class="reveal-elem product-page-item bg-white p-5 sm:p-8 rounded-3xl border-2 border-royal-goldBorder shadow-xl max-w-2xl mx-auto">
+        <div class="w-full aspect-square bg-[#FBF9F5] rounded-2xl overflow-hidden border border-amber-200/60 p-2 flex items-center justify-center relative">
+          <img 
+            src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773161626532-enrtgrvo2.avif" 
+            alt="Jewllz 92.5 Silver Design 2.29g" 
+            class="w-full h-full object-cover rounded-xl"
+            loading="lazy"
+          />
+          <div class="absolute top-4 left-4 bg-royal-charcoal/90 text-amber-200 text-xs font-cinzel px-3 py-1 rounded-md border border-royal-goldBorder backdrop-blur-sm">
+            BIS 925 Hallmark
+          </div>
+        </div>
+        <div class="mt-6 flex flex-wrap items-center justify-between border-t border-amber-200/80 pt-5 gap-3">
+          <div>
+            <span class="text-xs uppercase font-cinzel tracking-wider text-stone-500 font-semibold block">Design Code #JLZ-118</span>
+            <h3 class="text-xl font-cormorant font-bold text-royal-charcoal">Fine 92.5 Sterling Silver Edition</h3>
+          </div>
+          <div class="bg-amber-50 px-5 py-2.5 rounded-xl border border-royal-goldBorder text-right">
+            <span class="text-[11px] font-cinzel uppercase text-royal-goldDark block font-semibold">Net Silver Weight</span>
+            <span class="text-2xl font-cinzel font-bold text-royal-charcoal">2.29 g</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product Item 19 -->
+      <article class="reveal-elem product-page-item bg-white p-5 sm:p-8 rounded-3xl border-2 border-royal-goldBorder shadow-xl max-w-2xl mx-auto">
+        <div class="w-full aspect-square bg-[#FBF9F5] rounded-2xl overflow-hidden border border-amber-200/60 p-2 flex items-center justify-center relative">
+          <img 
+            src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773160117584-p5bsscolx.avif" 
+            alt="Jewllz 92.5 Silver Design 3.31g" 
+            class="w-full h-full object-cover rounded-xl"
+            loading="lazy"
+          />
+          <div class="absolute top-4 left-4 bg-royal-charcoal/90 text-amber-200 text-xs font-cinzel px-3 py-1 rounded-md border border-royal-goldBorder backdrop-blur-sm">
+            BIS 925 Hallmark
+          </div>
+        </div>
+        <div class="mt-6 flex flex-wrap items-center justify-between border-t border-amber-200/80 pt-5 gap-3">
+          <div>
+            <span class="text-xs uppercase font-cinzel tracking-wider text-stone-500 font-semibold block">Design Code #JLZ-119</span>
+            <h3 class="text-xl font-cormorant font-bold text-royal-charcoal">Fine 92.5 Sterling Silver Edition</h3>
+          </div>
+          <div class="bg-amber-50 px-5 py-2.5 rounded-xl border border-royal-goldBorder text-right">
+            <span class="text-[11px] font-cinzel uppercase text-royal-goldDark block font-semibold">Net Silver Weight</span>
+            <span class="text-2xl font-cinzel font-bold text-royal-charcoal">3.31 g</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product Item 20 -->
+      <article class="reveal-elem product-page-item bg-white p-5 sm:p-8 rounded-3xl border-2 border-royal-goldBorder shadow-xl max-w-2xl mx-auto">
+        <div class="w-full aspect-square bg-[#FBF9F5] rounded-2xl overflow-hidden border border-amber-200/60 p-2 flex items-center justify-center relative">
+          <img 
+            src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773159556650-6zz0oepz5.avif" 
+            alt="Jewllz 92.5 Silver Design 2.33g" 
+            class="w-full h-full object-cover rounded-xl"
+            loading="lazy"
+          />
+          <div class="absolute top-4 left-4 bg-royal-charcoal/90 text-amber-200 text-xs font-cinzel px-3 py-1 rounded-md border border-royal-goldBorder backdrop-blur-sm">
+            BIS 925 Hallmark
+          </div>
+        </div>
+        <div class="mt-6 flex flex-wrap items-center justify-between border-t border-amber-200/80 pt-5 gap-3">
+          <div>
+            <span class="text-xs uppercase font-cinzel tracking-wider text-stone-500 font-semibold block">Design Code #JLZ-120</span>
+            <h3 class="text-xl font-cormorant font-bold text-royal-charcoal">Fine 92.5 Sterling Silver Edition</h3>
+          </div>
+          <div class="bg-amber-50 px-5 py-2.5 rounded-xl border border-royal-goldBorder text-right">
+            <span class="text-[11px] font-cinzel uppercase text-royal-goldDark block font-semibold">Net Silver Weight</span>
+            <span class="text-2xl font-cinzel font-bold text-royal-charcoal">2.33 g</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product Item 21 -->
+      <article class="reveal-elem product-page-item bg-white p-5 sm:p-8 rounded-3xl border-2 border-royal-goldBorder shadow-xl max-w-2xl mx-auto">
+        <div class="w-full aspect-square bg-[#FBF9F5] rounded-2xl overflow-hidden border border-amber-200/60 p-2 flex items-center justify-center relative">
+          <img 
+            src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773159515900-v3hhadsmn.avif" 
+            alt="Jewllz 92.5 Silver Design 2.33g" 
+            class="w-full h-full object-cover rounded-xl"
+            loading="lazy"
+          />
+          <div class="absolute top-4 left-4 bg-royal-charcoal/90 text-amber-200 text-xs font-cinzel px-3 py-1 rounded-md border border-royal-goldBorder backdrop-blur-sm">
+            BIS 925 Hallmark
+          </div>
+        </div>
+        <div class="mt-6 flex flex-wrap items-center justify-between border-t border-amber-200/80 pt-5 gap-3">
+          <div>
+            <span class="text-xs uppercase font-cinzel tracking-wider text-stone-500 font-semibold block">Design Code #JLZ-121</span>
+            <h3 class="text-xl font-cormorant font-bold text-royal-charcoal">Fine 92.5 Sterling Silver Edition</h3>
+          </div>
+          <div class="bg-amber-50 px-5 py-2.5 rounded-xl border border-royal-goldBorder text-right">
+            <span class="text-[11px] font-cinzel uppercase text-royal-goldDark block font-semibold">Net Silver Weight</span>
+            <span class="text-2xl font-cinzel font-bold text-royal-charcoal">2.33 g</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product Item 22 -->
+      <article class="reveal-elem product-page-item bg-white p-5 sm:p-8 rounded-3xl border-2 border-royal-goldBorder shadow-xl max-w-2xl mx-auto">
+        <div class="w-full aspect-square bg-[#FBF9F5] rounded-2xl overflow-hidden border border-amber-200/60 p-2 flex items-center justify-center relative">
+          <img 
+            src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1773158574494-j36md31yw.avif" 
+            alt="Jewllz 92.5 Silver Design 5.57g" 
+            class="w-full h-full object-cover rounded-xl"
+            loading="lazy"
+          />
+          <div class="absolute top-4 left-4 bg-royal-charcoal/90 text-amber-200 text-xs font-cinzel px-3 py-1 rounded-md border border-royal-goldBorder backdrop-blur-sm">
+            BIS 925 Hallmark
+          </div>
+        </div>
+        <div class="mt-6 flex flex-wrap items-center justify-between border-t border-amber-200/80 pt-5 gap-3">
+          <div>
+            <span class="text-xs uppercase font-cinzel tracking-wider text-stone-500 font-semibold block">Design Code #JLZ-122</span>
+            <h3 class="text-xl font-cormorant font-bold text-royal-charcoal">Fine 92.5 Sterling Silver Edition</h3>
+          </div>
+          <div class="bg-amber-50 px-5 py-2.5 rounded-xl border border-royal-goldBorder text-right">
+            <span class="text-[11px] font-cinzel uppercase text-royal-goldDark block font-semibold">Net Silver Weight</span>
+            <span class="text-2xl font-cinzel font-bold text-royal-charcoal">5.57 g</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product Item 23 -->
+      <article class="reveal-elem product-page-item bg-white p-5 sm:p-8 rounded-3xl border-2 border-royal-goldBorder shadow-xl max-w-2xl mx-auto">
+        <div class="w-full aspect-square bg-[#FBF9F5] rounded-2xl overflow-hidden border border-amber-200/60 p-2 flex items-center justify-center relative">
+          <img 
+            src="https://glimya.com/jewel/products/JEWLLZ-MMKSGEO0OSNB/Gold_necklace_suspended_in_air_202608081108-1786167764102-184080441.avif" 
+            alt="Gold necklace lightweight 2.28g" 
+            class="w-full h-full object-cover rounded-xl"
+            loading="lazy"
+          />
+          <div class="absolute top-4 left-4 bg-royal-charcoal/90 text-amber-200 text-xs font-cinzel px-3 py-1 rounded-md border border-royal-goldBorder backdrop-blur-sm">
+            BIS 925 Hallmark
+          </div>
+        </div>
+        <div class="mt-6 flex flex-wrap items-center justify-between border-t border-amber-200/80 pt-5 gap-3">
+          <div>
+            <span class="text-xs uppercase font-cinzel tracking-wider text-stone-500 font-semibold block">Design Code #JLZ-123</span>
+            <h3 class="text-xl font-cormorant font-bold text-royal-charcoal">Suspended Lustre 92.5 Pendant Necklace</h3>
+          </div>
+          <div class="bg-amber-50 px-5 py-2.5 rounded-xl border border-royal-goldBorder text-right">
+            <span class="text-[11px] font-cinzel uppercase text-royal-goldDark block font-semibold">Net Silver Weight</span>
+            <span class="text-2xl font-cinzel font-bold text-royal-charcoal">2.28 g</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ALL DETAILS & PRICING -->
+  <section class="max-w-6xl mx-auto px-4 py-16 border-t-2 border-royal-goldBorder/40">
+
+    <!-- Section Title -->
+    <div class="text-center mb-14 reveal-elem">
+      <span class="text-xs font-cinzel uppercase tracking-[0.3em] text-royal-goldDark font-bold">Factory Commercial Terms</span>
+      <h2 class="text-3xl sm:text-5xl font-cormorant font-bold text-royal-charcoal mt-1">Wholesale Pricing & Sample Kit Ledgers</h2>
+      <div class="w-32 h-0.5 bg-royal-goldBorder mx-auto my-3"></div>
+      <p class="text-xs text-stone-600 max-w-xl mx-auto font-sans">
+        Crafted specifically for fine jewellery boutiques. Zero retail inflation, direct bullion access, and built-in digital marketing enablement.
+      </p>
+    </div>
+
+    <!-- Jewellery-Styled Pricing Tiers -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- 5 Pcs Mini Kit Ledger -->
+      <div class="reveal-elem avoid-break bg-white rounded-3xl border-2 border-royal-goldBorder p-7 relative shadow-lg flex flex-col justify-between">
+        <div class="border-b border-amber-200/70 pb-5">
+          <div class="flex justify-between items-baseline mb-2">
+            <span class="text-[10px] font-cinzel uppercase tracking-widest text-royal-goldDark bg-amber-50 px-3 py-1 rounded-md border border-amber-200">
+              Tier 01 Ledger
+            </span>
+            <span class="text-xs font-cinzel text-stone-500">Min. 20 Grams</span>
+          </div>
+          <h3 class="text-2xl font-cormorant font-bold text-royal-charcoal">5 Pieces Mini Kit</h3>
+          <p class="text-xs font-serif italic text-stone-500 mt-0.5">Trial & showcase curation</p>
+          
+          <div class="mt-4 bg-amber-50/70 rounded-2xl p-4 border border-amber-200 text-center">
+            <span class="text-xs font-cinzel uppercase tracking-wider text-royal-goldDark block">Factory Making Charge</span>
+            <div class="text-3xl font-cinzel font-black text-royal-charcoal mt-0.5">₹155 <span class="text-sm font-normal text-stone-500">/ gram</span></div>
+            <span class="text-[11px] text-stone-500 block mt-1">+ ₹300 Insured Express Courier</span>
+          </div>
+        </div>
+
+        <div class="py-5">
+          <span class="text-[11px] font-cinzel uppercase tracking-wider text-royal-goldDark font-bold block mb-3">Merchant Privileges:</span>
+          <ul class="space-y-2.5 text-xs text-stone-700 leading-relaxed font-sans">
+            <li class="flex items-start">
+              <span class="text-royal-goldDark mr-2 font-bold">&bull;</span>
+              <span>Full high-definition video of all ordered jewellery pieces.</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-royal-goldDark mr-2 font-bold">&bull;</span>
+              <span>Official Jewllz Authorized Retail Collaboration Certificate.</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-royal-goldDark mr-2 font-bold">&bull;</span>
+              <span>Official Jewllz Collaboration Instagram Post for brand reach.</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-royal-goldDark mr-2 font-bold">&bull;</span>
+              <span>Digital customer catalogue on your shop name subdomain website.</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-royal-goldDark mr-2 font-bold">&bull;</span>
+              <span>Jewllz Merchant Loyalty Coins credit on total dispatch.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pt-4 border-t border-amber-100">
+          <a href="https://wa.me/919310370080?text=I%20would%20like%20to%20order%20the%205%20Pieces%20Mini%20Kit" class="block w-full text-center bg-royal-charcoal text-amber-200 hover:bg-black font-cinzel text-xs py-3 rounded-xl border border-royal-goldBorder transition uppercase tracking-wider font-semibold">
+            Inquire 5-Piece Kit
+          </a>
+        </div>
+      </div>
+
+      <!-- 10 Pcs Classic Kit Ledger -->
+      <div class="reveal-elem avoid-break bg-white rounded-3xl border-2 border-royal-goldDark p-7 relative shadow-xl flex flex-col justify-between">
+        <div class="absolute -top-3.5 left-1/2 transform -translate-x-1/2">
+          <span class="bg-royal-goldDark text-white text-[10px] font-cinzel font-bold tracking-widest uppercase px-4 py-1 rounded-full shadow-md">
+            Recommended Tier
+          </span>
+        </div>
+
+        <div class="border-b border-amber-200/70 pb-5">
+          <div class="flex justify-between items-baseline mb-2">
+            <span class="text-[10px] font-cinzel uppercase tracking-widest text-royal-goldDark bg-amber-50 px-3 py-1 rounded-md border border-amber-200">
+              Tier 02 Ledger
+            </span>
+            <span class="text-xs font-cinzel text-stone-500">Min. 45 Grams</span>
+          </div>
+          <h3 class="text-2xl font-cormorant font-bold text-royal-charcoal">10 Pieces Classic Kit</h3>
+          <p class="text-serif italic text-xs text-stone-500 mt-0.5">Showcase & customer retail testing</p>
+          
+          <div class="mt-4 bg-amber-50/70 rounded-2xl p-4 border border-amber-200 text-center">
+            <span class="text-xs font-cinzel uppercase tracking-wider text-royal-goldDark block">Factory Making Charge</span>
+            <div class="text-3xl font-cinzel font-black text-royal-charcoal mt-0.5">₹150 <span class="text-sm font-normal text-stone-500">/ gram</span></div>
+            <span class="text-[11px] text-stone-500 block mt-1">+ ₹300 Insured Express Courier</span>
+          </div>
+        </div>
+
+        <div class="py-5">
+          <span class="text-[11px] font-cinzel uppercase tracking-wider text-royal-goldDark font-bold block mb-3">Merchant Privileges:</span>
+          <ul class="space-y-2.5 text-xs text-stone-700 leading-relaxed font-sans">
+            <li class="flex items-start">
+              <span class="text-royal-goldDark mr-2 font-bold">&bull;</span>
+              <span>Full high-definition unboxing video of every ordered article.</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-royal-goldDark mr-2 font-bold">&bull;</span>
+              <strong class="text-royal-charcoal">High-resolution ready-to-use social media photos of every item.</strong>
+            </li>
+            <li class="flex items-start">
+              <span class="text-royal-goldDark mr-2 font-bold">&bull;</span>
+              <span>Official Jewllz Collaboration Certificate + Instagram Joint Post.</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-royal-goldDark mr-2 font-bold">&bull;</span>
+              <span>Digital customer catalogue under your shop name subdomain.</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-royal-goldDark mr-2 font-bold">&bull;</span>
+              <span>Accumulated Jewllz Merchant Loyalty Coins.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pt-4 border-t border-amber-100">
+          <a href="https://wa.me/919310370080?text=I%20would%20like%20to%20order%20the%2010%20Pieces%20Classic%20Kit" class="block w-full text-center bg-royal-goldBase text-white hover:bg-royal-goldDark font-cinzel text-xs py-3 rounded-xl transition uppercase tracking-wider font-semibold shadow-md">
+            Inquire 10-Piece Kit
+          </a>
+        </div>
+      </div>
+
+      <!-- 20 Pcs Mega Kit Ledger (Royal Velvet Dark Aesthetic) -->
+      <div class="reveal-elem avoid-break bg-[#171512] text-white rounded-3xl border-2 border-amber-400 p-7 relative shadow-2xl flex flex-col justify-between">
+        <div class="absolute -top-3.5 right-6">
+          <span class="bg-amber-400 text-stone-900 text-[10px] font-cinzel font-black tracking-widest uppercase px-3.5 py-1 rounded-full shadow-lg">
+            Free Shipping
+          </span>
+        </div>
+
+        <div class="border-b border-stone-700 pb-5">
+          <div class="flex justify-between items-baseline mb-2">
+            <span class="text-[10px] font-cinzel uppercase tracking-widest text-amber-300 bg-stone-800 px-3 py-1 rounded-md border border-stone-700">
+              Tier 03 Master
+            </span>
+            <span class="text-xs font-cinzel text-amber-200/80">Min. 90 Grams</span>
+          </div>
+          <h3 class="text-2xl font-cormorant font-bold text-white">20 Pieces Mega Kit</h3>
+          <p class="text-serif italic text-xs text-stone-400 mt-0.5">Scale retail & boutique dominance</p>
+          
+          <div class="mt-4 bg-stone-900/90 rounded-2xl p-4 border border-amber-400/40 text-center">
+            <span class="text-xs font-cinzel uppercase tracking-wider text-amber-300 block">Lowest Factory Making Charge</span>
+            <div class="text-3xl font-cinzel font-black text-amber-300 mt-0.5">₹135 <span class="text-sm font-normal text-stone-400">/ gram</span></div>
+            <span class="text-[11px] text-emerald-400 block mt-1 font-semibold">100% Free Express Insured Delivery Across India</span>
+          </div>
+        </div>
+
+        <div class="py-5">
+          <span class="text-[11px] font-cinzel uppercase tracking-wider text-amber-300 font-bold block mb-3">VIP Merchant Privileges:</span>
+          <ul class="space-y-2.5 text-xs text-stone-200 leading-relaxed font-sans">
+            <li class="flex items-start">
+              <span class="text-amber-400 mr-2 font-bold">&bull;</span>
+              <span>1 Full showcase video of all 20 ordered items.</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-amber-400 mr-2 font-bold">&bull;</span>
+              <strong class="text-amber-300">1 Custom Viral 9:16 Instagram Reel produced for your brand.</strong>
+            </li>
+            <li class="flex items-start">
+              <span class="text-amber-400 mr-2 font-bold">&bull;</span>
+              <span>Ready-to-use high-resolution product marketing posters.</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-amber-400 mr-2 font-bold">&bull;</span>
+              <strong class="text-amber-300">1 Custom 3D Brand Logo Animation Video.</strong>
+            </li>
+            <li class="flex items-start">
+              <span class="text-amber-400 mr-2 font-bold">&bull;</span>
+              <span>
+                Complete Meta Ads campaign setup by Ofbuzz Technology 
+                (<a href="https://www.ofbuzztechnology.in" target="_blank" rel="noopener noreferrer" class="text-amber-300 underline font-medium hover:text-white">www.ofbuzztechnology.in</a>).
+              </span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-amber-400 mr-2 font-bold">&bull;</span>
+              <span>Custom shop subdomain catalogue + Jewllz Loyalty Coins.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pt-4 border-t border-stone-800">
+          <a href="https://wa.me/919310370080?text=I%20would%20like%20to%20order%20the%2020%20Pieces%20Mega%20Kit" class="block w-full text-center bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-stone-950 font-cinzel text-xs py-3 rounded-xl transition uppercase tracking-wider font-black shadow-lg">
+            Claim 20-Piece Mega Kit
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Transparent Pricing Certificate Explainer -->
+    <div class="reveal-elem avoid-break mt-16 bg-white rounded-3xl border-2 border-royal-goldBorder p-8 sm:p-10 shadow-xl">
+      <div class="text-center max-w-2xl mx-auto mb-8">
+        <span class="text-[10px] font-cinzel uppercase tracking-[0.25em] text-royal-goldDark font-bold bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
+          Pure Commodity Valuation Formula
+        </span>
+        <h3 class="text-2xl sm:text-3xl font-cormorant font-bold text-royal-charcoal mt-2">
+          How Wholesale Jewellery Pricing Works
+        </h3>
+        <p class="text-xs text-stone-500 mt-1 font-sans">
+          Two transparent components. Zero hidden showroom markups.
+        </p>
+      </div>
+
+      <!-- Jewellery Formula Ledger -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 bg-amber-50/50 p-6 rounded-2xl border border-amber-200/80 items-center text-center">
+        <div class="bg-white p-5 rounded-xl border border-royal-goldBorder/60 shadow-sm">
+          <span class="text-[11px] font-cinzel uppercase tracking-wider text-royal-goldDark block font-semibold">Step 01</span>
+          <div class="text-lg font-cormorant font-bold text-royal-charcoal mt-1">Live Silver Metal Rate</div>
+          <p class="text-xs text-stone-500 mt-1">Daily 92.5 pure bullion rate passed to you at 100% direct market cost without retail spread.</p>
+        </div>
+        <div class="text-2xl font-cinzel font-bold text-royal-goldDark hidden md:block">+</div>
+        <div class="bg-white p-5 rounded-xl border border-royal-goldBorder/60 shadow-sm">
+          <span class="text-[11px] font-cinzel uppercase tracking-wider text-royal-goldDark block font-semibold">Step 02</span>
+          <div class="text-lg font-cormorant font-bold text-royal-charcoal mt-1">Factory Making Charge</div>
+          <p class="text-xs text-stone-500 mt-1">Introductory manufacturing fee: ₹135/g to ₹155/g covering casting, polishing, and BIS hallmarking.</p>
+        </div>
+      </div>
+
+      <!-- Live Simulation Example -->
+      <div class="mt-8 bg-royal-charcoal text-white rounded-2xl p-6 sm:p-8 border border-royal-goldBorder">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-stone-700 pb-5">
+          <div>
+            <span class="text-xs font-cinzel uppercase tracking-wider text-amber-300 font-semibold">Real Valuation Example</span>
+            <h4 class="text-xl font-cormorant font-bold text-white mt-1">10-Gram Hallmarked Sterling Silver Ring</h4>
+            <p class="text-xs text-stone-400">Calculated on live silver bullion rate ₹235/g + Mini Kit making ₹155/g</p>
+          </div>
+          <div class="text-left md:text-right">
+            <span class="text-[11px] font-cinzel uppercase text-stone-400">Direct Boutique Wholesale Cost</span>
+            <div class="text-3xl font-cinzel font-black text-amber-300">₹3,900</div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-5 text-xs">
+          <div>
+            <span class="text-stone-400 block">Pure Silver (10g &times; ₹235)</span>
+            <strong class="text-white text-sm">₹2,350</strong>
+          </div>
+          <div>
+            <span class="text-stone-400 block">Factory Making (10g &times; ₹155)</span>
+            <strong class="text-white text-sm">₹1,550</strong>
+          </div>
+          <div>
+            <span class="text-stone-400 block">Showroom Retail MRP</span>
+            <strong class="text-stone-400 line-through text-sm">₹7,215</strong>
+          </div>
+          <div class="bg-stone-900 p-2.5 rounded-lg border border-emerald-500/50">
+            <span class="text-emerald-400 block font-semibold">Your Gross Retail Profit</span>
+            <strong class="text-emerald-300 text-sm">~45% to 50% Margin</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8 Value Pillars (Why Partner With Jewllz) -->
+    <div class="reveal-elem avoid-break mt-16">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-xs font-cinzel uppercase tracking-[0.25em] text-royal-goldDark font-bold">Manufacturing Guarantees</span>
+        <h3 class="text-3xl font-cormorant font-bold text-royal-charcoal mt-1">Why Partner With Jewllz</h3>
+        <p class="text-xs text-stone-500 mt-1">Your trust is our priority. Crafted to eliminate retail risks for modern jewellers.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="bg-white p-5 rounded-2xl border border-royal-goldBorder/70 shadow-sm">
+          <span class="w-8 h-8 rounded-full bg-amber-50 text-royal-goldDark flex items-center justify-center font-cinzel font-bold text-xs mb-3 border border-amber-200">1</span>
+          <h4 class="font-cormorant font-bold text-base text-royal-charcoal">100% Certified Silver</h4>
+          <p class="text-xs text-stone-500 mt-1 leading-relaxed">Assured 92.5+ purity with authentic laboratory BIS hallmark stamping on each item.</p>
+        </div>
+        <div class="bg-white p-5 rounded-2xl border border-royal-goldBorder/70 shadow-sm">
+          <span class="w-8 h-8 rounded-full bg-amber-50 text-royal-goldDark flex items-center justify-center font-cinzel font-bold text-xs mb-3 border border-amber-200">2</span>
+          <h4 class="font-cormorant font-bold text-base text-royal-charcoal">Transparent Pricing</h4>
+          <p class="text-xs text-stone-500 mt-1 leading-relaxed">Direct live market bullion rates with fixed per-gram making fees and zero markups.</p>
+        </div>
+        <div class="bg-white p-5 rounded-2xl border border-royal-goldBorder/70 shadow-sm">
+          <span class="w-8 h-8 rounded-full bg-amber-50 text-royal-goldDark flex items-center justify-center font-cinzel font-bold text-xs mb-3 border border-amber-200">3</span>
+          <h4 class="font-cormorant font-bold text-base text-royal-charcoal">Custom On-Demand Craft</h4>
+          <p class="text-xs text-stone-500 mt-1 leading-relaxed">Freshly manufactured on verified demand rather than carrying aged warehouse stock.</p>
+        </div>
+        <div class="bg-white p-5 rounded-2xl border border-royal-goldBorder/70 shadow-sm">
+          <span class="w-8 h-8 rounded-full bg-amber-50 text-royal-goldDark flex items-center justify-center font-cinzel font-bold text-xs mb-3 border border-amber-200">4</span>
+          <h4 class="font-cormorant font-bold text-base text-royal-charcoal">No Pressure To Buy</h4>
+          <p class="text-xs text-stone-500 mt-1 leading-relaxed">Begin risk-free with ultra-low minimum order quantity from merely 5 curated pieces.</p>
+        </div>
+        <div class="bg-white p-5 rounded-2xl border border-royal-goldBorder/70 shadow-sm">
+          <span class="w-8 h-8 rounded-full bg-amber-50 text-royal-goldDark flex items-center justify-center font-cinzel font-bold text-xs mb-3 border border-amber-200">5</span>
+          <h4 class="font-cormorant font-bold text-base text-royal-charcoal">Jeweller-Assisted Buying</h4>
+          <p class="text-xs text-stone-500 mt-1 leading-relaxed">Direct trade consultation to help choose top fast-moving designs for your city clientele.</p>
+        </div>
+        <div class="bg-white p-5 rounded-2xl border border-royal-goldBorder/70 shadow-sm">
+          <span class="w-8 h-8 rounded-full bg-amber-50 text-royal-goldDark flex items-center justify-center font-cinzel font-bold text-xs mb-3 border border-amber-200">6</span>
+          <h4 class="font-cormorant font-bold text-base text-royal-charcoal">Smart QR Pricing Tags</h4>
+          <p class="text-xs text-stone-500 mt-1 leading-relaxed">Centralized pricing QR verification for transparent, instant counter billing.</p>
+        </div>
+        <div class="bg-white p-5 rounded-2xl border border-royal-goldBorder/70 shadow-sm">
+          <span class="w-8 h-8 rounded-full bg-amber-50 text-royal-goldDark flex items-center justify-center font-cinzel font-bold text-xs mb-3 border border-amber-200">7</span>
+          <h4 class="font-cormorant font-bold text-base text-royal-charcoal">Secure Partner Payments</h4>
+          <p class="text-xs text-stone-500 mt-1 leading-relaxed">Direct 1-click UPI transfers via GPay, PhonePe, Paytm, BHIM, and SMEPay gateway.</p>
+        </div>
+        <div class="bg-white p-5 rounded-2xl border border-royal-goldBorder/70 shadow-sm">
+          <span class="w-8 h-8 rounded-full bg-amber-50 text-royal-goldDark flex items-center justify-center font-cinzel font-bold text-xs mb-3 border border-amber-200">8</span>
+          <h4 class="font-cormorant font-bold text-base text-royal-charcoal">1-Year Protective Lustre</h4>
+          <p class="text-xs text-stone-500 mt-1 leading-relaxed">Premium anti-tarnish micro-coating engineered to last up to 1 year with regular care.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trade FAQ Section -->
+    <div class="reveal-elem avoid-break mt-16">
+      <div class="text-center max-w-xl mx-auto mb-8">
+        <span class="text-xs font-cinzel uppercase tracking-[0.25em] text-royal-goldDark font-bold">Trade Support</span>
+        <h3 class="text-3xl font-cormorant font-bold text-royal-charcoal mt-1">Frequently Asked Questions</h3>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl mx-auto text-xs">
+        <div class="bg-white p-6 rounded-2xl border border-royal-goldBorder/70 shadow-sm">
+          <h4 class="font-cormorant font-bold text-base text-royal-charcoal">What is included in the Wholesale Jewelry Sample Kit?</h4>
+          <p class="text-stone-600 mt-2 leading-relaxed">Each kit includes authentic 92.5 Sterling Silver jewellery pieces hand-picked by you, authentic hallmarked 925 purity, protective tamper-evident transit pouches, and transparent cost breakdowns.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-royal-goldBorder/70 shadow-sm">
+          <h4 class="font-cormorant font-bold text-base text-royal-charcoal">How does the factory making charge pricing work?</h4>
+          <p class="text-stone-600 mt-2 leading-relaxed">You get direct factory transparency: you pay the live market silver rate per gram plus introductory wholesale making charges (starting from ₹135/g to ₹155/g depending on kit tier), with zero retail markups, that too with ultra low MOQ.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-royal-goldBorder/70 shadow-sm">
+          <h4 class="font-cormorant font-bold text-base text-royal-charcoal">Can I keep the sample pieces or sell them in my store?</h4>
+          <p class="text-stone-600 mt-2 leading-relaxed">Yes, 100%. All sample kit pieces are completely yours upon delivery. You can display them in your boutique showcase, test customer demand, or retail them immediately.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-royal-goldBorder/70 shadow-sm">
+          <h4 class="font-cormorant font-bold text-base text-royal-charcoal">How many pieces can I choose, and can I mix categories?</h4>
+          <p class="text-stone-600 mt-2 leading-relaxed">You can choose Mini Kit (5 pieces), Classic Kit (10 pieces), or Mega Kit (20 pieces). You have total freedom to mix rings, pendants, earrings, bracelets, and chains across the entire catalog.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-royal-goldBorder/70 shadow-sm">
+          <h4 class="font-cormorant font-bold text-base text-royal-charcoal">How fast is dispatch and what are delivery charges?</h4>
+          <p class="text-stone-600 mt-2 leading-relaxed">Kits are dispatched via express insured courier within 24 to 48 hours of order placement. Mega kits include 100% free delivery across India.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-royal-goldBorder/70 shadow-sm">
+          <h4 class="font-cormorant font-bold text-base text-royal-charcoal">What payment options are available?</h4>
+          <p class="text-stone-600 mt-2 leading-relaxed">We support instant 1-click UPI via Google Pay, PhonePe, Paytm, and BHIM, dynamic on-screen QR code scanning from another phone, and credit/debit cards via secure SMEPay gateway.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Terms & Commercial Conditions (Bottom Placement Copy) -->
+    <div class="reveal-elem avoid-break mt-16 bg-amber-50/90 rounded-2xl border-2 border-royal-goldBorder/80 p-6 sm:p-8">
+      <h4 class="font-cinzel font-bold text-sm text-royal-goldDark tracking-wider uppercase mb-3">
+        Terms and Commercial Conditions
+      </h4>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs text-stone-600 leading-relaxed font-sans">
+        <p><strong>1. Purity Assurance:</strong> 100% authentic 92.5 Sterling Silver with government-recognized laboratory BIS hallmarking on every sample piece.</p>
+        <p><strong>2. Live Pricing Settlement:</strong> Live silver bullion rates apply transparently as per the bullion index on the order placement date.</p>
+        <p><strong>3. Minimum Weight Criteria:</strong> Mini Kit requires 20g minimum; Classic Kit requires 45g minimum; Mega Kit requires 90g minimum.</p>
+        <p><strong>4. Digital Deliverables:</strong> HD videos, subdomain white-label storefronts, and marketing creatives are issued directly upon dispatch validation.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- STATUTORY FOOTER -->
+  <footer class="bg-royal-charcoal text-amber-200/90 border-t-4 border-royal-goldBorder py-12 px-4 sm:px-8">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-xs font-sans leading-relaxed">
+      
+      <!-- Brand & Tagline -->
+      <div>
+        <h4 class="text-2xl font-cinzel font-bold text-white tracking-widest uppercase">JEWLLZ</h4>
+        <p class="text-amber-300 font-serif italic text-sm mt-0.5">Quality You Can Trust</p>
+        <p class="text-stone-400 mt-3 text-xs">
+          Direct factory wholesale sterling silver jewellery manufacturer for next-generation boutiques and showroom partners.
+        </p>
+      </div>
+
+      <!-- MCA Registration & Tax IDs -->
+      <div>
+        <h5 class="text-white font-cinzel font-semibold uppercase tracking-wider text-[11px] mb-2">Corporate Entity</h5>
+        <p class="text-white font-medium">JEWLLZ BY INDOROUTE GLOBAL LLP</p>
+        <p class="text-stone-400">Govt. Registered MCA Entity</p>
+        <p class="text-stone-400 mt-1">GSTIN: <span class="font-mono text-amber-300">20AALFI6848K1Z2</span></p>
+        <p class="text-stone-400">PAN: <span class="font-mono text-amber-300">AALFI6848K</span></p>
+      </div>
+
+      <!-- Registered Office Address -->
+      <div>
+        <h5 class="text-white font-cinzel font-semibold uppercase tracking-wider text-[11px] mb-2">Registered Office</h5>
+        <p class="text-stone-300">
+          Shiv Shakti Colony, Sukhdev Nagar, Chas, Bokaro Steel City, District: Bokaro, State: Jharkhand, PIN Code: 827013
+        </p>
+        <p class="mt-2 text-stone-300">
+          Email: <a href="mailto:info@jewllz.in" class="text-amber-300 hover:underline">info@jewllz.in</a>
+        </p>
+      </div>
+
+      <!-- Contact & Technology Partner -->
+      <div>
+        <h5 class="text-white font-cinzel font-semibold uppercase tracking-wider text-[11px] mb-2">Trade Desk Support</h5>
+        <p class="text-stone-400">WhatsApp Helpline:</p>
+        <a href="https://wa.me/919310370080" class="text-white font-bold text-sm tracking-wider hover:text-amber-300 inline-block mt-0.5">
+          +91 9310370080
+        </a>
+        <div class="mt-3">
+          <a href="https://jewllz.in/" target="_blank" rel="noopener noreferrer" class="text-amber-300 hover:underline block">
+            Visit Online: jewllz.in
+          </a>
+          <a href="https://www.ofbuzztechnology.in" target="_blank" rel="noopener noreferrer" class="text-stone-400 hover:text-amber-200 block text-[11px] mt-1">
+            Meta Ads Setup: www.ofbuzztechnology.in
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright -->
+    <div class="max-w-7xl mx-auto mt-10 pt-6 border-t border-stone-800 text-center text-[11px] text-stone-500">
+      <p>&copy; 2026 JEWLLZ BY INDOROUTE GLOBAL LLP. All rights reserved. Direct Wholesale Sample Kit Campaign.</p>
+    </div>
+  </footer>
+
+  <!-- Intersection Observer Creative Animation Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const revealElements = document.querySelectorAll(".reveal-elem");
+      
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            obs.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.12,
+        rootMargin: "0px 0px -40px 0px"
+      });
+
+      revealElements.forEach(el => observer.observe(el));
+    });
+  </script>
+
+</body>
+</html>
