@@ -507,7 +507,7 @@
       border-color: #1B5E20;
     }
 
-    /* VIEW MORE BANNER */
+    /* VIEW MORE CONTROLS (DIRECTLY AFTER 5TH PRODUCT) */
     .view-more-banner {
       background: #FFFFFF;
       border: 2px dashed var(--border-gold-strong);
@@ -530,7 +530,7 @@
       margin-bottom: 16px;
     }
 
-    /* EXTRA DESIGNS WRAPPER */
+    /* STRICT HIDING OF DESIGNS 6 TO 23 */
     #extra-designs-wrapper {
       display: none;
     }
@@ -816,7 +816,7 @@
       line-height: 1.5;
     }
 
-    /* FAQ SECTION */
+    /* FAQ ACCORDION STYLE */
     .faq-section {
       padding: 56px 0;
       background: #FFFFFF;
@@ -1138,6 +1138,7 @@
         display: none !important;
       }
 
+      /* Force show all designs in PDF printout */
       #extra-designs-wrapper {
         display: block !important;
       }
@@ -1365,7 +1366,7 @@
       <article class="product-single-page-card" id="card-JW04">
         <div class="product-layout-grid">
           <div class="ratio-12-14-container" onclick="toggleZoom(this)" onmousemove="handleZoomPan(event, this)">
-            <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345094591-6t8xtjba4.avif" alt="Jewellery Design JW-04" class="product-img-main" loading="lazy">
+            <img src="https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781344951823-pa2almxjq.avif" alt="Jewellery Design JW-04" class="product-img-main" loading="lazy">
             <span class="zoom-hint-badge">Click to Inspect Zoom</span>
           </div>
           <div class="product-details-col">
@@ -1389,7 +1390,7 @@
                   <input type="text" id="qty-JW-04" class="qty-input" value="1" readonly>
                   <button type="button" class="stepper-btn" onclick="stepQty('JW-04', 1)">+</button>
                 </div>
-                <button type="button" class="btn-add-amazon" id="btn-add-JW-04" onclick="addToWholesaleCart('JW-04', 4.50, 'https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781345094591-6t8xtjba4.avif')">
+                <button type="button" class="btn-add-amazon" id="btn-add-JW-04" onclick="addToWholesaleCart('JW-04', 4.50, 'https://dngqjgffhrzcauxtzhqd.supabase.co/storage/v1/object/public/product-images/products/1781344951823-pa2almxjq.avif')">
                   Add to Wholesale Box
                 </button>
               </div>
@@ -1435,7 +1436,7 @@
         </div>
       </article>
 
-      <!-- VIEW MORE BUTTON -->
+      <!-- VIEW MORE BUTTON (Directly after Product 5 - Strictly Collapsed by Default) -->
       <div class="view-more-banner" id="view-more-banner-box">
         <h3>Want to explore more curated silver designs?</h3>
         <p>18 additional designs are available in this collection. Click below to view them, or scroll down directly to explore Kit Tiers &amp; Pricing.</p>
@@ -1600,7 +1601,7 @@
                 <div class="amazon-stepper-row">
                   <div class="qty-stepper">
                     <button type="button" class="stepper-btn" onclick="stepQty('JW-10', -1)">-</button>
-                    <input type="text" id="qty-JW-010" class="qty-input" value="1" readonly>
+                    <input type="text" id="qty-JW-10" class="qty-input" value="1" readonly>
                     <button type="button" class="stepper-btn" onclick="stepQty('JW-10', 1)">+</button>
                   </div>
                   <button type="button" class="btn-add-amazon" id="btn-add-JW-10" onclick="addToWholesaleCart('JW-10', 4.64, 'https://glimya.com/jewel/products/JEWLLZ-MSUN33N63YJ6/Gold_bracelet_worn_on_wrist_202608091104-1789319426684-309228579.avif')">
@@ -2041,12 +2042,12 @@
           </div>
         </article>
 
-      </div>
+      </div> <!-- End #extra-designs-wrapper -->
 
     </div>
   </section>
 
-  <!-- WHOLESALE ORDER SAMPLE TIERS SECTION -->
+  <!-- WHOLESALE ORDER SAMPLE TIERS SECTION (DIRECTLY ACCESSIBLE AFTER 5 DESIGNS) -->
   <section class="pricing-tiers-section page-break-print" id="wholesale-tiers">
     <div class="container">
       <div class="section-header">
@@ -2265,91 +2266,3 @@
 
         <div class="faq-card">
           <div class="faq-q">What payment options are available?</div>
-          <div class="faq-a">We support instant 1-click UPI via Google Pay, PhonePe, Paytm, and BHIM, dynamic on-screen QR code scanning from another phone, and credit/debit cards via secure SMEPay gateway.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- COMMUNITY BANNER -->
-  <section class="community-cta-section">
-    <div class="container community-box">
-      <h2 class="community-title">Join Our Official WhatsApp Community</h2>
-      <p class="community-desc">
-        Connect directly with fellow retail jewellers across India, get exclusive catalogue releases, and special batch pricing notifications.
-      </p>
-      <a href="https://chat.whatsapp.com/Bxrgvnalg7nG2d5FcKlQCG" target="_blank" rel="noopener" class="btn btn-whatsapp" style="padding: 12px 28px; font-size: 14px;">
-        Join WhatsApp Community
-      </a>
-    </div>
-  </section>
-
-  <!-- TERMS & CONDITIONS COPY -->
-  <div class="container">
-    <div class="terms-box" style="margin: 36px auto;">
-      <div class="terms-title">Standard Wholesale Terms &amp; Conditions (Catalogue Concluding Notice)</div>
-      All prices and making charge structures provided in this catalogue are strictly B2B wholesale rates. Orders are fulfilled under the registered corporate entity Jewllz by Indoroute Global LLP. Transit insurance coverage applies to all dispatches. Standard care guidelines preserve the long-lasting plating.
-    </div>
-  </div>
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="master-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <h4>JEWLLZ BY INDOROUTE GLOBAL LLP</h4>
-          <p>Direct Factory Manufacturing &bull; Authentic 92.5 Silver</p>
-          <p><strong>Registered Office:</strong> Shiv Shakti Colony, Sukhdev Nagar, Chas, Bokaro Steel City, District: Bokaro, State: Jharkhand, PIN Code: 827013</p>
-          <p><strong>Email:</strong> info@jewllz.in</p>
-        </div>
-
-        <div class="footer-col">
-          <h4>STATUTORY DETAILS</h4>
-          <p>Govt. Registered MCA Entity: <strong>Indoroute Global LLP</strong></p>
-          <p>GSTIN: <strong>20AALFI6848K1Z2</strong></p>
-          <p>PAN: <strong>AALFI6848K</strong></p>
-        </div>
-
-        <div class="footer-col">
-          <h4>CONNECT DIRECTLY</h4>
-          <p>Helpline Support: <strong>+91 9310370080</strong></p>
-          <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 8px;">
-            <a href="https://chat.whatsapp.com/Bxrgvnalg7nG2d5FcKlQCG" target="_blank" rel="noopener" class="btn btn-whatsapp" style="font-size: 11.5px; padding: 6px 12px;">
-              Join WhatsApp Community
-            </a>
-            <a href="https://jewllz.in/" target="_blank" rel="noopener" class="btn btn-outline-gold" style="font-size: 11.5px; padding: 6px 12px;">
-              Visit Jewllz Portal
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom-line">
-        &copy; 2026 JEWLLZ BY INDOROUTE GLOBAL LLP. All rights reserved. Direct Wholesale Sample Kit Campaign.
-      </div>
-    </div>
-  </footer>
-
-  <!-- SLIDEOUT CART DRAWER -->
-  <div class="cart-drawer-overlay" id="cart-overlay" onclick="closeDrawer()"></div>
-  <aside class="cart-drawer" id="cart-drawer" aria-label="Wholesale Shopping Drawer">
-    <div class="cart-drawer-header">
-      <h3>Your Wholesale Sample Box</h3>
-      <button type="button" class="close-drawer-btn" onclick="closeDrawer()">&times;</button>
-    </div>
-
-    <div class="cart-items-scroll" id="cart-items-container">
-      <div style="text-align: center; color: var(--text-muted); padding: 40px 0;">
-        Your sample box is currently empty.<br>Add items using the Add to Wholesale Box button.
-      </div>
-    </div>
-
-    <div class="cart-drawer-footer">
-      <div class="cart-summary-line">
-        <span>Total Selected Quantity:</span>
-        <strong id="drawer-total-qty">0 Pieces</strong>
-      </div>
-      <div class="cart-summary-line">
-        <span>Estimated Total Weight:</span>
-        <strong id="drawer-total-weight">0.
